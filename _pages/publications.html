@@ -13,10 +13,10 @@ author_profile: true
 {% include base_path %}
 {% for post in site.publications reversed %}
   {% if post.collection = "bookchapters" %}
-  {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% if label != written_label %}
-     </ul><h2>{{ label }}</h2><ul>
-     {% capture written_label %}{{ label }}{% endcapture %}
+    {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if label != written_label %}
+       </ul><h2>{{ label }}</h2><ul>
+       {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
   (% endif %}
@@ -27,10 +27,12 @@ author_profile: true
 {% include base_path %}
 <ul>
 {% for post in site.publications reversed %}
-  {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% if label != written_label %}
-     </ul><h2>{{ label }}</h2><ul>
-     {% capture written_label %}{{ label }}{% endcapture %}
+  {% if post.collection = "publications" %}
+    {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if label != written_label %}
+       </ul><h2>{{ label }}</h2><ul>
+       {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
