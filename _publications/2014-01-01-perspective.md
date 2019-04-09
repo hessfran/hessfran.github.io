@@ -6,7 +6,7 @@ date: 2014-10-01
 paperurl: 'https://doi.org/10.1039/C3CY00833A'
 doi: '10.1039/C3CY00833A'
 citation: 'F. Hess, H. Over. <i>Catal. Sci. Technol.</i> 4 (<b>2014</b>) 583-598.'
-image: 
+teaser: "/images/CatalSciTechnol_cover_teaser.png"
 ---
 
 [Read @ RSC](https://pubs.rsc.org/en/content/articlelanding/2014/cy/c3cy00833a#!divAbstract) [Free preprint](https://pubs.rsc.org/en/content/getauthorversionpdf/C3CY00833A) [Supplementary material](http://www.rsc.org/suppdata/cy/c3/c3cy00833a/c3cy00833a.pdf)
