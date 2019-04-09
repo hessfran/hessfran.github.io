@@ -13,13 +13,11 @@ author_profile: true
 {% assign cyear = 3000 %}
 {% assign lyear = cyear %}
 {% for post in site.publications reversed %}
-  {% assign cyear = {{ post.date | date: "%Y" }} %}
-  {% if cyear != lyear %}
-    {% assign lyear = cyear %}
-	{{ cyear }}
+  {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if label != written_label %}
+     <h2>{{ label }}</h2>
+     {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
-  {{ cyear }}
-  {{ lyear }}
   {% include archive-single.html %}
 {% endfor %}
 
