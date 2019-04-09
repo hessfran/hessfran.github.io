@@ -10,8 +10,8 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
-{% assign cyear = 3000 %}}
-{% assign lyear = cyear %}}
+{% assign cyear = 3000 %}
+{% assign lyear = cyear %}
 {% for post in site.publications reversed %}
   {% assign cyear = {{ post.date | date: "%Y" }} %}
   {% if cyear != lyear %}
