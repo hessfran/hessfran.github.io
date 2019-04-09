@@ -8,10 +8,19 @@ author_profile: true
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
+
 <h2>Book chapters</h2>
 {% include base_path %}
 {% for post in site.bookchapters reversed %}
+  {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if label != written_label %}
+     </ul><h2>{{ label }}</h2><ul>
+     {% capture written_label %}{{ label }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
 {% endfor %}
+
+
 <h2>Journal articles</h2>
 {% include base_path %}
 <ul>
