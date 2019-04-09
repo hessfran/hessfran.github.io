@@ -15,7 +15,7 @@ author_profile: true
 {% for post in site.publications reversed %}
   {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% if label != written_label %}
-     <h2>{{ label }}</h2>
+     {{ label }}
      {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
