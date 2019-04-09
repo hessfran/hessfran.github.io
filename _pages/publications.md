@@ -10,13 +10,14 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
-
+{% assign cyear = 3000 %}}
+{% assign lyear = cyear %}}
 {% for post in site.publications reversed %}
-  {% if forloop.first %}
-     {% assign cyear = {{ post.date| date: "%Y" }} | assign lastyear = cyear %}
-  {% endif %}
   {% assign cyear = {{ post.date | date: "%Y" }} %}
-  {{ cyear }}
+  {% if cyear != lyear %}
+    {% assign lyear = cyear %}
+	<h2>{{ cyear }}
+  {% endif %}
   {% include archive-single.html %}
 {% endfor %}
 
