@@ -5,7 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-test
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
@@ -14,8 +13,7 @@ test
 {% for post in site.publications reversed %}
   {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% if label != written_label %}
-     {{ label }}
-	 test
+     <h3>{{ label }}</h3>
      {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
