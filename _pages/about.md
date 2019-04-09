@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Under construction, but feel free to look at this cow doing science.
+Under construction, but feel free to look at this cow sciencing.
 
-<img src="/images/CatalSciTechnol_cover_lowres">
+<img src="/images/CatalSciTechnol_cover_lowres.png">
