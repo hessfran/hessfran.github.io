@@ -53,14 +53,14 @@
     <!--<p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>-->
     <!--{% endif %}-->
     
-	
+	<ul style="list-style: none;">
     {% if post.citation and post.paperurl %}
-      <q>{{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.doi }}</u></a></q>
+      <li>{{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.doi }}</u></a></li>
     {% elsif post.citation %}
-      <q>Recommended citation: {{ post.citation }} </q>
+      <li>Recommended citation: {{ post.citation }} </li>
     {% elsif post.paperurl %}
-      <q>Download <a href=" {{ post.paperurl }} "><u>here</u></a></q>
+      <li>Download <a href=" {{ post.paperurl }} "><u>here</u></a></li>
     {% endif %}
-	
+	</ul>
   </article>
 </div>
