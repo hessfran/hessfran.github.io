@@ -11,50 +11,34 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Chemistry, Justus-Liebig-Universität Giessen, 2009
-on "Catalytic Oxidation of Ammonia over RuO<sub>2</sub> nanotubes", supervised by Prof. Dr. Herbert Over
-* M.Sc. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Sc. in Chemistry, Justus-Liebig-Universität Giessen, 2009, on "Catalytic Oxidation of Ammonia over RuO<sub>2</sub> nanotubes", supervised by Prof. Dr. Herbert Over
+* M.Sc. in Chemistry, Justus-Liebig-Universität Giessen, 2011, on "Kinetic Monte Carlo Simulations for the Deacon Process over RuO<sub>2</sub>(110)", supervised by Prof. Dr. Herbert Over
+* Dr. rer. nat in Chemistry, Justus-Liebig-Universität Giessen, 2011, on "DFT-based Kinetic Monte Carlo Simulations of oxidation reactions over the RuO<sub>2</sub>(110) model catalyst surface", supervised by Prof. Dr. Herbert Over
 
 Research experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* July 2017 - May 2019
+  * Postdoctoral fellow at Department of Nuclear Science and Engineering, Massachusetts Institute of Technology, advised by Prof. Dr. Bilge Yildiz
+  * Research Fellowship funded by Deutsche Forschungsgemeinschaft (HE 7782/1-1)
+  * Atomic-scale modeling of the surface chemistry of cathode materials in solid oxide fuel cells with potentially far reaching consequences for catalysis on mixed oxides.
+  * Fundamental new insight into the connection between surface and bulk defect chemistry in complex materials.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Dec. 2015 - June 2017
+  * Postdoctoral Associate at Institute for Physical Chemistry, Justus-Liebig-Universität Giessen, advised by Prof. Dr. Herbert Over
+  * Rationalized by theory the catalyst degradation in the industrial Deacon Process over cerium dioxide and predicted possible mitigation strategies proven successful on the bench-top scale.
+  * Proposed new dopant compounds to enhance catalyst stability in the Deacon Process based on computational screening of oxide materials.
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Oct. 2011 - Dec. 2015
+  * Research and Teaching Assistant at Institute for Physical Chemistry, Justus-Liebig-Universität Giessen, advised by Prof. Dr. Herbert Over
+  * Developed highly accurate DFT-based Kinetic Monte Carlo Simulations to resolve the reaction mechanism of the Deacon Process over the RuO 2 (110) surface with unexpected conclusions.
+  * Resolved several literature controversies regarding the reaction mechanism of the CO oxidation over the RuO<sub>2</sub> (110) surface.
   
-Talks
+Awards and Fellowships
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Liebig Fellowship funded by Fonds der Chemischen Industrie, startig from June 2019, at RWTH Aachen
+* Research Fellowship funded by Deutsche Forschungsgemeinschaft (HE 7782/1-1), July 2017 - May 2019 at Massachusetts Institute of Technology
+* Graduate Student Fellowship funded by Justus-Liebig-Universität Giessen, Jan. 2012 - Dec. 2014
+* Best Poster Award, Symposium for Theoretical Chemistry, Karlsruhe, 2012
+* Undergraduate Student Fellowship funded by City of Giessen, Oct. 2009 - Sept. 2011
+
+
