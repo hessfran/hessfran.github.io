@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,6 +8,15 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+Expertise and Research Interest
+======
+* Heterogeneous catalysis, reaction kinetics
+* Stability of catalyst materials under harsh reaction conditions
+* Kinetic Monte Carlo simulations with lateral interactions
+* Density Functional Theory
+* Multiscale Modelling
+* Surface Science
 
 Education
 ======
@@ -30,7 +39,7 @@ Research experience
 
 * Oct. 2011 - Dec. 2015
   * Research and Teaching Assistant at Institute for Physical Chemistry, Justus-Liebig-Universität Giessen, advised by Prof. Dr. Herbert Over
-  * Developed highly accurate DFT-based Kinetic Monte Carlo Simulations to resolve the reaction mechanism of the Deacon Process over the RuO 2 (110) surface with unexpected conclusions.
+  * Developed DFT-based Kinetic Monte Carlo Simulations with detailed lateral interaction model employing a cluster expansion to resolve the reaction mechanism of the Deacon Process over the RuO<sub>2</sub>(110) surface with unexpected conclusions.
   * Resolved several literature controversies regarding the reaction mechanism of the CO oxidation over the RuO<sub>2</sub> (110) surface.
   
 Awards and Fellowships
