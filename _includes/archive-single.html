@@ -55,10 +55,10 @@
     
 	<ul style="list-style: none;">
 	{% if post.teaser %}
-	  <li><table><td>
-	  <tr>{{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></tr>
-	  <tr><img src="{{ post.teaser }}" ></tr>
-	  </td></table></li>
+	  <li><table><tr>
+	  <td>{{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></td>
+	  <td><img src="{{ post.teaser }}" ></td>
+	  </tr></table></li>
 	{% else %}
       {% if post.citation and post.paperurl %}
         <li>{{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></li>
