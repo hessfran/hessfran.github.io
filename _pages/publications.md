@@ -12,7 +12,10 @@ author_profile: true
 {% include base_path %}
 
 {% for post in site.publications reversed %}
-  test
+  {% if forloop.first %}
+     {% cyear = {{ post.year | default: 3000 }} | lastyear = cyear %}
+	 <h2>{{ cyear }}</h2>
+  {% endif %}
   {% include archive-single.html %}
 {% endfor %}
 
