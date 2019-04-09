@@ -8,7 +8,11 @@ author_profile: true
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
-
+<h2>Book chapters</h2>
+{% include base_path %}
+{% for post in site.bookchapters reversed %}
+{% endfor %}
+<h2>Journal articles</h2>
 {% include base_path %}
 <ul>
 {% for post in site.publications reversed %}
@@ -20,5 +24,6 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 </ul>
+
 
 
