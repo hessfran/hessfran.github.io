@@ -25,5 +25,5 @@ Keywords
 * Kinetic Monte Carlo
 * Density functional theory
 * Surface reaction
-* Surface structure
-* Theoretical electrochemistry
+* HCl oxidation
+* CO oxidation
