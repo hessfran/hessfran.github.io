@@ -13,7 +13,7 @@ image:
 
 **Featured on the front cover of Catalysis Science and Technology 4!**
 
-<img src="/images/CatalSciTechnol_cover.png">
+<img src="/images/CatalSciTechnol_cover_lowres.png">
 
 Abstract
 --------
