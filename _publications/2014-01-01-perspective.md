@@ -1,26 +1,23 @@
 ---
-title: "Combined experiment and theory approach in surface chemistry: Stairway to heaven?"
+title: "Perspective article: Kinetic Monte Carlo simulations of heterogeneously catalyzed oxidation reactions "
 collection: publications
 pubtype: 'journal'
-date: 2015-10-01
-paperurl: 'https://doi.org/10.1016/j.susc.2015.01.006'
-doi: '10.1016/j.susc.2015.01.006'
-citation: 'K.S. Exner, F. Hess, H. Over, A.P. Seitsonen. <i>Surf. Sci.</i> 640 (<b>2015</b>) 165-180.'
+date: 2014-10-01
+paperurl: 'https://doi.org/10.1039/C3CY00833A'
+doi: '10.1039/C3CY00833A'
+citation: 'F. Hess, H. Over. <i>Catal. Sci. Technol.</i> 4 (<b>2014</b>) 583-598.'
+image: 
 ---
 
-[Read @ Sciencedirect](https://www.sciencedirect.com/science/article/pii/S0039602815000096)
+[Read @ RSC](https://pubs.rsc.org/en/content/articlelanding/2014/cy/c3cy00833a#!divAbstract) [Free preprint](https://pubs.rsc.org/en/content/getauthorversionpdf/C3CY00833A) [Supplementary material](http://www.rsc.org/suppdata/cy/c3/c3cy00833a/c3cy00833a.pdf)
 
-Highlights
-----------
-* Structure determination by a combined theory experiment approach
-* HCl oxidation over chlorinated TiO<sub>2</sub>(110) model catalysts
-* Microscopic insight into the oxidation of Ru(0001)
-* Ab-initio kinetic Monte Carlo simulations of CO oxidation over RuO<sub>2</sub>(110)
-* Ab-initio thermodynamics to study the electrochemical chlorine evolution reaction
+**Featured on the front cover of Catalysis Science and Technology 4!**
+
+<img src="/images/CatalSciTechnol_cover.png">
 
 Abstract
 --------
-In this perspective we discuss how an intimate interaction of experiments with theory is able to deepen our insight into the catalytic reaction system on the molecular level. This strategy is illustrated by discussing various examples from our own research of surface chemistry and model catalysis. The particular examples were carefully chosen to balance the specific strength of both approaches – theory and experiment – and emphasize the benefit of this combined approach. We start with the determination of complex surface structures, where diffraction techniques in combination with theory are clear-cut. The promoter action of alkali metals in heterogeneous catalysis is rationalized with theory and experiment for the case of CO coadsorption. Predictive power of theory is limited as demonstrated with the apparent activity of chlorinated TiO2(110) in the oxidation of HCl: Even if we know all elementary reaction steps of a catalytic reaction mechanism, the overall kinetics may remain elusive and require the application kinetic Monte Carlo simulations. Catalysts are not always stable under reaction conditions and may chemically transform as discussed for the CO oxidation reaction over ruthenium. Under oxidizing reaction conditions ruthenium transforms into RuO2, a process which is hardly understood on the molecular level. Lastly we focus on electrochemical reactions. Here theory is clearly ahead since spectroscopic methods are not available to resolve the processes at the electrode surface.
+In this perspective, we focus on the catalyzed oxidation of CO and HCl over the model catalyst RuO2(110) and how the kinetics of these reactions can be modeled by kinetic Monte Carlo (kMC) simulations. Assuming the reaction mechanism is known, the critical parameters entering the kMC simulations include the activation and adsorption energies as well as interaction energies between the adsorbed species and the diffusion barriers. This input parameter set can either be determined by using dedicated coadsorption experiments or by calculations from electronic structure theory. A critical comparison of kMC results with on-line kinetic and in situ spectroscopic experiments enables the assessment of a proposed reaction mechanism. Transient rather than steady state experiments are of particular importance for this purpose. Only the inclusion of lateral interactions among the reaction intermediates allows for the determination of an apparent activation energy which is consistent with the experiment. For the case of CO oxidation over RuO2(110), we compare the results of kMC with those based on the mean field approach, the standard method of microkinetic modeling. It turns out that under realistic reaction conditions for the CO oxidation over RuO2(110) both methods can equally well describe experimental kinetic data if lateral repulsion is included in the model. However, if one-dimensional confinement is encountered such as with the HCl oxidation reaction over RuO2(110), then kMC is the preferred method for microkinetic modeling.
 
 Keywords
 --------
