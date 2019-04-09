@@ -16,10 +16,10 @@ author_profile: true
   {% assign cyear = {{ post.date | date: "%Y" }} %}
   {% if cyear != lyear %}
     {% assign lyear = cyear %}
-	<h2>{{ cyear }}</h2>
+	{{ cyear }}
   {% endif %}
-  <h2>{{ cyear }}</h2>
-  <h2>{{ lyear }}</h2>
+  {{ cyear }}
+  {{ lyear }}
   {% include archive-single.html %}
 {% endfor %}
 
