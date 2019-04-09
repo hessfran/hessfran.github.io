@@ -18,8 +18,8 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "sitemap"
-    url: /sitemap/
+  #- title: "sitemap"
+  #  url: /sitemap/
     
   #- title: "Guide"
   #  url: /markdown/
