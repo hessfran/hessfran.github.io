@@ -16,6 +16,7 @@ author_profile: true
   {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% if label != written_label %}
      {{ label }}
+	 test
      {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
