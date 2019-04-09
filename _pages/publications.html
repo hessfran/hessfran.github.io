@@ -13,8 +13,8 @@ author_profile: true
 {% include base_path %}
 <ul>
 {% for post in site.publications reversed %}
-  {{ post.collection }}
-  {% if post.collection.label == "bookchapters" %}
+  {{ post.pubtype }}
+  {% if post.pubtype == "bookchapter" %}
     {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% if label != written_label %}
        </ul><h2>{{ label }}</h2><ul>
