@@ -11,11 +11,12 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
+* B.Sc. in Chemistry, Justus-Liebig-Universität Giessen, 2009
+on "Catalytic Oxidation of Ammonia over RuO<sub>2</sub> nanotubes", supervised by Prof. Dr. Herbert Over
+* M.Sc. in Jekyll, GitHub University, 2014
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
-Work experience
+Research experience
 ======
 * Summer 2015: Research Assistant
   * Github University
