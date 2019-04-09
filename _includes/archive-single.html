@@ -57,7 +57,7 @@
 	{% if post.teaser %}
 	  <table><tr>
 	  <td>{{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></td>
-	  <td><img src="{{ post.teaser }}" ></td>
+	  <td><img src="{{ post.teaser }}" width=100%></td>
 	  </tr></table>
 	{% else %}
       {% if post.citation and post.paperurl %}
