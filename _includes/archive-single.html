@@ -53,19 +53,19 @@
     <!--<p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>-->
     <!--{% endif %}-->
     
-	<ul style="list-style: none;">
+	
 	{% if post.teaser %}
-	  <li><table><tr>
+	  <table><tr>
 	  <td>{{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></td>
 	  <td><img src="{{ post.teaser }}" ></td>
-	  </tr></table></li>
+	  </tr></table>
 	{% else %}
       {% if post.citation and post.paperurl %}
-        <li>{{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></li>
+        {{ post.citation }} <a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a>
       {% elsif post.citation %}
-        <li>{{ post.citation }} </li>
+        {{ post.citation }} 
       {% elsif post.paperurl %}
-        <li>Download <a href=" {{ post.paperurl }} "><u>here</u></a></li>
+        Download <a href=" {{ post.paperurl }} "><u>here</u></a>
       {% endif %}
 	{% endif %}
 	</ul>
