@@ -14,10 +14,9 @@ author_profile: true
 {% for post in site.publications reversed %}
   {% if forloop.first %}
      {% assign cyear = {{ post.date | default: "1900-01-01" | date: "%Y" }} | assign lastyear = cyear %}
-	 {{ cyear }} 
   {% endif %}
   {% assign cyear = {{ post.date | default: "1900-01-01" | date: "%Y" }} %}
-  {{ cyear }}
+  {{ post.date }}
   {% include archive-single.html %}
 {% endfor %}
 
