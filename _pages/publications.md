@@ -18,6 +18,8 @@ author_profile: true
     {% assign lyear = cyear %}
 	<h2>{{ cyear }}</h2>
   {% endif %}
+  <h2>{{ cyear }}</h2>
+  <h2>{{ lyear }}</h2>
   {% include archive-single.html %}
 {% endfor %}
 
