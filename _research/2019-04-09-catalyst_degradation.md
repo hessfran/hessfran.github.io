@@ -7,7 +7,7 @@ teaser: "/images/2019-04-09-mechanism_total_teaser.png"
 public: true
 excerpt: "coming soon"
 related: true
-related_posts: [1,2,3]
+related_papers: [1,2,3]
 ---
 
 <img src="/images/2019-04-09-mechanism_total_teaser.png">

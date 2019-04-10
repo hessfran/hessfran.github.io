@@ -59,7 +59,9 @@ layout: default
         {% if page.collection == 'research' %}
              <h3>Related publications</h3>
              <div class="grid__wrapper">
-               
+               {% for paper in site.related_papers %}
+                  <p> Paper: {{paper}}</p>			   
+			   {% endfor %}
              </div>
         {% endif %}
       </section>
