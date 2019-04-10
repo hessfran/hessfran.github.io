@@ -6,6 +6,7 @@ date: 2013-06-15
 paperurl: 'https://doi.org/10.1002/cctc.201300301'
 doi: '10.1002/cctc.201300301'
 citation: 'C.H. Kanzler, S. Urban, K. Zalewska-Wierzbicka, F. Hess, S. Rohrlack, C. Wessel, R. Ostermann, J.P. Hofmann, H. Over. <i>Chem. Cat. Chem.</i> 5 (<b>2013</b>) 2621-2626.'
+tags: ["catalyst degradation", "CeO2", "Deacon Process"]
 ---
 
 [Read @ Wiley Online](https://onlinelibrary.wiley.com/doi/abs/10.1002/cctc.201300301) [Supplementary material](https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fcctc.201300301&file=cctc_201300301_sm_miscellaneous_information.pdf)
