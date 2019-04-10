@@ -5,7 +5,7 @@ topic: "catalysis"
 date: 2019-04-09
 teaser: "/images/2019-04-09-mechanism_total_teaser.png"
 public: true
-excerpt: "coming soon"
+excerpt: "Catalyst aging is an important issue in heterogeneous catalysis and electrocatalysis, where a catalyst material is used over a prolonged time in a stationary or mobile application, such as a chemical reactor or an energy conversion device. "
 related: true
 tags: ["Catalyst Degradation"]
 ---
