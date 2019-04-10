@@ -58,9 +58,9 @@ layout: default
         <p>test</p>
         {% if page.collection == 'research' %}
              <h3>Related publications</h3>
-			 {{ site.related_papers}} 
-               {% for paper in site.related_papers %}
-                  <p> Paper: {{paper}}</p>			   
+			 {{ page.tags }} 
+               {% for tag in page.tags %}
+                  <p> tag: {{ tag }}</p>			   
 			   {% endfor %}
         {% endif %}
       </section>
