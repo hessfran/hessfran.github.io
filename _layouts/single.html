@@ -55,12 +55,13 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-        <p>test</p>
         {% if page.collection == 'research' %}
              <h3>Related publications</h3>
 			 {{ page.tags }} 
                {% for paper in site.publications reversed %}
+			     {{ paper.tags }}
 			     {% for tag in page.tags %}
+				   {{tag}}
                   {% if paper.tags contains tag %}
 				    {% include archive-single.html %}
 					{% break %}
