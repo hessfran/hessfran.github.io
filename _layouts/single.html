@@ -63,6 +63,7 @@ layout: default
 			     {% for tag in page.tags %}
 				   <p>{{ paper.tags }} contains {{tag}}? {{ paper.tags contains tag }}</p>
                   {% if paper.tags contains tag %}
+				    test
 				    {% include archive-single.html %}
 					{% break %}
 				  {% endif %}
