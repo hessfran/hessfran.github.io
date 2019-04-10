@@ -62,7 +62,7 @@ layout: default
 				<div class="grid__wrapper">
 					{% for post in site.related_posts%}
 						{{ post }}
-						{% include archive-single.html type="grid" %}
+						<!--{% include archive-single.html type="grid" %}-->
 					{% endfor %}
 				</div>
 			</div>
@@ -80,7 +80,7 @@ layout: default
 
       {% include post_pagination.html %}
     </div>
-
+	</article>
     {% if site.comments.provider and page.comments %}
       {% include comments.html %}
     {% endif %}
@@ -90,5 +90,5 @@ layout: default
   <!--{% if page.related and site.related_posts.size > 0 %}-->
   
   <!--{% endif %}-->
-  </article>
+  
 </div>
