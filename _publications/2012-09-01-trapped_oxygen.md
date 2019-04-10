@@ -7,6 +7,7 @@ paperurl: 'https://doi.org/10.1016/j.susc.2012.04.019'
 doi: '10.1016/j.susc.2012.04.019'
 citation: 'F. Hess, P.P.T. Krause, S.F. Rohrlack, J.P. Hofmann, H. Over. <i>Surf. Sci.</i> 606 (<b>2012</b>) L69-L73.'
 teaser: "/images/2012-09-01-trapped_oxygen.jpg"
+tags: ["RuO2", "KMC", "HCl Oxidation", "TPD", "Surface Defects", "Configurational Control", "Lateral Interactions", "Deacon Process"]
 ---
 
 [Read @ Sciencedirect](https://www.sciencedirect.com/science/article/pii/S0039602812001513)
