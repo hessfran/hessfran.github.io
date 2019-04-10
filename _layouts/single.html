@@ -75,15 +75,15 @@ layout: default
   </article>
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
-  {% if page.related and site.related_posts.size > 0 %}
+  <!--{% if page.related and site.related_posts.size > 0 %}-->
     <div class="page__related">
       <h3>Related publications</h3>
       <div class="grid__wrapper">
         {% for post in site.related_posts%}
-			{{ post.title }}
+			{{ post }}
           {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
     </div>
-  {% endif %}
+  <!--{% endif %}-->
 </div>
