@@ -58,11 +58,11 @@ layout: default
         {% if page.collection == 'research' %}
              <h3>Related publications</h3>
 			 {{ page.tags }} 
-               {% for paper in site.publications reversed %}
+               {% for post in site.publications reversed %}
 			     
 			     {% for tag in page.tags %}
-				   <p>{{ paper.tags }} contains {{tag}}? {{ paper.tags contains tag }}</p>
-                  {% if paper.tags contains tag %}
+				   <p>{{ post.tags }} contains {{tag}}? {{ post.tags contains tag }}</p>
+                  {% if post.tags contains tag %}
 				    test
 				    {% include archive-single.html %}
 					{% break %}
