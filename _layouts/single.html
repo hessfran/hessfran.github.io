@@ -55,18 +55,18 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-		test
-		{% if page.collection == 'research' %}
-			<div class="page__related">
-				<h3>Related publications</h3>
-				<div class="grid__wrapper">
-					{% for post in site.related_posts%}
-						{{ post }}
+        test
+        {% if page.collection == 'research' %}
+           <div class="page__related">
+             <h3>Related publications</h3>
+             <div class="grid__wrapper">
+               {% for post in site.related_posts%}
+                 {{ post }}
 						<!--{% include archive-single.html type="grid" %}-->
-					{% endfor %}
-				</div>
-			</div>
-		{% endif %}
+               {% endfor %}
+             </div>
+           </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
