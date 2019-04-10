@@ -61,7 +61,7 @@ layout: default
                {% for paper in site.publications reversed %}
 			     {{ paper.tags }}
 			     {% for tag in page.tags %}
-				   <p>{{tag}} {{paper.tags contains tag}</p>
+				   <p>{{tag}} {{ paper.tags contains tag }}</p>
                   {% if paper.tags contains tag %}
 				    {% include archive-single.html %}
 					{% break %}
