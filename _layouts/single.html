@@ -59,9 +59,9 @@ layout: default
              <h3>Related publications</h3>
 			 {{ page.tags }} 
                {% for paper in site.publications reversed %}
-			     {{ paper.tags }}
+			     
 			     {% for tag in page.tags %}
-				   <p>{{tag}} {{ paper.tags contains tag }}</p>
+				   <p>{{ paper.tags }} contains {{tag}}? {{ paper.tags contains tag }}</p>
                   {% if paper.tags contains tag %}
 				    {% include archive-single.html %}
 					{% break %}
