@@ -180,7 +180,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  bookchapters:
+  research:
     output: true
     permalink: /:collection/:path/
   portfolio:
