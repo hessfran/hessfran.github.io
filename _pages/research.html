@@ -6,11 +6,22 @@ author_profile: true
 ---
 
 <div>
-<h2>Research topics</h2>
+<h2>Catalysis</h2>
 {% include base_path %}
 <ul>
 {% for post in site.research %}
-    {% include archive-single-topics.html %}
+	{% if post.topic == "catalysis" %}
+		{% include archive-single-topics.html %}
+	{% endif %}
+{% endfor %}
+</ul>
+<h2>Kinetic Monte Carlo modeling of surface reactions</h2>
+{% include base_path %}
+<ul>
+{% for post in site.research %}
+	{% if post.topic == "kmc" %}
+		{% include archive-single-topics.html %}
+	{% endif %}
 {% endfor %}
 </ul>
 </div>
