@@ -8,13 +8,13 @@ author_profile: true
 <div class="page__content">
 
 <h2> Anbieter</h2>
-<p>Franziska Hess</ br>
-77 Massachusetts Avenue 13-3034</ br>
-Cambridge, MA, 02139</ br>
-USA</p
+<p>Franziska Hess<br>
+77 Massachusetts Avenue 13-3034<br>
+Cambridge, MA, 02139<br>
+USA</p>
 
-<p>Tel.: +1-617-460-4187</ br>
-E-Mail: dr.franziska.hess@gmail.com</ br>
+<p>Tel.: +1-617-460-4187<br>
+E-Mail: dr.franziska.hess@gmail.com<br>
 Website: https://hessfran.github.io/</p>
 
 <h2 id="ger">Haftungsausschluss</h2>
