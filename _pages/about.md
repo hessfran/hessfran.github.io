@@ -10,4 +10,4 @@ redirect_from:
 
 Welcome to the place where surface science, catalysis and modeling come together
 
-<img src="/images/CatalSciTechnol_cover_small.png" class="figure">
+<img src="/images/CatalSciTechnol_cover_small.png" class="feature__item--center">
