@@ -4,11 +4,13 @@ title: "Impressum"
 permalink: /impressum/
 author_profile: true
 ---
+
+<div class="page__content">
 <a href="#ger">Deutsch</a> <a href="#eng">English</a>
 <h2> Anbieter</h2>
-<p>Hess group</p>
+<p>Franziska Hess</p>
 <p>77 Massachusetts Avenue 13-3034</p>
-<p>02139 Cambridge, MA</p>
+<p>Cambridge, MA, 02139</p>
 <p>USA</p>
 
 <p>Tel.: +1-617-460-4187</p>
@@ -41,4 +43,5 @@ Weitere Information bezüglich der Datennutzung durch Facebook entnehmen Sie bit
 <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter http://twitter.com/privacy.</p>
 <p>Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter http://twitter.com/account/settings ändern.</p>
 
-Quelle: <a href="http://www.haftungsausschluss.org/datenschutzerklaerung-muster-generator-dsgvo/">Datenschutzerklärung DSGVO 2018</a> von <a href="http://www.haftungsausschluss-vorlage.de/haftungsausschluss/">Haftungsausschluss-Vorlage.de</a> und <a href="http://www.dsgvo-gesetz.info/">der neuen Datenschutz-Grundverordnung</a>
+<p>Quelle: <a href="http://www.haftungsausschluss.org/datenschutzerklaerung-muster-generator-dsgvo/">Datenschutzerklärung DSGVO 2018</a> von <a href="http://www.haftungsausschluss-vorlage.de/haftungsausschluss/">Haftungsausschluss-Vorlage.de</a> und <a href="http://www.dsgvo-gesetz.info/">der neuen Datenschutz-Grundverordnung</a></p>
+</div
