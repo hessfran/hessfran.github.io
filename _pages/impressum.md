@@ -44,4 +44,4 @@ Weitere Information bezüglich der Datennutzung durch Facebook entnehmen Sie bit
 <p>Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter http://twitter.com/account/settings ändern.</p>
 
 <p>Quelle: <a href="http://www.haftungsausschluss.org/datenschutzerklaerung-muster-generator-dsgvo/">Datenschutzerklärung DSGVO 2018</a> von <a href="http://www.haftungsausschluss-vorlage.de/haftungsausschluss/">Haftungsausschluss-Vorlage.de</a> und <a href="http://www.dsgvo-gesetz.info/">der neuen Datenschutz-Grundverordnung</a></p>
-</div
+</div>
