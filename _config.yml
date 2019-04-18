@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Franziska Hess"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Franziska Hess"
 description              : &description "research group leader"
