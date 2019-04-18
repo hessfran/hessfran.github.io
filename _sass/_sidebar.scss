@@ -9,13 +9,14 @@
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
-
+  
   @include clearfix();
   margin-bottom: 1em;
   
 
   @include breakpoint($large) {
     @include span(2 of 12);
+	float: right;
     opacity: 1;
     /*-webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;*/
@@ -50,6 +51,20 @@
   }
 }
 
+.sidebar__left {
+
+  @include breakpoint($large) {
+    @include span(2 of 12);
+	float: left;
+    opacity: 1;
+    /*-webkit-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;*/
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 
 .sidebar__right {
   margin-bottom: 1em;
