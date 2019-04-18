@@ -51,6 +51,7 @@
 }
 
 .sidebar__left {
+  @include clearfix();
   @include breakpoint($large) {
     @include span(2 of 12 first);
     opacity: 1;
