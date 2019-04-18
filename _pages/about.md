@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Heterogeneous catalysis from first principles"
-excerpt: "About me"
+excerpt: "Heterogeneous catalysis from first principles"
 author_profile: true
 redirect_from: 
   - /about/
