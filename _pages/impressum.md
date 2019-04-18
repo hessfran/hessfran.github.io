@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <div class="page__content">
-<a href="#ger">Deutsch</a> <a href="#eng">English</a>
+
 <h2> Anbieter</h2>
 <p>Franziska Hess</p>
 <p>77 Massachusetts Avenue 13-3034</p>
