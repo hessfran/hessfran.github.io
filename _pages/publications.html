@@ -10,7 +10,7 @@ author_profile: true
 {% endif %}
 
 <div>
-<h2>Book chapters</h2>
+<h2 id="book">Book chapters</h2>
 {% include base_path %}
 <ul>
 {% for post in site.publications reversed %}
@@ -26,7 +26,7 @@ author_profile: true
 </ul>
 </div>
 <div>
-<h2>Journal articles</h2>
+<h2 id="article">Journal articles</h2>
 {% include base_path %}
 {% capture written_label %}{{ "none" }}{% endcapture %}
 <ul>
