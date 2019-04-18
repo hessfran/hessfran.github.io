@@ -18,7 +18,7 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(8 wide of 12);
+    @include span(8 of 12);
     @include prefix(0 of 12);
     @include suffix(0.5 of 12);
   }
