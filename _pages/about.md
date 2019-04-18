@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to the place where surface science, catalysis and modeling come together
+Welcome to the place where surface science, catalysis and modeling come together.
 
 <p style="text-align: center;"><img src="/images/CatalSciTechnol_cover_small.png"></p>
+
