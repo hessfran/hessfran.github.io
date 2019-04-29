@@ -21,7 +21,7 @@
           animation-delay: 0.0s;
 
   @include breakpoint($large) {
-    display: table-cell;
+    display: block;
 	padding-left: 0em;
     padding-right: 1em;
   }
@@ -50,7 +50,7 @@
 	display: inline;
 	
 	@include breakpoint($large) {
-      display: table-cell;
+      display: block;
     }
   }
 
