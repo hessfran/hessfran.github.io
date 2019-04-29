@@ -31,10 +31,10 @@
   }
 
   ol {
-    padding: 0em;
+    /*padding: 0em;
 	list-style-position: inside;
     list-style: disc;
-    font-size: $type-size-5;
+    font-size: $type-size-5;*/
 
     @include breakpoint($large) {
       @include span(0 of 12);
