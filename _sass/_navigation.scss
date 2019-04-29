@@ -47,10 +47,10 @@
 
   li {
     /*display: inline;*/
-	display: table-cell;
+	display: inline;
 	
 	@include breakpoint($large) {
-      display: inline;
+      display: table-cell;
     }
   }
 
