@@ -50,7 +50,7 @@
 	display: inline;
 	
 	@include breakpoint($large) {
-      padding: 1em;
+      padding-left: 1em;
 	  display: block;
     }
   }
