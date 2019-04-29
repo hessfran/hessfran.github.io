@@ -33,7 +33,7 @@
   ol {
     padding: 0;
 	list-style-position: inside;
-    list-style: disk;
+    list-style: disc;
     font-size: $type-size-5;
 
     @include breakpoint($large) {
