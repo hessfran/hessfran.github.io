@@ -5,12 +5,16 @@
   {% include breadcrumbs.html %}
   <!--{{ page.title }}-->
   <h4>Contents</h4>
+  <nav class="breadcrumbs">
+  <ol>
   {% if page.title=="Publications" %}
-    <p><a href="#book"><i class="fab">Book chapters</i></a></p>
-    <p><a href="#article"><i class="fab">Journal articles</i></a></p>
+    <li><a href="#book"><i class="fab">Book chapters</i></a></li>
+    <li><a href="#article"><i class="fab">Journal articles</i></a></li>
   {% endif %}
   {% if page.title=="Research" %}
-    <p><a href="#catalysis"><i class="fab">Catalysis</i></a></p>
-    <p><a href="#KMC"><i class="fab">KMC</i></a></p>
+    <li><a href="#catalysis"><i class="fab">Catalysis</i></a></li>
+    <li><a href="#KMC"><i class="fab">KMC</i></a></li>
   {% endif %}
+  </ol>
+  </nav>
   </div>
