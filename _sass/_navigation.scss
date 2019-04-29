@@ -13,6 +13,7 @@
   margin-bottom: 0;
   padding-left: 0em;
   padding-right: 2em;
+  display: inline;
   font-family: $sans-serif;
   -webkit-animation: intro 0.0s both;
           animation: intro 0.0s both;
@@ -20,7 +21,8 @@
           animation-delay: 0.0s;
 
   @include breakpoint($large) {
-    padding-left: 0em;
+    display: table-cell;
+	padding-left: 0em;
     padding-right: 1em;
   }
 
