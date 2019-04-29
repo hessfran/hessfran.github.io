@@ -47,6 +47,11 @@
 
   li {
     /*display: inline;*/
+	display: table-cell;
+	
+	@include breakpoint($large) {
+      display: inline;
+    }
   }
 
   .current {
