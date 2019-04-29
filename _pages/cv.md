@@ -22,7 +22,7 @@ Education
 ======
 * **B.Sc. in Chemistry**, Justus-Liebig-Universität Giessen, 2009, on *"Catalytic Oxidation of Ammonia over RuO<sub>2</sub> nanotubes"*, supervised by Prof. Dr. Herbert Over
 * **M.Sc. in Chemistry**, Justus-Liebig-Universität Giessen, 2011, on *"Kinetic Monte Carlo Simulations for the Deacon Process over RuO<sub>2</sub>(110)"*, supervised by Prof. Dr. Herbert Over
-* **Dr. rer. nat.**, Justus-Liebig-Universität Giessen, 2015, on *"DFT-based Kinetic Monte Carlo Simulations of oxidation reactions over the RuO<sub>2</sub>(110) model catalyst surface"*, supervised by Prof. Dr. Herbert Over [Read @Publication Server of the Justus-Liebig-University of Giessen](http://geb.uni-giessen.de/geb/volltexte/2016/12013/)
+* **Dr. rer. nat.**, Justus-Liebig-Universität Giessen, 2015, on *"DFT-based Kinetic Monte Carlo Simulations of oxidation reactions over the RuO<sub>2</sub>(110) model catalyst surface"*, [(Read @Publication Server of the Justus-Liebig-University of Giessen)](http://geb.uni-giessen.de/geb/volltexte/2016/12013/), supervised by Prof. Dr. Herbert Over 
 
 Research experience
 ======
