@@ -46,7 +46,7 @@
   }
 
   li {
-    padding: 1em;
+    padding: 0.5em;
 	display: inline;
 	
 	@include breakpoint($large) {
