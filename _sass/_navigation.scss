@@ -46,11 +46,11 @@
   }
 
   li {
-    /*display: inline;*/
+    padding: 1em;
 	display: inline;
 	
 	@include breakpoint($large) {
-      
+      padding: 0em;
 	  display: block;
     }
   }
