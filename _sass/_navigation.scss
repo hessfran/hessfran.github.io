@@ -34,7 +34,7 @@
     padding: 0;
 	list-style-position: inside;
     list-style: none;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
 
     @include breakpoint($large) {
       @include span(0 of 12);
