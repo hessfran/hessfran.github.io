@@ -23,7 +23,7 @@
   @include breakpoint($large) {
     display: block;
 	padding-left: 0em;
-    padding-right: 1em;
+    padding-right: 0em;
   }
 
   @include breakpoint($x-large) {
