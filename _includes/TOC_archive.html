@@ -5,7 +5,11 @@
   {{ page.title }}
   <h4>Contents</h4>
   {% if page.title=="Publications" %}
-    <p><a href="#book">Book chapters</a></p>
-    <p><a href="#article">Journal articles</a></p>
+    <p><a href="#book" class="author__urls">Book chapters</a></p>
+    <p><a href="#article" class="author__urls">Journal articles</a></p>
+  {% endif %}
+  {% if page.title=="Research" %}
+    <p><a href="#catalysis" class="author__urls">Catalysis</a></p>
+    <p><a href="#KMC" class="author__urls">KMC</a></p>
   {% endif %}
   </div>
