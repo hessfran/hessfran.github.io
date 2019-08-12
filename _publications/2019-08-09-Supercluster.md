@@ -2,20 +2,20 @@
 title: "Efficient implementation of Cluster Expansion models in surface Kinetic Monte Carlo simulations with lateral interactions: Subtraction Schemes, Supersites and the Supercluster Contraction"
 collection: publications
 pubtype: 'journal'
-date: 2019-09-09
+date: 2019-08-09
 paperurl: ''
 doi: '10.1002/jcc.26041'
 citation: 'F. Hess. <i>J. Comp. Chem.</i> xxx (<b>2019</b>) xxx.'
-teaser: "/images/2019-08-09-supercluster_TOC.jpg"
+teaser: "/images/2019-08-09-supercluster_TOC.png"
 tags: ["Lateral Interactions", "KMC", "algorithms"]
 ---
 
 Coming soon @ JCC
-[Read preprint @ ArXiv] (https://arxiv.org/abs/1908.03526)
-[Read preprint] (/files/2019-08-09-supercluster_main.pdf)
-[Read supporting material] (/files/2019-08-09-supercluster_supporting_material.pdf)
+[Read preprint @ ArXiv](https://arxiv.org/abs/1908.03526)
+[Read preprint](/files/2019-08-09-supercluster_main.pdf)
+[Read supporting material](/files/2019-08-09-supercluster_supporting_material.pdf)
 
-<img src="/images/2019-08-09-supercluster_TOC.jpg">
+<img src="/images/2019-08-09-supercluster_TOC.png">
 
 Highlights
 ----------
