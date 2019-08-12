@@ -10,10 +10,14 @@ teaser: "/images/2019-08-09-supercluster_TOC.png"
 tags: ["Lateral Interactions", "KMC", "algorithms"]
 ---
 
-Coming soon @ JCC
-[Read preprint @ ArXiv](https://arxiv.org/abs/1908.03526)
-[Read preprint](/files/2019-08-09-supercluster_main.pdf)
-[Read supporting material](/files/2019-08-09-supercluster_supporting_material.pdf)
+Coming soon @JCC.
+
+[[ext] preprint @ArXiv](https://arxiv.org/abs/1908.03526).
+
+[[PDF] preprint](/files/2019-08-09-supercluster_main.pdf).
+
+[[PDF] supporting material](/files/2019-08-09-supercluster_supporting_material.pdf).
+
 
 <img src="/images/2019-08-09-supercluster_TOC.png">
 
