@@ -10,7 +10,7 @@ teaser: "/images/2019-08-09-supercluster_TOC.png"
 tags: ["Lateral Interactions", "KMC", "algorithms"]
 ---
 
-[[ext] full paper @ JCC] (https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041)
+[[ext] full paper @ JCC](https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041)
 
 [[ext] preprint @ArXiv](https://arxiv.org/abs/1908.03526).
 
