@@ -3,20 +3,22 @@ title: "Efficient implementation of Cluster Expansion models in surface Kinetic 
 collection: publications
 pubtype: 'journal'
 date: 2019-08-09
-paperurl: ''
+paperurl: 'https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041'
 doi: '10.1002/jcc.26041'
 citation: 'F. Hess. <i>J. Comp. Chem.</i> xxx (<b>2019</b>) xxx.'
 teaser: "/images/2019-08-09-supercluster_TOC.png"
 tags: ["Lateral Interactions", "KMC", "algorithms"]
 ---
 
-Coming soon @JCC.
+[[ext] full paper @ JCC](https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041)
 
 [[ext] preprint @ArXiv](https://arxiv.org/abs/1908.03526).
 
 [[PDF] preprint](/files/2019-08-09-supercluster_main.pdf).
 
 [[PDF] supporting material](/files/2019-08-09-supercluster_supporting_material.pdf).
+
+[[Github] SSS-VSSM repository on Github](https://github.com/hessfran/SSS-VSSM)
 
 
 <img src="/images/2019-08-09-supercluster_TOC.png">
