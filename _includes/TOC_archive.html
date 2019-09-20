@@ -4,15 +4,27 @@
   <div class="sidebar__left">
   {% include breadcrumbs.html %} <!--{{ page.title }}-->
   <nav class="breadcrumbs">
-  <ol>
-	<li>Contents</li>
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Contents</li>
   {% if page.title=="Publications" %}
-    <li><a href="#book"><i class="fab">Book chapters</i></a></li>
-    <li><a href="#article"><i class="fab">Journal articles</i></a></li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a href="#book" itemprop="item"><i class="fab">Book chapters</i></a>
+		<meta itemprop="position" content="book" />
+	</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a href="#article" itemprop="item"><i class="fab">Journal articles</i></a>
+		<meta itemprop="position" content="Journal articles" />
+	</li>
   {% endif %}
   {% if page.title=="Research" %}
-    <li><a href="#catalysis"><i class="fab">Catalysis</i></a></li>
-    <li><a href="#KMC"><i class="fab">KMC</i></a></li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a href="#catalysis" itemprop="item"><i class="fab">Catalysis</i></a>
+		<meta itemprop="position" content="Catalysis" />
+	</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a href="#KMC" itemprop="item"><i class="fab">KMC</i></a>
+		<meta itemprop="position" content="KMC" />
+	</li>
   {% endif %}
   </ol>
   </nav>
