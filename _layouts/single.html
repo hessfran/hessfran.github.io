@@ -9,7 +9,8 @@ layout: default
 {% endif %}
 
 {{ page.url }}
-{{ page.url != "/" }}
+{% assign cond = page.url != "/" }
+{{ cond }}
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
