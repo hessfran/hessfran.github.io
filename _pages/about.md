@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 permalink: /
 #title: "Surface catalysis from first principles"
 excerpt: "Surface catalysis from first principles"
