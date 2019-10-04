@@ -4,13 +4,7 @@
 
 <ul>
 {% for post in everything reversed %}
-  {% if post.newsline %}
-    {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% if label != written_label %}
-       </ul><h3>{{ label }}</h3><ul>
-       {% capture written_label %}{{ label }}{% endcapture %}
-    {% endif %}
-	
+  {% if post.newsline %}	
     {% include archive-news.html %}
   {% endif %}
 {% endfor %}
