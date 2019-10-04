@@ -9,7 +9,7 @@ layout: default
 {% endif %}
 
 {{ page.url }}
-{{ paginator }}
+{{ page.url != "/" }}
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
