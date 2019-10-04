@@ -2,7 +2,7 @@
 <div>
 {% assign everything = site.publications | concat: site.research %}
 
-<h3>News</h3>
+<h2>News</h2>
 <ol class="news__item">
 {% for post in everything reversed %}
   {% if post.newsline %}	
