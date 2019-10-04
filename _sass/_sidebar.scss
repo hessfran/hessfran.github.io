@@ -57,7 +57,7 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
-	float: left;
+	/*float: left;*/
 	margin-left: -1em;
     opacity: 1;
     /*-webkit-transition: opacity 0.2s ease-in-out;
