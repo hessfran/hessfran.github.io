@@ -50,8 +50,7 @@
 }
 
 .archive__item-newsline {
-  @include span(1 of 12);
-  margin-left: span(0 of 12) + gutter(10 of 12);
+  margin-left: span(5 of 12);
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
   font-weight: bold;
