@@ -12,7 +12,8 @@ layout: default
   true
 {% else %}
   false
-{% end if %}
+{% endif %}
+
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
