@@ -32,14 +32,14 @@
     {% endif %}
 
     <p class="archive__item-title" itemprop="headline">
-	  <span class="archive__item-newsline">
+
       {% if post.link %} 
         <a href="{{ post.link }}">{{ post.newsline }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <!--{{ post.year | default: "1900" }}-->
 		<a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.newsline }}</a>
       {% endif %}
-	  </span>
+
     </p>
     
     {% if post.read_time %}
