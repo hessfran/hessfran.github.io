@@ -3,7 +3,7 @@
 {% assign everything = site.publications | concat: site.research %}
 
 <u2>News</u2>
-<ol>
+<ol class="news__item">
 {% for post in everything reversed %}
   {% if post.newsline %}	
     <li class="news__item">{% include archive-news.html %}</li>
