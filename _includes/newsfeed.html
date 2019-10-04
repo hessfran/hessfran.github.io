@@ -5,7 +5,7 @@
 <ul>
 {% for post in everything reversed %}
   {% if post.newsline %}
-    </ul><h3>{{ post.date | date: "%Y" }} - <a href="{{post.}}{{ post.link }}">post.newsline</a></h3><ul>
+    </ul><h3>{{ post.date | date: "%Y" }} - <a href="{{post.}}{{ post.link }}">{{ post.newsline }}</a></h3><ul>
   {% endif %}
 {% endfor %}
 </ul>
