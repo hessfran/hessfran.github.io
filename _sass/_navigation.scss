@@ -21,7 +21,7 @@
           animation-delay: 0.0s;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(12 of 12);
 	display: block;
 	padding-left: 0em;
     padding-right: 0em;
@@ -38,12 +38,12 @@
     font-size: $type-size-5;
 
     @include breakpoint($large) {
-      @include span(2 of 12);
+      @include span(12 of 12);
 	  @include prefix(0 of 12);
     }
 
     @include breakpoint($x-large) {
-      @include span(2 of 12);
+      @include span(12 of 12);
 	  @include prefix(0 of 12);
     }
   }
