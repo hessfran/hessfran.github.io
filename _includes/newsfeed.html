@@ -10,7 +10,8 @@
        </ul><h3>{{ label }}</h3><ul>
        {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
-    {% include archive-single.html %}
+	<h3>{{ post.newsline}}</h3>
+    {% include archive-news.html %}
   {% endif %}
 {% endfor %}
 </ul>
