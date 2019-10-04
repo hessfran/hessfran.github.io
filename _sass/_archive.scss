@@ -10,7 +10,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(8 of 12);
+    @include span(12 of 12);
     @include prefix(0 of 12);
 	@include suffix(0 of 12);
   }
@@ -50,7 +50,6 @@
 }
 
 .archive__item-newsline {
-  margin-left: span(0 of 12);
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
   font-weight: bold;
