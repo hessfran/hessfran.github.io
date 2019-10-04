@@ -8,19 +8,14 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-{% if page.url != "/" %}
-  false new
-{% else %}
-  true new
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  true2
-  {% unless paginator %}
-    paginator
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
+{% comment %}
+  {% if page.url != "/" and site.breadcrumbs %}
+    {% unless paginator %}
+      paginator
+      {% include breadcrumbs.html %}
+    {% endunless %}
+  {% endif %}
+{% endcomment %}
 
 <div id="main" role="main">
   {% include sidebar.html %} 

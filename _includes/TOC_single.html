@@ -2,6 +2,8 @@
 
 
   <div class="sidebar__left">
-  {% include breadcrumbs.html %}
+  {% if page.url != "/" %}
+    {% include breadcrumbs.html %}
+  {% endif %}
   
   </div>
