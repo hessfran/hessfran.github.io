@@ -1,10 +1,9 @@
 ---
-layout: single
+layout: splash
 permalink: /
 #title: "Surface catalysis from first principles"
 excerpt: "Surface catalysis from first principles"
 author_profile: true
-breadcrumbs: false
 redirect_from: 
   - /about/
   - /about.html
