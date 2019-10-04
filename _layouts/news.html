@@ -22,9 +22,11 @@ layout: default
       <h1 class="page__title">{{ page.title }}</h1>
     {% endunless %}
     {{ content }}
+	
+	{% comment %} start of the news section {% endcomment %}
+    {% include newsfeed.html %}
   </div>
   
-  {% comment %} start of the news section {% endcomment %}
-  {% include newsfeed.html %}
+  
    
 </div>
