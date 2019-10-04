@@ -8,9 +8,11 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-{{ page.url }}
-{% assign cond = (page.url != "/") %}
-{{ cond }}
+{% if page.url == "/" %}
+  true
+{% else %}
+  false
+{% end if %}
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
