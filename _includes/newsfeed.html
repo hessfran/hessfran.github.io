@@ -3,7 +3,7 @@
 {% assign everything = site.publications | concat: site.research %}
 
 <ul>
-{% for post in everyhing reversed %}
+{% for post in everything reversed %}
   {{ post.title }}
   {% if post.newsline %}
     </ul><h3>{{ post.newsline }}</h3><ul>
