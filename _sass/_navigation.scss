@@ -21,7 +21,8 @@
           animation-delay: 0.0s;
 
   @include breakpoint($large) {
-    display: block;
+    @include span(2 of 12);
+	display: block;
 	padding-left: 0em;
     padding-right: 0em;
   }
