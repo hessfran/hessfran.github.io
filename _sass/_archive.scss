@@ -30,6 +30,7 @@
 
 .archive__wide {
   margin-bottom: 2em;
+  margin-righ: 0;
   float: left;
   
   @include breakpoint($medium) {
