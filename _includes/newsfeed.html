@@ -1,6 +1,7 @@
 
 <div>
 {% assign everything = site.publications | concat: site.research %}
+{{ everything }}
 <ul>
 {% for post in everyhing reversed %}
   {% if post.newsline %}
