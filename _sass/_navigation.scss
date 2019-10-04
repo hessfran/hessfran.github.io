@@ -37,16 +37,16 @@
     font-size: $type-size-5;
 
     @include breakpoint($large) {
-      @include span(0 of 12);
+      @include span(2 of 12);
     }
 
     @include breakpoint($x-large) {
-      @include prefix(0 of 12);
+      @include prefix(2 of 12);
     }
   }
 
   li {
-    padding: 0.5em;
+    padding: 0em;
 	display: inline;
 	
 	@include breakpoint($large) {
