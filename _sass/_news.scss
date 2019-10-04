@@ -6,7 +6,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(12 of 12);
+    @include span(10 of 12);
     @include prefix(0 of 12);
 	@include suffix(0 of 12);
   }
