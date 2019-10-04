@@ -30,7 +30,8 @@
 
 .archive__wide {
   margin-bottom: 2em;
-
+  float: left;
+  
   @include breakpoint($medium) {
     @include span(12 of 12);
   }
@@ -53,6 +54,7 @@
     }
   }
 }
+
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
