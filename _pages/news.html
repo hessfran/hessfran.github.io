@@ -1,0 +1,55 @@
+---
+layout: archive
+title: "News"
+permalink: /news/
+author_profile: true
+---
+
+
+<div>
+{% assign everything = site.publications | concat: site.research %}
+<ul>
+{% for post in everyhing reversed %}
+  {% if post.newsline %}
+    </ul><h3>{{ post.newsline }}</h3><ul>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% comment %}
+<h2 id="book">Book chapters</h2>
+{% include base_path %}
+<ul>
+{% for post in site.publications reversed %}
+  {% if post.pubtype == "bookchapter" %}
+    {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if label != written_label %}
+       </ul><h3>{{ label }}</h3><ul>
+       {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+</ul>
+</div>
+<div>
+<h2 id="article">Journal articles</h2>
+{% include base_path %}
+{% capture written_label %}{{ "none" }}{% endcapture %}
+<ul>
+{% for post in site.publications reversed %}
+  {% if post.pubtype == "journal" %}
+    {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if label != written_label %}
+       </ul><h3>{{ label }}</h3><ul>
+       {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% endcomment %}
+</div>
+
+
