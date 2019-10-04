@@ -15,7 +15,7 @@ layout: default
 <div id="main" role="main">
   
   {% include TOC_single.html %}
-  
+  {% include sidebar.html %}
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -25,9 +25,10 @@ layout: default
 	
 	
   </div>
+  <div class="clearfix">
   {% comment %} start of the news section {% endcomment %}
     {% include newsfeed.html %}
-  {% include sidebar.html %} 
+   </div>
   
    
 </div>
