@@ -17,7 +17,7 @@ author_profile: true
   {% if post.pubtype == "bookchapter" %}
     {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% if label != written_label %}
-       </ul><h3>{{ label }}</h3><ul>
+       <li><h3>{{ label }}</h3></li>
        {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
     {% include archive-single.html %}
@@ -29,12 +29,12 @@ author_profile: true
 <h2 id="article">Journal articles</h2>
 {% include base_path %}
 {% capture written_label %}{{ "none" }}{% endcapture %}
-<ul>
+<ul class="news__item">
 {% for post in site.publications reversed %}
   {% if post.pubtype == "journal" %}
     {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% if label != written_label %}
-       </ul><h3>{{ label }}</h3><ul>
+       <li><h3>{{ label }}</h3></li>
        {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
     {% include archive-single.html %}
