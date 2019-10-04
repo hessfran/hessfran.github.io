@@ -1,9 +1,10 @@
 
 <div>
 {% assign everything = site.publications | concat: site.research %}
-{{ everything }}
+
 <ul>
 {% for post in everyhing reversed %}
+  {{ post.title }}
   {% if post.newsline %}
     </ul><h3>{{ post.newsline }}</h3><ul>
   {% endif %}
