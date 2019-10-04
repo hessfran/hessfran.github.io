@@ -26,7 +26,7 @@
     {% for crumb in crumbs offset: 1 %}
       
       {% if forloop.last %}
-        <li class="current">{{ page.title }}</li>
+        <li class="current"><span class="current">{{ page.title }}</span></li>
       {% else %}
         {% assign i = i | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
