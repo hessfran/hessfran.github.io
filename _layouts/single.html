@@ -8,14 +8,16 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-{% if page.url == "/" %}
-  true
-{% else %}
+{% if page.url != "/" %}
   false
+{% else %}
+  true
 {% endif %}
 
 {% if page.url != "/" and site.breadcrumbs %}
+  true2
   {% unless paginator %}
+    paginator
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
