@@ -14,13 +14,13 @@
 
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="news__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   <table>
   <tr>
-  <td><span class="news__item-newsline">{{ post.date | date: "%Y-%m-%d"}}</span> </td>
+  <td><span class="archive__item-newsline">{{ post.date | date: "%Y-%m-%d"}}</span> </td>
   <td>
     {% if include.type == "grid" and teaser %}
-      <div class="news__item-teaser">
+      <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
@@ -31,7 +31,7 @@
       </div>
     {% endif %}
 
-    <p class="news__item-title" itemprop="headline">
+    <p class="archive__item-title" itemprop="headline">
 
       {% if post.link %} 
         <a href="{{ post.link }}">{{ post.newsline }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -55,9 +55,9 @@
         {% endif %}
 
     <!--{% if post.excerpt and site.read_more != 'enabled' %}-->
-    <!--<p class="news__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>-->
+    <!--<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>-->
     <!--{% elsif post.excerpt and site.read_more == 'enabled' %}-->
-    <!--<p class="news__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>-->
+    <!--<p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>-->
     <!--{% endif %}-->
 	<p>
     {% if post.citation and post.paperurl %}
