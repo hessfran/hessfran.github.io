@@ -377,10 +377,10 @@
 
 .hlist {
   list-style-type: none;
-  display: inline;
+  display: blok;
   @include breakpoint($large) {
     @include span(12 of 12);
-	display: block;
+	display: inline;
   }
   
   hlist__smallbox {
@@ -388,7 +388,6 @@
 	
     @include breakpoint($large) {
       @include span(12 of 12);
-	  display: block;
 	}
   }
   
@@ -397,7 +396,6 @@
 	
     @include breakpoint($large) {
       @include span(12 of 12);
-	  display: block;
 	}
   }
 
