@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Resources"
+permalink: /resources/
+author_profile: true
+---
+
+<div>
+<h2 id="F95">Fortran code</h2>
+{% include base_path %}
+<ul class="news__item">
+{% for post in site.publications reversed %}
+  {% if post.pubtype == "F95code" %}
+    {% capture label %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if label != written_label %}
+       <li><h3>{{ label }}</h3></li>
+       {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+
