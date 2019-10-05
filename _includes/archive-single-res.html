@@ -17,7 +17,14 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   
    <ul class="hlist">
-   <li class="hlist__center">
+   <li class="hlist__smallbox>
+	{% if post.teaser %}
+	  <img src="{{ post.teaser }}">
+	{% else %}
+      
+	{% endif %}
+    </li>
+   <li class="hlist__largebox">
     <p class="archive__item-title" itemprop="headline">
       {% if post.link %} 
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -32,13 +39,12 @@
 	  {% endif %}
 	</p>
 	</li>
-	<li>
-	{% if post.teaser %}
-	  <img src="{{ post.teaser }}">
-	{% else %}
-      
-	{% endif %}
-    </li>
+	
+	<li class="hlist__smallbox">
+     {% if post.dllink %}
+	   <a href="{{ post.dllink }}">Direct download</a>
+     {% endif%}	 
+   </li>
 	</ul>
   </article>
 </div>

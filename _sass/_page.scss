@@ -383,7 +383,16 @@
 	display: block;
   }
   
-  hlist__center {
+  hlist__smallbox {
+    @include span(2 of 12);
+	
+    @include breakpoint($large) {
+      @include span(12 of 12);
+	  display: block;
+	}
+  }
+  
+  hlist__largebox {
     @include span(8 of 12);
 	
     @include breakpoint($large) {
