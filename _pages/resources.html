@@ -11,6 +11,7 @@ author_profile: true
 <ul class="news__item">
 {% for post in site.resources reversed %}
   {{ post }}
+  {% include archive-single.html %}
   {% if post.pubtype == "F95code" %}
     {% include archive-single.html %}
   {% endif %}
