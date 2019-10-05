@@ -10,8 +10,6 @@ author_profile: true
 {% include base_path %}
 <ul class="news__item">
 {% for post in site.resources reversed %}
-  {{ post.title }}
-  {% include archive-single-topic.html %}
   {% if post.pubtype == "F95code" %}
     {% include archive-single.html %}
   {% endif %}
