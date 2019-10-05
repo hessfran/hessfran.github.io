@@ -376,6 +376,7 @@
 /* list that flips around */
 
 .hlist {
+  float: none;
   list-style-type: none;
   padding-left: 0;
   display: block;
