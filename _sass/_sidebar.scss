@@ -57,7 +57,7 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
-	padding-right: span(0.25 of 12);
+	padding-right: span(0.1 of 12);
 	float: left;
 	margin-left: -1em;
     opacity: 1;
