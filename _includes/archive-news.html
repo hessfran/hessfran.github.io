@@ -22,7 +22,7 @@
     <p class="archive__item-newsline">{{ post.date | date: "%Y-%m-%d"}}</p> 
   </li>
   
-  <li class="hlist__largebox">
+  <li class="hlist__mediumbox">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -76,7 +76,7 @@
 	</li>
 	
 	
-	<li class="hlist__smallbox">
+	<li class="hlist__picbox">
 	  {% if post.teaser %}
 	    <img src="{{ post.teaser }}">
 	  {% else %}

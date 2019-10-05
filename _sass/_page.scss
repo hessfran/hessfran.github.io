@@ -402,6 +402,16 @@
 	}
   }
   
+  .hlist__mediumbox {
+    @include span(12 of 12);
+	
+    @include breakpoint($x-large) {
+      @include span(7 of 12);
+	  padding-left: span(1/4 of 12);
+	  padding-right: span(1/4 of 12);
+	}
+  }
+  
   .hlist__largebox {
     @include span(12 of 12);
 	
