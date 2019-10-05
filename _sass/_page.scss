@@ -384,6 +384,13 @@
   }
   
   hlist__center {
+    @include span(8 of 12);
+	
+    @include breakpoint($large) {
+      @include span(12 of 12);
+	  display: block;
+	}
+  }
     
   }
 }
