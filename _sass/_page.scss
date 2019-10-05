@@ -373,6 +373,27 @@
 }
 
 
+/* list that flips around */
+
+.hlist {
+  display: inline;
+  @include breakpoint($large) {
+    @include span(12 of 12);
+	display: block;
+  }
+  
+}
+
+  .page__inner-wrap {
+    @include full();
+
+    .page__content,
+    .page__meta,
+    .page__share {
+      @include full();
+    }
+  }
+}
 /*
    Related
    ========================================================================== */

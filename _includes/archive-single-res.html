@@ -16,32 +16,30 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   
-   <table>
-   <tr>
-   <td>
-    <p class="archive__item-title" itemprop="headline">
+   <ul class="hlist">
+   <li>
+    <span class="archive__item-title" itemprop="headline">
       {% if post.link %} 
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <!--{{ post.year | default: "1900" }}-->
 		<a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </p>
-	<p class="archive__item-excerpt">
+    </span>
+	<span class="archive__item-excerpt">
 	  {% if post.excerpt %}
 	    {{post.excerpt}}
 	  {% endif %}
-	</p>
-	</td>
-	<td>
+	</span>
+	</li>
+	<li>
 	{% if post.teaser %}
 	  <img src="{{ post.teaser }}">
 	{% else %}
       
 	{% endif %}
-    </td>
-	</tr>
-	</table>
+    </li>
+	</ul>
   </article>
 </div>
 {% endif %}
