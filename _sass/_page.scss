@@ -404,7 +404,9 @@
     @include span(12 of 12);
 	
     @include breakpoint($x-large) {
-      @include span(6 of 12);
+      @include span(8 of 12);
+	  padding-left: span(1/4 of 12);
+	  padding-right: span(1/4 of 12);
 	}
   }
   
@@ -412,7 +414,7 @@
     @include span(12 of 12);
 	
     @include breakpoint($x-large) {
-      @include span(9 of 12);
+      @include span(10 of 12);
 	  padding-left: span(1/4 of 12);
 	  padding-right: span(1/4 of 12);
 	}
