@@ -386,11 +386,11 @@
 	display: inline;
   }
   
-  .hlist__xsmallbox {
-    @include span(5 of 12);
+  .hlist__picbox {
+    @include span(12 of 12);
 	
     @include breakpoint($x-large) {
-      @include span(1 of 12);
+      @include span(3 of 12);
 	}
   }
   
