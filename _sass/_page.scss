@@ -373,7 +373,16 @@
 }
 
 
+/* list that flips around */
 
+.hlist {
+  display: inline;
+  @include breakpoint($large) {
+    @include span(12 of 12);
+	display: block;
+  }
+  
+}
 /*
    Related
    ========================================================================== */
