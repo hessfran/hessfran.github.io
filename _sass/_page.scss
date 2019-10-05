@@ -395,7 +395,7 @@
   }
   
   .hlist__smallbox {
-    @include span(5 of 12);
+    @include span(12 of 12);
 	
     @include breakpoint($x-large) {
       @include span(2 of 12);
