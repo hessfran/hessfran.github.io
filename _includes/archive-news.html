@@ -16,10 +16,11 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-  <table>
-  <tr>
-  <td><span class="archive__item-newsline">{{ post.date | date: "%Y-%m-%d"}}</span> </td>
-  <td>
+  <ul class="hlist">
+  
+  <li class="hlist__xsmallbox"><span class="archive__item-newsline">{{ post.date | date: "%Y-%m-%d"}}</span> </li>
+  
+  <li class="hlist__largebox">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -70,17 +71,17 @@
       Download <a href=" {{ post.paperurl }} "><u>here</u></a>
     {% endif %}
 	</p>
-	</td>
+	</li>
 	
 	
-	<td>
+	<li class="hlist__smallbox">
 	  {% if post.teaser %}
 	    <img src="{{ post.teaser }}">
 	  {% else %}
-	</td>
+	</li>
       
 	{% endif %}
-	</tr>
-	</table>
+
+	</ul>
   </article>
 </div>
