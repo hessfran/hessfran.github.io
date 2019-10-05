@@ -384,7 +384,7 @@
 	display: inline;
   }
   
-  xhlist__xsmallbox{
+  .hlist__xsmallbox {
     @include span(5 of 12);
 	
     @include breakpoint($x-large) {
