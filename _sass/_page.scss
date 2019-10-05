@@ -377,25 +377,25 @@
 
 .hlist {
   list-style-type: none;
-  display: blok;
+  display: block;
   @include breakpoint($large) {
     @include span(12 of 12);
 	display: inline;
   }
   
   hlist__smallbox {
-    @include span(2 of 12);
+    @include span(12 of 12);
 	
     @include breakpoint($large) {
-      @include span(12 of 12);
+      @include span(2 of 12);
 	}
   }
   
   hlist__largebox {
-    @include span(8 of 12);
+    @include span(12 of 12);
 	
     @include breakpoint($large) {
-      @include span(12 of 12);
+      @include span(8 of 12);
 	}
   }
 
