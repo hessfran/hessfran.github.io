@@ -17,13 +17,12 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   
    <ul class="hlist">
-   <li class="hlist__smallbox">
-	{% if post.teaser %}
-	  <img src="{{ post.teaser }}">
-	{% else %}
-      
+   {% if post.teaser %}
+     <li class="hlist__smallbox">
+	   <img src="{{ post.teaser }}">
+	 </li>
 	{% endif %}
-    </li>
+    
    <li class="hlist__xlargebox">
     <p class="archive__item-title" itemprop="headline">
       {% if post.link %} 
