@@ -403,7 +403,8 @@
     @include span(12 of 12);
 	
     @include breakpoint($x-large) {
-      @include span(8 of 12);
+      @include span(7 of 12);
+	  @include gutter(0.25 of 12);
 	}
   }
 
