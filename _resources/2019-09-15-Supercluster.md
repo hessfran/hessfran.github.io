@@ -4,7 +4,7 @@ collection: resources
 pubtype: 'F95code'
 date: 2019-09-15
 dllink: 'https://github.com/hessfran/SSS-VSSM'
-excerpt= 'This Fortran 95 sample code demonstrates the implementation of the SSS-VSSM algorithm using a sample Cluster Expansion.'
+excerpt: 'This Fortran 95 sample code demonstrates the implementation of the SSS-VSSM algorithm using a sample Cluster Expansion.'
 tags: ["Lateral Interactions", "KMC", "algorithms"]
 newsline: "SSS-VSSM code available"
 ---
