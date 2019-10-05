@@ -383,7 +383,7 @@
 	display: inline;
   }
   
-  hlist__smallbox {
+  .hlist__smallbox {
     @include span(12 of 12);
 	
     @include breakpoint($large) {
@@ -391,7 +391,7 @@
 	}
   }
   
-  hlist__largebox {
+  .hlist__largebox {
     @include span(12 of 12);
 	
     @include breakpoint($large) {
