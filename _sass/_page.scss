@@ -404,8 +404,8 @@
 	
     @include breakpoint($x-large) {
       @include span(9 of 12);
-	  padding-left: gutter(1/4 of 12);
-	  padding-right: gutter(1/4 of 12);
+	  padding-left: span(1/4 of 12);
+	  padding-right: span(1/4 of 12);
 	}
   }
 
