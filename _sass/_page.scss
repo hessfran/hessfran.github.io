@@ -377,6 +377,7 @@
 
 .hlist {
   list-style-type: none;
+  padding-left: 0;
   display: block;
   @include breakpoint($large) {
     @include span(12 of 12);
