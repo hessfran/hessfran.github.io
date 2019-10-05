@@ -387,7 +387,7 @@
     @include span(12 of 12);
 	
     @include breakpoint($x-large) {
-      @include span(3 of 12);
+      @include span(2 of 12);
 	}
   }
   
@@ -396,6 +396,14 @@
 	
     @include breakpoint($x-large) {
       @include span(6 of 12);
+	}
+  }
+  
+  .hlist__xlargebox {
+    @include span(12 of 12);
+	
+    @include breakpoint($x-large) {
+      @include span(8 of 12);
 	}
   }
 
