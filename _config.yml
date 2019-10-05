@@ -180,6 +180,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  resources:
+    output: true
+    permalink: /:collection/:path/
   research:
     output: true
     permalink: /:collection/:path/
@@ -233,6 +236,15 @@ defaults:
   - scope:
       path: ""
       type: research
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+   # resources
+   - scope:
+      path: ""
+      type: resources
     values:
       layout: single
       author_profile: true
