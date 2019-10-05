@@ -376,14 +376,16 @@
 /* list that flips around */
 
 .hlist {
-  list-style-type:none
+  list-style-type: none;
   display: inline;
   @include breakpoint($large) {
     @include span(12 of 12);
 	display: block;
   }
   
-  hlist__center
+  hlist__center {
+    
+  }
 }
 /*
    Related

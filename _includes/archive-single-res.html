@@ -17,20 +17,20 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   
    <ul class="hlist">
-   <li>
-    <span class="archive__item-title" itemprop="headline">
+   <li class="hlist__center">
+    <p class="archive__item-title" itemprop="headline">
       {% if post.link %} 
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <!--{{ post.year | default: "1900" }}-->
 		<a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </span>
-	<span class="archive__item-excerpt">
+    </p>
+	<p class="archive__item-excerpt">
 	  {% if post.excerpt %}
 	    {{post.excerpt}}
 	  {% endif %}
-	</span>
+	</p>
 	</li>
 	<li>
 	{% if post.teaser %}
