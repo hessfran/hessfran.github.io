@@ -387,7 +387,7 @@
     @include span(12 of 12);
 	
     @include breakpoint($x-large) {
-      @include span(2 of 12);
+      @include span(1.75 of 12);
 	}
   }
   
