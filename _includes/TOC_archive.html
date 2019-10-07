@@ -7,24 +7,24 @@
  <!--{{ page.title }}-->
   <nav class="breadcrumbs">
   <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Contents</li>
+	<li>Contents</li>
   {% if page.title=="Publications" %}
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a href="#book" itemprop="item"><i>Book chapters</i></a>
+    <li>
+		<a href="#book" itemprop="additionalType"><i>Book chapters</i></a>
 		<meta itemprop="position" content="book" />
 	</li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a href="#article" itemprop="item"><i>Journal articles</i></a>
+    <li
+		<a href="#article" itemprop="additionalType"><i>Journal articles</i></a>
 		<meta itemprop="position" content="Journal articles" />
 	</li>
   {% endif %}
   {% if page.title=="Research" %}
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a href="#catalysis" itemprop="item"><i>Catalysis</i></a>
+    <li>
+		<a href="#catalysis" itemprop="additionalType"><i>Catalysis</i></a>
 		<meta itemprop="position" content="Catalysis" />
 	</li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a href="#KMC" itemprop="item"><i>KMC</i></a>
+    <li>
+		<a href="#KMC" itemprop="additionalType"><i>KMC</i></a>
 		<meta itemprop="position" content="KMC" />
 	</li>
   {% endif %}

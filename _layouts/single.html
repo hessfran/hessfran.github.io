@@ -21,11 +21,20 @@ layout: default
   {% include sidebar.html %} 
   {% include TOC_single.html %}
   
+  {{% if page.collection == "publications" %}}
+    <article class="page" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  {{% elseif page.collection == "research" %}}
+    <article class="page" itemscope itemtype="http://schema.org/learningResourceType">
+  {{% else %}}
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  {{% endif %}}
   
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.title %}
+	  <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}
+	  <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}
+	  <meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
 	{% if page.teaser %}<meta itemprop="image" content="{{ page.teaser }}">{% endif %}
 
@@ -59,7 +68,9 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {{ content }}
+        <span itemprop="description">
+		  {{ content }}
+		</span>
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
         {% if page.collection == 'research' %}
              <h3>Related publications</h3>
@@ -67,7 +78,7 @@ layout: default
                {% for post in site.publications reversed %}
 			     {% for tag in page.tags %}
                   {% if post.tags contains tag %}
-				    <li>{% include archive-related.html %}</li>
+				    <li itemprop="citation">{% include archive-related.html %}</li>
 					{% break %}
 				  {% endif %}
 				 {% endfor %}
