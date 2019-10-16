@@ -24,9 +24,9 @@ layout: default
   {{% if page.collection == "publications" %}}
     <article class="page" itemscope itemtype="http://schema.org/ScholarlyArticle">
   {{% elseif page.collection == "research" %}}
-    <article class="page" itemscope itemtype="http://schema.org/learningResourceType">
+    <article itemscope itemtype="http://schema.org/learningResourceType">
   {{% else %}}
-    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <article itemscope itemtype="http://schema.org/CreativeWork">
   {{% endif %}}
   
     {% if page.title %}
