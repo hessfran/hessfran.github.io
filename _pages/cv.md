@@ -50,8 +50,4 @@ Awards and Fellowships
 * Best Poster Award, Symposium for Theoretical Chemistry, Karlsruhe, 2012
 * Undergraduate Student Fellowship funded by City of Giessen, Oct. 2009 - Sept. 2011
 
-Memberships
-=====
-GDCh, DPG, ACS
-
 
