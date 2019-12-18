@@ -68,7 +68,7 @@ layout: default
         <span itemprop="description">
 		  {{ content }}
 		  {% if page.citation and page.paperurl %}
-            <p>{{ page.citation }}<i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i> <a href="{{ page.paperurl }}"><u>{{ page.doi | default: "[DOI]"] }}</u></a></p>
+            <p>{{ page.citation }} <i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i><a href="{{ page.paperurl }}">{{ page.doi | default: "[DOI]"] }}</a></p>
           {% elsif page.citation %}
             <p>{{ page.citation }} </p>
           {% endif %}
