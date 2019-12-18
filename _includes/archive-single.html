@@ -58,7 +58,7 @@
     <!--{% endif %}-->
 	<p>
     {% if post.citation and post.paperurl %}
-      {{ post.citation }}  <i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i><a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a>
+      {{ post.citation }}  <nobr><i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i><a href="{{ post.paperurl }}">{{ post.doi | default: "[DOI]"] }}</a></nobr>
     {% elsif post.citation %}
       {{ post.citation }} 
     {% elsif post.paperurl %}

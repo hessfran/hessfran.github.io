@@ -18,11 +18,11 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   <ul class="hlist">
   
-  <li class="hlist__smallbox">
+  <li class="hlist__datebox">
     <p class="archive__item-newsline">{{ post.date | date: "%Y-%m-%d"}}</p> 
   </li>
   
-  <li class="hlist__mediumbox">
+  <li class="hlist__newsbox">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
