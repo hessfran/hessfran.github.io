@@ -11,15 +11,15 @@ tags: ["Lateral Interactions", "KMC", "algorithms"]
 newsline: "New J. Comp. Chem. paper on efficient implementation of CE models in KMC simulations"
 ---
 
-[[ext] full paper @ JCC](https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041)
+<i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i> [full paper @ JCC](https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041)
 
-[[ext] preprint @ArXiv](https://arxiv.org/abs/1908.03526).
+<i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i> [preprint @ArXiv](https://arxiv.org/abs/1908.03526).
 
-[[PDF] preprint](/files/2019-08-09-supercluster_main.pdf).
+<i class="fa fa-external-file-pdf" aria-hidden="true" title="direct PDF download"></i> [preprint](/files/2019-08-09-supercluster_main.pdf).
 
-[[PDF] supporting material](/files/2019-08-09-supercluster_supporting_material.pdf).
+<i class="fa fa-external-file-pdf" aria-hidden="true" title="direct PDF download"></i> [supporting material](/files/2019-08-09-supercluster_supporting_material.pdf).
 
-[[Github] SSS-VSSM repository on Github](https://github.com/hessfran/SSS-VSSM)
+<i class="fa fa-github" aria-hidden="true" title="Github"></i> [[Github] SSS-VSSM repository on Github](https://github.com/hessfran/SSS-VSSM)
 
 
 <img src="/images/2019-08-09-supercluster_TOC.png">
