@@ -5,7 +5,7 @@ pubtype: 'journal'
 date: 2019-08-09
 paperurl: 'https://onlinelibrary.wiley.com/doi/10.1002/jcc.26041'
 doi: '10.1002/jcc.26041'
-citation: 'F. Hess. <i>J. Comp. Chem.</i> xxx (<b>2019</b>) xxx.'
+citation: 'F. Hess. <i>J. Comp. Chem.</i> 40 (<b>2019</b>) 2664– 2676.'
 teaser: "/images/2019-08-09-supercluster_TOC.png"
 tags: ["Lateral Interactions", "KMC", "algorithms"]
 newsline: "New J. Comp. Chem. paper on efficient implementation of CE models in KMC simulations"
