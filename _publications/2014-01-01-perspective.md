@@ -10,7 +10,7 @@ teaser: "/images/CatalSciTechnol_cover_teaser.png"
 tags: ["RuO2", "KMC", "HCl Oxidation", "CO Oxidation", "TPD", "Surface Defects", "Configurational Control", "Lateral Interactions", "Deacon Process", "Cluster Expansion"]
 ---
 
-[Read @ RSC](https://pubs.rsc.org/en/content/articlelanding/2014/cy/c3cy00833a#!divAbstract) [Free preprint](https://pubs.rsc.org/en/content/getauthorversionpdf/C3CY00833A) [Supplementary material](http://www.rsc.org/suppdata/cy/c3/c3cy00833a/c3cy00833a.pdf)
+<i class="fa fa-external-link-alt" aria-hidden="true" title="external link"></i> [Read @ RSC](https://pubs.rsc.org/en/content/articlelanding/2014/cy/c3cy00833a#!divAbstract) [Free preprint](https://pubs.rsc.org/en/content/getauthorversionpdf/C3CY00833A) [Supplementary material](http://www.rsc.org/suppdata/cy/c3/c3cy00833a/c3cy00833a.pdf)
 
 **Featured on the front cover of Catalysis Science and Technology 4!**
 
