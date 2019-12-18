@@ -7,7 +7,7 @@ paperurl: 'https://doi.org/10.1039/C3CY00833A'
 doi: '10.1039/C3CY00833A'
 citation: 'F. Hess, H. Over. <i>Catal. Sci. Technol.</i> 4 (<b>2014</b>) 583-598.'
 teaser: "/images/CatalSciTechnol_cover_teaser.png"
-tags: ["RuO2", "KMC", "HCl oxidation", "CO oxidation", "TPD", "surface defects", "configurational control", "lateral interactions", "Deacon Process", "cluster expansion"]
+tags: ["RuO2", "KMC", "HCl oxidation", "CO oxidation", "TPD", "surface defects", "configurational control", "lateral interactions", "Deacon Process", "cluster expansion", "transient experiments"]
 ---
 
 
