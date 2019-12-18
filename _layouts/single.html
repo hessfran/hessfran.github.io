@@ -21,16 +21,14 @@ layout: default
   {% include sidebar.html %} 
   {% include TOC_single.html %}
   
-  {{% if page.collection == "publications" %}}
+  
+  {% if page.collection == "publications" %}
     <article class="page" itemscope itemtype="http://schema.org/ScholarlyArticle">
-	page.collection
-  {{% elseif page.collection == "research" %}}
+  {% elseif page.collection == "research" %}
     <article class="page" itemscope itemtype="http://schema.org/learningResourceType">
-	page.collection
-  {{% else %}}
+  {% else %}
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-	page.collection
-  {{% endif %}}
+  {% endif %}
   
     {% if page.title %}
 	  <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
