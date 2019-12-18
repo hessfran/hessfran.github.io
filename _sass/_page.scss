@@ -17,6 +17,10 @@
 }
 
 .page {
+  @include breakpoint($medium) {
+    @include span(12 of 12);
+  }
+  
   @include breakpoint($large) {
     @include span(8 of 12);
     @include prefix(0 of 12);
