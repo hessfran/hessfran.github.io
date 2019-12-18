@@ -23,13 +23,13 @@ layout: default
   
   {{% if page.collection == "publications" %}}
     <article class="page" itemscope itemtype="http://schema.org/ScholarlyArticle">
-	if1
+	page.collection
   {{% elseif page.collection == "research" %}}
     <article class="page" itemscope itemtype="http://schema.org/learningResourceType">
-	if2
+	page.collection
   {{% else %}}
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-	if3
+	page.collection
   {{% endif %}}
   
     {% if page.title %}
