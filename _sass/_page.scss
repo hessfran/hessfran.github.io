@@ -398,6 +398,14 @@
 	}
   }
   
+  .hlist__datebox {
+    @include span(12 of 12);
+	
+    @include breakpoint($x-large) {
+      @include span(1.7 of 12);
+	}
+  }
+  
   .hlist__smallbox {
     @include span(12 of 12);
 	
@@ -416,6 +424,15 @@
 	}
   }
   
+  .hlist__newsbox {
+    @include span(12 of 12);
+	
+    @include breakpoint($x-large) {
+      @include span(7.3 of 12);
+	  padding-left: span(1/4 of 12);
+	  padding-right: span(1/4 of 12);
+	}
+  }
   .hlist__largebox {
     @include span(12 of 12);
 	
