@@ -4,7 +4,7 @@
 
 <h2>News</h2>
 <ol class="news__item">
-{% for post in everything reversed %}
+{% for post in everything.sort_by{ |dat| dat.date } reversed %}
   {% if post.newsline %}	
     <li class="news__item">{% include archive-news.html %}</li>
   {% endif %}
