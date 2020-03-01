@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[    668991,      15577]
-NotebookOptionsPosition[    669553,      15573]
-NotebookOutlinePosition[    669993,      15592]
-CellTagsIndexPosition[    669950,      15589]
+NotebookDataLength[    797880,      17523]
+NotebookOptionsPosition[    798323,      17515]
+NotebookOutlinePosition[    798882,      17538]
+CellTagsIndexPosition[    798839,      17535]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -337,7 +337,7 @@ $CellContext`datashow[
          "Rn", $CellContext`elfun[{18, 7}] = "Og", $CellContext`elfun[
            Pattern[$CellContext`coords, 
             Blank[]]] := 
-         "no element", $CellContext`compddat[
+         "no element", $CellContext`resdat = {}, $CellContext`compddat[
           "Ac"] = {}, $CellContext`compddat["Ag"] = {{
             Subscript[
              Row[{
@@ -4094,12 +4094,15 @@ $CellContext`datashow[
             Blank[]]] := 
          If[$CellContext`elfun[$CellContext`sel] != 
            "no element", $CellContext`resdat = $CellContext`compddat[
-              $CellContext`elfun[$CellContext`sel]]; \
-$CellContext`calculateGdiagram[$CellContext`Tset, 
-             $CellContext`elfun[$CellContext`sel], 
-             $CellContext`clphases[
-              $CellContext`elfun[$CellContext`sel]], 10^$CellContext`ipsHCl, 
-             10^$CellContext`ipsO2, 10^$CellContext`ipsH2O], 
+              $CellContext`elfun[$CellContext`sel]]; 
+           If[Length[$CellContext`resdat] == 0, 
+             Row[{"No data on", 
+               $CellContext`elfun[$CellContext`sel]}, "  "], 
+             $CellContext`calculateGdiagram[$CellContext`Tset, 
+              $CellContext`elfun[$CellContext`sel], 
+              $CellContext`clphases[
+               $CellContext`elfun[$CellContext`sel]], 10^$CellContext`ipsHCl, 
+              10^$CellContext`ipsO2, 10^$CellContext`ipsH2O]], 
            "no element selected"], $CellContext`calculateGdiagram[
            Pattern[$CellContext`Tsel, 
             Blank[]], 
@@ -4232,7 +4235,107 @@ $CellContext`p0O2, $CellContext`p0H2O]], $CellContext`ltot}}],
          92, $CellContext`ordnum["V"] = 23, $CellContext`ordnum["W"] = 
          74, $CellContext`ordnum["Xe"] = 54, $CellContext`ordnum["Y"] = 
          39, $CellContext`ordnum["Yb"] = 70, $CellContext`ordnum["Zn"] = 
-         30, $CellContext`ordnum["Zr"] = 40, $CellContext`DGphs1group[
+         30, $CellContext`ordnum["Zr"] = 
+         40, $CellContext`initdat1 = {{-6., {-140.3708805519417, \
+-135.1378805519417, -25.69693055194168, -86.68523055194167}}, {-5.9, \
+{-140.1471893379366, -134.9141893379366, -25.47323933793657, \
+-86.46153933793656}}, {-5.8, {-139.88959799399979`, -134.65659799399978`, \
+-25.215647993999767`, -86.20394799399976}}, {-5.7, {-139.59674609181613`, \
+-134.36374609181615`, -24.922796091816128`, -85.91109609181612}}, {-5.6, \
+{-139.26815752207796`, -134.03515752207795`, -24.59420752207795, \
+-85.58250752207795}}, {-5.5, {-138.90428907607478`, -133.6712890760748, \
+-24.23033907607477, -85.21863907607477}}, {-5.4, {-138.50648377639533`, \
+-133.27348377639532`, -23.832533776395316`, -84.8208337763953}}, {-5.3, \
+{-138.07683876299572`, -132.84383876299574`, -23.40288876299572, \
+-84.39118876299571}}, {-5.2, {-137.61801415755525`, -132.38501415755525`, \
+-22.94406415755523, -83.93236415755521}}, {-5.1, {-137.13301733306912`, \
+-131.90001733306912`, -22.459067333069108`, -83.4473673330691}}, {-5., \
+{-136.62499523631018`, -131.39199523631018`, -21.951045236310165`, \
+-82.93934523631016}}, {-4.9, {-136.09705852820485`, -130.86405852820485`, \
+-21.423108528204846`, -82.41140852820483}}, {-4.8, {-135.55214974647058`, \
+-130.31914974647057`, -20.87819974647055, -81.86649974647054}}, {-4.7, \
+{-134.99295732321943`, -129.75995732321942`, -20.319007323219413`, \
+-81.3073073232194}}, {-4.6, {-134.4218701914769, -129.1888701914769, \
+-19.74792019147688, -80.73622019147687}}, {-4.5, {-133.84096420429304`, \
+-128.60796420429304`, -19.167014204293025`, -80.15531420429302}}, {-4.4, \
+{-133.25201090424338`, -128.01901090424337`, -18.57806090424335, \
+-79.56636090424334}}, {-4.3, {-132.65650021656595`, -127.42350021656594`, \
+-17.982550216565926`, -78.97085021656592}}, {-4.2, {-132.05567042843592`, \
+-126.8226704284359, -17.381720428435887`, -78.37002042843588}}, {-4.1, \
+{-131.45054070796112`, -126.21754070796113`, -16.77659070796112, \
+-77.76489070796111}}, {-4., {-130.841943063483, -125.608943063483, \
+-16.16799306348298, -77.15629306348296}}, {-3.9, {-130.2305519205549, \
+-124.9975519205549, -15.556601920554881`, -76.54490192055486}}, {-3.8, \
+{-129.6169104017466, -124.3839104017466, -14.942960401746591`, \
+-75.93126040174658}}, {-3.6999999999999997`, {-129.00145299235405`, \
+-123.76845299235406`, -14.327502992354043`, -75.31580299235404}}, \
+{-3.5999999999999996`, {-128.38452463799092`, -123.15152463799093`, \
+-13.710574637990911`, -74.6988746379909}}, {-3.5, {-127.76639651711157`, \
+-122.53339651711157`, -13.09244651711156, -74.08074651711155}}, {-3.4, \
+{-127.14727881828699`, -121.91427881828699`, -12.473328818286973`, \
+-73.46162881828697}}, {-3.3, {-126.52733086931234`, -121.29433086931235`, \
+-11.853380869312328`, -72.84168086931231}}, {-3.1999999999999997`, \
+{-125.90666894099445`, -120.67366894099446`, -11.23271894099444, \
+-72.22101894099443}}, {-3.0999999999999996`, {-125.28537200087763`, \
+-120.05237200087763`, -10.611422000877617`, -71.5997220008776}}, {-3., \
+{-124.66348563211898`, -119.43048563211897`, -9.989535632118962, \
+-70.97783563211895}}, {-2.9, {-124.04102426607409`, -118.8080242660741, \
+-9.36707426607408, -70.35537426607407}}, {-2.8, {-123.41797180625488`, \
+-118.18497180625488`, -8.744021806254867, -69.73232180625486}}, \
+{-2.6999999999999997`, {-122.79428064606054`, -117.56128064606054`, \
+-8.120330646060523, -69.10863064606052}}, {-2.5999999999999996`, \
+{-122.16986900108287`, -116.93686900108287`, -7.495919001082861, \
+-68.48421900108285}}, {-2.5, {-121.54461638521305`, -116.31161638521304`, \
+-6.870666385213029, -67.85896638521302}}, {-2.4, {-120.91835695285732`, \
+-115.68535695285732`, -6.244406952857302, -67.23270695285728}}, {-2.3, \
+{-120.29087029972113`, -115.05787029972115`, -5.616920299721125, \
+-66.60522029972111}}, {-2.1999999999999997`, {-119.66186915119674`, \
+-114.42886915119674`, -4.9879191511967225`, -65.97621915119672}}, \
+{-2.0999999999999996`, {-119.03098315515044`, -113.79798315515043`, \
+-4.357033155150421, -65.34533315515041}}, {-2., {-118.3977377125897, \
+-113.16473771258971`, -3.7237877125896923`, -64.71208771258968}}, \
+{-1.8999999999999995`, {-117.7615263919375, -112.52852639193749`, \
+-3.087576391937473, -64.07587639193746}}, {-1.7999999999999998`, \
+{-117.12157492929461`, -111.88857492929462`, -2.4476249292946015`, \
+-63.43592492929459}}, {-1.7000000000000002`, {-116.47689403775894`, \
+-111.24389403775893`, -1.8029440377589199`, -62.79124403775891}}, \
+{-1.5999999999999996`, {-115.8262171042327, -110.59321710423269`, \
+-1.1522671042326837`, -62.14056710423267}}, {-1.5, {-115.16791712865822`, \
+-109.93491712865821`, -0.4939671286582016, -61.482267128658194`}}, \
+{-1.3999999999999995`, {-114.4998945961239, -109.26689459612389`, 
+            0.17405540387611837`, -60.81424459612387}}, \
+{-1.2999999999999998`, {-113.81942373397818`, -108.58642373397818`, 
+            0.8545262660218287, -60.13377373397816}}, {-1.1999999999999993`, \
+{-113.12293765087955`, -107.88993765087956`, 
+            1.5510123491204577`, -59.43728765087953}}, {-1.0999999999999996`, \
+{-112.40572103818361`, -107.17272103818361`, 
+            2.2682289618164067`, -58.72007103818358}}, {-1., \
+{-111.66145823489121`, -106.42845823489121`, 
+            3.0124917651088037`, -57.97580823489118}}, {-0.8999999999999995, \
+{-110.88154585841711`, -105.64854585841712`, 
+            3.7924041415828977`, -57.19589585841709}}, {-0.7999999999999998, \
+{-110.054003954878, -104.821003954878, 
+            4.619946045122022, -56.36835395487797}}, {-0.6999999999999993, \
+{-109.16166329086752`, -103.92866329086753`, 
+            5.512286709132488, -55.4760132908675}}, {-0.5999999999999996, \
+{-108.17895529332728`, -102.94595529332729`, 
+            6.494994706672733, -54.49330529332725}}, {-0.5, \
+{-107.06576118531393`, -101.83276118531393`, 
+            7.608188814686088, -53.3801111853139}}, {-0.39999999999999947`, \
+{-105.75432624420655`, -100.52132624420655`, 
+            8.919623755793467, -52.06867624420652}}, {-0.2999999999999998, \
+{-104.11700642454758`, -98.88400642454758, 
+            10.556943575452431`, -50.43135642454756}}, {-0.1999999999999993, \
+{-101.86648293856706`, -96.63348293856706, 
+            12.807467061432952`, -48.180832938567036`}}, \
+{-0.09999999999999964, {-98.08491187840028, -92.85191187840029, 
+            16.589038121599735`, -44.39926187840025}}}, \
+$CellContext`DGphs1group[
+          "Na", 2, {1, 2, 7, 8, 9, 10, 12, 13, 15, 16}, 650, 
+           0.8855764939082783, 1, 1, 1/1000000] = {1954.300000000003, 
+          0., -166003.77306247206`, -184771.73653123603`, -184278.836531236, \
+-180425.211531236, -347996.6627280596, -336883.6127280595, \
+-95834.25885300356, -97494.10885300353}, $CellContext`DGphs1group[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`phs1, 
@@ -4256,6 +4359,26 @@ $CellContext`p0HCl, $CellContext`p0O2, $CellContext`p0H2O] = Table[
 $CellContext`phs2, $CellContext`T, $CellContext`x, $CellContext`p0HCl, \
 $CellContext`p0O2, $CellContext`p0H2O], {$CellContext`phs2, \
 $CellContext`grp2}]), $CellContext`minDGR123[
+          "Na", 2, 1, 650, 0.8855764939082783, 1, 1, 1/1000000] = 
+         1954.300000000003, $CellContext`minDGR123[
+          "Na", 2, 2, 650, 0.8855764939082783, 1, 1, 1/1000000] = 
+         0., $CellContext`minDGR123[
+          "Na", 2, 7, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -166003.77306247206`, $CellContext`minDGR123[
+          "Na", 2, 8, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -184771.73653123603`, $CellContext`minDGR123[
+          "Na", 2, 9, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -184278.836531236, $CellContext`minDGR123[
+          "Na", 2, 10, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -180425.211531236, $CellContext`minDGR123[
+          "Na", 2, 12, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -347996.6627280596, $CellContext`minDGR123[
+          "Na", 2, 13, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -336883.6127280595, $CellContext`minDGR123[
+          "Na", 2, 15, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -95834.25885300356, $CellContext`minDGR123[
+          "Na", 2, 16, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = -97494.10885300353, $CellContext`minDGR123[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`phs1, 
@@ -4278,6 +4401,35 @@ $CellContext`p0HCl, $CellContext`p0O2, $CellContext`p0H2O] = Min[
             $CellContext`DGR123[$CellContext`el, $CellContext`phs1, \
 $CellContext`phs2, $CellContext`T, $CellContext`x, $CellContext`p0HCl, \
 $CellContext`p0O2, $CellContext`p0H2O]]), $CellContext`DGR123[
+          "Na", 2, 1, 650, 0.8855764939082783, 1, 1, 1/1000000] = {
+          1954.300000000003, 1954.300000000003, 
+          1954.300000000003}, $CellContext`DGR123[
+          "Na", 2, 2, 650, 0.8855764939082783, 1, 1, 1/1000000] = {0., 0., 
+          0.}, $CellContext`DGR123[
+          "Na", 2, 7, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-166003.7242438168, -166003.77306247206`, \
+-166003.77306247206`}, $CellContext`DGR123[
+          "Na", 2, 8, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-184771.7121219084, -184771.73653123603`, \
+-184771.73653123603`}, $CellContext`DGR123[
+          "Na", 2, 9, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-184278.81212190838`, -184278.836531236, \
+-184278.836531236}, $CellContext`DGR123[
+          "Na", 2, 10, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-180425.18712190838`, -180425.211531236, \
+-180425.211531236}, $CellContext`DGR123[
+          "Na", 2, 12, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-347996.65052339574`, -347996.65052339574`, \
+-347996.6627280596}, $CellContext`DGR123[
+          "Na", 2, 13, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-336883.60052339575`, -336883.60052339575`, \
+-336883.6127280595}, $CellContext`DGR123[
+          "Na", 2, 15, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-95834.14901102922, -95834.24664833979, \
+-95834.25885300356}, $CellContext`DGR123[
+          "Na", 2, 16, 650, 0.8855764939082783, 1, 1, 1/
+           1000000] = {-97493.9990110292, -97494.09664833976, \
+-97494.10885300353}, $CellContext`DGR123[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`phs1, 
@@ -4331,16 +4483,16 @@ $CellContext`phs1, $CellContext`phs2]/2)
                   4], (-($CellContext`dClf[$CellContext`DGel, \
 $CellContext`phs1, $CellContext`phs2]/
                    2 + $CellContext`dOf[$CellContext`DGel, $CellContext`phs1, \
-$CellContext`phs2])/2) 
-                Part[$CellContext`Gxgas, 
-                  2]}]})), $CellContext`pgas[$CellContext`xsolinmod, 1, 1, 1/
-           1000000] = {
+$CellContext`phs2])/2) Part[$CellContext`Gxgas, 2]}]})), $CellContext`DGel = 
+         11, $CellContext`pxgas = {0.1144235060917217, 0.7786058765229305, 
+          0.4427892469541391, 0.4427892469541391}, $CellContext`pgas[
+          0.8855764939082783, 1, 1, 1/1000000] = {0.1144235060917217, 
+          0.7786058765229305, 0.4427892469541391, 
+          0.4427892469541391}, $CellContext`pgas[$CellContext`xsolinmod, 1, 1,
+            1/1000000] = {
           1. - $CellContext`xsolinmod, 1. - $CellContext`xsolinmod/4, 
            1.*^-6 + $CellContext`xsolinmod/2, 
            1.*^-6 + $CellContext`xsolinmod/2}, $CellContext`pgas[
-           Part[{}, 1], 1, 1, 1/1000000] = {
-          1. - Part[{}, 1], 1. - Part[{}, 1]/4, 1.*^-6 + Part[{}, 1]/2, 
-           1.*^-6 + Part[{}, 1]/2}, $CellContext`pgas[
            Pattern[$CellContext`x, 
             Blank[]], 
            Pattern[$CellContext`p0HCl, 
@@ -4356,7 +4508,19 @@ $CellContext`p0HCl, $CellContext`p0O2, $CellContext`p0H2O] =
 ($CellContext`x/
               4), $CellContext`p0H2O + $CellContext`p0HCl ($CellContext`x/
                2), $CellContext`p0H2O + $CellContext`p0HCl ($CellContext`x/
-               2)}), $CellContext`compdG[
+               2)}), $CellContext`Gxgas = {-225508.1734659095, \
+-134693.17693752795`, -149397.59895320857`, -368965.360856702}, \
+$CellContext`Gfgas[
+           Pattern[$CellContext`T, 
+            Blank[]], 
+           Pattern[$CellContext`pgas, 
+            Blank[]]] := $CellContext`Hf0gas 
+           1000 - $CellContext`T ($CellContext`S0gas - $CellContext`R 
+           Log[$CellContext`pgas]), $CellContext`Hf0gas = \
+{-92.31680071327973, -0.004679086900203355, -0.005279401044778587, \
+-241.83091153348036`}, $CellContext`S0gas = {186.88630974133775`, 
+          205.1324926530484, 223.06124320351034`, 
+          188.81836592821475`}, $CellContext`R = 8.314, $CellContext`compdG[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`ncompd, 
@@ -4375,8 +4539,8 @@ $CellContext`dataselectfun[$CellContext`el, $CellContext`ncompd, {8,
             Blank[]]] := ({$CellContext`Hsel, $CellContext`Ssel} = Transpose[
              $CellContext`dataselectfun[$CellContext`el, $CellContext`ncompd, \
 {8, 9}]]; $CellContext`Hsel 
-            1000 - $CellContext`Ssel $CellContext`T), \
-$CellContext`dataselectfun[
+            1000 - $CellContext`Ssel $CellContext`T), $CellContext`Hsel = 
+         2.597, $CellContext`Ssel = 58.302, $CellContext`dataselectfun[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`ncompd, 
@@ -9052,7 +9216,752 @@ $CellContext`sellist], $CellContext`elsysnorm = {{{3, "Li",
          46, $CellContext`elnum["U"] = 60, $CellContext`elnum["V"] = 
          12, $CellContext`elnum["W"] = 51, $CellContext`elnum["Y"] = 
          22, $CellContext`elnum["Yb"] = 47, $CellContext`elnum["Zn"] = 
-         19, $CellContext`elnum["Zr"] = 23, $CellContext`dOf[
+         19, $CellContext`elnum["Zr"] = 23, $CellContext`dOf[3, 2, 1] = 
+         0., $CellContext`dOf[3, 2, 2] = 0., $CellContext`dOf[3, 2, 5] = 
+         0.5, $CellContext`dOf[3, 2, 6] = 0.5, $CellContext`dOf[3, 2, 8] = 
+         1., $CellContext`dOf[3, 2, 10] = 0., $CellContext`dOf[3, 2, 11] = 
+         0., $CellContext`dOf[3, 2, 14] = 4., $CellContext`dOf[3, 2, 15] = 
+         4., $CellContext`dOf[3, 2, 16] = 
+         0., $CellContext`dOf[3, 5, 10] = -0.5, $CellContext`dOf[
+          3, 5, 11] = -0.5, $CellContext`dOf[
+          3, 5, 12] = -0.5, $CellContext`dOf[
+          3, 5, 16] = -0.5, $CellContext`dOf[3, 10, 3] = 
+         0., $CellContext`dOf[3, 10, 4] = 1., $CellContext`dOf[3, 10, 7] = 
+         0.5, $CellContext`dOf[3, 10, 9] = 1., $CellContext`dOf[3, 10, 12] = 
+         0., $CellContext`dOf[3, 10, 13] = 1., $CellContext`dOf[4, 1, 1] = 
+         0., $CellContext`dOf[4, 1, 3] = 1., $CellContext`dOf[4, 1, 4] = 
+         1., $CellContext`dOf[4, 1, 5] = 1., $CellContext`dOf[4, 1, 14] = 
+         0., $CellContext`dOf[4, 1, 15] = 0., $CellContext`dOf[4, 1, 16] = 
+         0., $CellContext`dOf[4, 1, 17] = 0., $CellContext`dOf[4, 1, 18] = 
+         0., $CellContext`dOf[4, 3, 2] = -1., $CellContext`dOf[4, 3, 6] = 
+         0., $CellContext`dOf[4, 3, 7] = -0.5, $CellContext`dOf[4, 3, 8] = 
+         0., $CellContext`dOf[4, 3, 9] = 0., $CellContext`dOf[4, 3, 10] = 
+         0., $CellContext`dOf[4, 3, 11] = 0., $CellContext`dOf[4, 3, 12] = 
+         0., $CellContext`dOf[4, 3, 13] = -1., $CellContext`dOf[
+          4, 3, 14] = -1., $CellContext`dOf[4, 3, 15] = -1., $CellContext`dOf[
+          4, 3, 16] = -1., $CellContext`dOf[4, 3, 17] = -1., $CellContext`dOf[
+          4, 3, 18] = -1., $CellContext`dOf[4, 3, 19] = -1., $CellContext`dOf[
+          4, 3, 20] = -1., $CellContext`dOf[11, 2, 1] = 
+         0., $CellContext`dOf[11, 2, 2] = 0., $CellContext`dOf[11, 2, 7] = 
+         2., $CellContext`dOf[11, 2, 8] = 1., $CellContext`dOf[11, 2, 9] = 
+         1., $CellContext`dOf[11, 2, 10] = 1., $CellContext`dOf[11, 2, 12] = 
+         0., $CellContext`dOf[11, 2, 13] = 0., $CellContext`dOf[11, 2, 15] = 
+         4., $CellContext`dOf[11, 2, 16] = 
+         4., $CellContext`dOf[11, 8, 12] = -1., $CellContext`dOf[
+          11, 8, 13] = -1., $CellContext`dOf[
+          11, 8, 14] = -1., $CellContext`dOf[
+          11, 8, 17] = -1., $CellContext`dOf[11, 12, 3] = 
+         0., $CellContext`dOf[11, 12, 4] = 0., $CellContext`dOf[11, 12, 5] = 
+         1., $CellContext`dOf[11, 12, 6] = 0.5, $CellContext`dOf[11, 12, 11] = 
+         1., $CellContext`dOf[11, 12, 14] = 0., $CellContext`dOf[11, 12, 17] = 
+         0., $CellContext`dOf[12, 1, 1] = 0., $CellContext`dOf[12, 1, 2] = 
+         0., $CellContext`dOf[12, 1, 5] = 1., $CellContext`dOf[12, 1, 7] = 
+         0., $CellContext`dOf[12, 5, 6] = -1., $CellContext`dOf[
+          12, 5, 7] = -1., $CellContext`dOf[12, 5, 8] = -1., $CellContext`dOf[
+          12, 5, 9] = -1., $CellContext`dOf[12, 7, 3] = 
+         0., $CellContext`dOf[12, 7, 4] = 0., $CellContext`dOf[12, 7, 6] = 
+         0., $CellContext`dOf[12, 7, 8] = 0., $CellContext`dOf[12, 7, 9] = 
+         0., $CellContext`dOf[13, 1, 1] = 0., $CellContext`dOf[13, 1, 2] = 
+         0., $CellContext`dOf[13, 1, 4] = 1.5, $CellContext`dOf[13, 1, 5] = 
+         1.5, $CellContext`dOf[13, 1, 9] = 1., $CellContext`dOf[13, 1, 13] = 
+         0., $CellContext`dOf[13, 1, 14] = 
+         0., $CellContext`dOf[13, 4, 3] = -1.5, $CellContext`dOf[
+          13, 4, 6] = -1., $CellContext`dOf[
+          13, 4, 7] = -0.5, $CellContext`dOf[
+          13, 4, 8] = -1.5, $CellContext`dOf[
+          13, 4, 10] = -0.5, $CellContext`dOf[
+          13, 4, 11] = -1.5, $CellContext`dOf[
+          13, 4, 12] = -0.5, $CellContext`dOf[
+          13, 4, 13] = -1.5, $CellContext`dOf[
+          13, 4, 14] = -1.5, $CellContext`dOf[
+          13, 4, 15] = -1.5, $CellContext`dOf[
+          13, 4, 16] = -1.5, $CellContext`dOf[14, 1, 1] = 
+         0., $CellContext`dOf[14, 1, 4] = 2., $CellContext`dOf[14, 1, 5] = 
+         2., $CellContext`dOf[14, 1, 6] = 2., $CellContext`dOf[14, 1, 11] = 
+         0., $CellContext`dOf[14, 4, 2] = -2., $CellContext`dOf[
+          14, 4, 3] = -1., $CellContext`dOf[14, 4, 7] = 
+         0., $CellContext`dOf[14, 4, 8] = -1., $CellContext`dOf[
+          14, 4, 9] = -2., $CellContext`dOf[
+          14, 4, 10] = -2., $CellContext`dOf[
+          14, 4, 11] = -2., $CellContext`dOf[
+          14, 4, 12] = -2., $CellContext`dOf[19, 2, 1] = 
+         0., $CellContext`dOf[19, 2, 2] = 0., $CellContext`dOf[19, 2, 5] = 
+         0.5, $CellContext`dOf[19, 2, 6] = 0.5, $CellContext`dOf[19, 2, 7] = 
+         0.5, $CellContext`dOf[19, 2, 8] = 0.5, $CellContext`dOf[19, 2, 10] = 
+         2., $CellContext`dOf[19, 2, 11] = 2., $CellContext`dOf[19, 2, 12] = 
+         1., $CellContext`dOf[19, 2, 13] = 1., $CellContext`dOf[19, 2, 15] = 
+         0., $CellContext`dOf[19, 2, 16] = 0., $CellContext`dOf[19, 2, 18] = 
+         4., $CellContext`dOf[19, 2, 19] = 
+         4., $CellContext`dOf[19, 10, 15] = -2., $CellContext`dOf[
+          19, 10, 16] = -2., $CellContext`dOf[
+          19, 10, 17] = -2., $CellContext`dOf[
+          19, 10, 20] = -2., $CellContext`dOf[19, 15, 3] = 
+         0., $CellContext`dOf[19, 15, 4] = 1., $CellContext`dOf[19, 15, 9] = 
+         0.5, $CellContext`dOf[19, 15, 14] = 1., $CellContext`dOf[19, 15, 17] = 
+         0., $CellContext`dOf[19, 15, 20] = 0., $CellContext`dOf[20, 1, 1] = 
+         0., $CellContext`dOf[20, 1, 2] = 0., $CellContext`dOf[20, 1, 3] = 
+         0., $CellContext`dOf[20, 1, 6] = 1., $CellContext`dOf[20, 1, 8] = 
+         2., $CellContext`dOf[20, 1, 10] = 0., $CellContext`dOf[20, 1, 11] = 
+         0., $CellContext`dOf[20, 1, 13] = 
+         1., $CellContext`dOf[20, 6, 9] = -1., $CellContext`dOf[
+          20, 6, 10] = -1., $CellContext`dOf[
+          20, 6, 11] = -1., $CellContext`dOf[
+          20, 6, 12] = -1., $CellContext`dOf[20, 10, 4] = 
+         0., $CellContext`dOf[20, 10, 5] = 0., $CellContext`dOf[20, 10, 7] = 
+         1., $CellContext`dOf[20, 10, 9] = 0., $CellContext`dOf[20, 10, 12] = 
+         0., $CellContext`dOf[21, 1, 1] = 0., $CellContext`dOf[21, 1, 2] = 
+         0., $CellContext`dOf[21, 1, 3] = 0., $CellContext`dOf[21, 1, 8] = 
+         1.5, $CellContext`dOf[21, 1, 9] = 1.5, $CellContext`dOf[21, 1, 10] = 
+         0., $CellContext`dOf[21, 1, 11] = 
+         0., $CellContext`dOf[21, 8, 4] = -0.5, $CellContext`dOf[
+          21, 8, 5] = -1., $CellContext`dOf[21, 8, 6] = 
+         0.5, $CellContext`dOf[21, 8, 7] = -0.5, $CellContext`dOf[
+          21, 8, 10] = -1.5, $CellContext`dOf[
+          21, 8, 11] = -1.5, $CellContext`dOf[
+          21, 8, 12] = -1.5, $CellContext`dOf[22, 1, 1] = 
+         0., $CellContext`dOf[22, 1, 2] = 1., $CellContext`dOf[22, 1, 3] = 
+         1., $CellContext`dOf[22, 1, 4] = 2., $CellContext`dOf[22, 1, 6] = 
+         1.5, $CellContext`dOf[22, 1, 7] = 1.5, $CellContext`dOf[22, 1, 8] = 
+         2.5, $CellContext`dOf[22, 1, 9] = 
+         1.6666666666666665`, $CellContext`dOf[22, 1, 10] = 
+         1.75, $CellContext`dOf[22, 1, 11] = 0., $CellContext`dOf[22, 1, 13] = 
+         0., $CellContext`dOf[22, 1, 15] = 0., $CellContext`dOf[22, 1, 16] = 
+         0., $CellContext`dOf[22, 4, 5] = 
+         0., $CellContext`dOf[22, 4, 11] = -2., $CellContext`dOf[
+          22, 4, 12] = -2., $CellContext`dOf[
+          22, 4, 13] = -2., $CellContext`dOf[
+          22, 4, 14] = -2., $CellContext`dOf[
+          22, 4, 15] = -2., $CellContext`dOf[
+          22, 4, 16] = -2., $CellContext`dOf[
+          22, 4, 17] = -2., $CellContext`dOf[
+          22, 4, 18] = -2., $CellContext`dOf[23, 1, 1] = 
+         0., $CellContext`dOf[23, 1, 2] = 0., $CellContext`dOf[23, 1, 3] = 
+         1., $CellContext`dOf[23, 1, 4] = 1., $CellContext`dOf[23, 1, 6] = 
+         2., $CellContext`dOf[23, 1, 7] = 2., $CellContext`dOf[23, 1, 8] = 
+         2., $CellContext`dOf[23, 1, 10] = 1.5, $CellContext`dOf[23, 1, 11] = 
+         1.5, $CellContext`dOf[23, 1, 12] = 2., $CellContext`dOf[23, 1, 13] = 
+         2., $CellContext`dOf[23, 1, 14] = 2., $CellContext`dOf[23, 1, 15] = 
+         2.5, $CellContext`dOf[23, 1, 16] = 2.5, $CellContext`dOf[23, 1, 18] = 
+         0., $CellContext`dOf[23, 1, 19] = 0., $CellContext`dOf[23, 1, 21] = 
+         0., $CellContext`dOf[23, 1, 23] = 1., $CellContext`dOf[23, 1, 25] = 
+         0., $CellContext`dOf[23, 15, 5] = -1.5, $CellContext`dOf[
+          23, 15, 9] = -0.5, $CellContext`dOf[23, 15, 17] = 
+         0., $CellContext`dOf[23, 15, 18] = -2.5, $CellContext`dOf[
+          23, 15, 19] = -2.5, $CellContext`dOf[
+          23, 15, 20] = -2.5, $CellContext`dOf[
+          23, 15, 21] = -2.5, $CellContext`dOf[
+          23, 15, 22] = -2.5, $CellContext`dOf[
+          23, 15, 24] = -1.5, $CellContext`dOf[
+          23, 15, 25] = -2.5, $CellContext`dOf[
+          23, 15, 26] = -2.5, $CellContext`dOf[
+          23, 15, 27] = -2.5, $CellContext`dOf[24, 1, 1] = 
+         0., $CellContext`dOf[24, 1, 4] = 2., $CellContext`dOf[24, 1, 7] = 
+         3., $CellContext`dOf[24, 1, 9] = 1.5, $CellContext`dOf[24, 1, 11] = 
+         2.4000000000000004`, $CellContext`dOf[24, 1, 12] = 
+         2.625, $CellContext`dOf[24, 1, 14] = 0., $CellContext`dOf[24, 1, 17] = 
+         2., $CellContext`dOf[24, 1, 19] = 
+         0., $CellContext`dOf[24, 9, 2] = -1.5, $CellContext`dOf[
+          24, 9, 3] = -1.5, $CellContext`dOf[24, 9, 5] = 
+         0.5, $CellContext`dOf[24, 9, 6] = -0.5, $CellContext`dOf[24, 9, 8] = 
+         1.5, $CellContext`dOf[24, 9, 10] = 
+         0., $CellContext`dOf[24, 9, 13] = -1.5, $CellContext`dOf[
+          24, 9, 14] = -1.5, $CellContext`dOf[
+          24, 9, 15] = -1.5, $CellContext`dOf[
+          24, 9, 16] = -0.5, $CellContext`dOf[24, 9, 18] = 
+         0.5, $CellContext`dOf[24, 9, 19] = -1.5, $CellContext`dOf[
+          24, 9, 20] = -1.5, $CellContext`dOf[
+          24, 9, 21] = -0.5, $CellContext`dOf[
+          24, 9, 22] = -1.5, $CellContext`dOf[
+          24, 9, 23] = -0.5, $CellContext`dOf[
+          24, 9, 24] = -1.5, $CellContext`dOf[
+          24, 9, 25] = -1.5, $CellContext`dOf[25, 1, 1] = 
+         0., $CellContext`dOf[25, 1, 2] = 0., $CellContext`dOf[25, 1, 3] = 
+         1., $CellContext`dOf[25, 1, 4] = 1., $CellContext`dOf[25, 1, 6] = 
+         2., $CellContext`dOf[25, 1, 8] = 1.5, $CellContext`dOf[25, 1, 9] = 
+         1.3333333333333333`, $CellContext`dOf[25, 1, 12] = 
+         0., $CellContext`dOf[25, 1, 13] = 
+         0., $CellContext`dOf[25, 6, 5] = -1., $CellContext`dOf[25, 6, 7] = 
+         0., $CellContext`dOf[25, 6, 10] = -2., $CellContext`dOf[25, 6, 11] = 
+         1., $CellContext`dOf[25, 6, 12] = -2., $CellContext`dOf[
+          25, 6, 13] = -2., $CellContext`dOf[
+          25, 6, 14] = -2., $CellContext`dOf[
+          25, 6, 15] = -2., $CellContext`dOf[
+          25, 6, 16] = -2., $CellContext`dOf[26, 1, 1] = 
+         0., $CellContext`dOf[26, 1, 2] = 1., $CellContext`dOf[26, 1, 3] = 
+         1.5, $CellContext`dOf[26, 1, 4] = 1.5, $CellContext`dOf[26, 1, 5] = 
+         1.3333333333333333`, $CellContext`dOf[26, 1, 7] = 
+         1., $CellContext`dOf[26, 1, 9] = 0., $CellContext`dOf[26, 1, 10] = 
+         0., $CellContext`dOf[26, 1, 12] = 0., $CellContext`dOf[26, 1, 13] = 
+         0., $CellContext`dOf[26, 4, 6] = -1.5, $CellContext`dOf[
+          26, 4, 8] = -0.5, $CellContext`dOf[
+          26, 4, 9] = -1.5, $CellContext`dOf[
+          26, 4, 10] = -1.5, $CellContext`dOf[
+          26, 4, 11] = -1.5, $CellContext`dOf[
+          26, 4, 12] = -1.5, $CellContext`dOf[
+          26, 4, 13] = -1.5, $CellContext`dOf[
+          26, 4, 14] = -1.5, $CellContext`dOf[27, 1, 1] = 
+         0., $CellContext`dOf[27, 1, 2] = 0., $CellContext`dOf[27, 1, 3] = 
+         1., $CellContext`dOf[27, 1, 4] = 
+         1.3333333333333333`, $CellContext`dOf[27, 1, 6] = 
+         0., $CellContext`dOf[27, 1, 7] = 
+         0., $CellContext`dOf[
+          27, 4, 5] = -1.3333333333333333`, $CellContext`dOf[
+          27, 4, 6] = -1.3333333333333333`, $CellContext`dOf[
+          27, 4, 7] = -1.3333333333333333`, $CellContext`dOf[
+          27, 4, 8] = -1.3333333333333333`, $CellContext`dOf[
+          27, 4, 9] = -1.3333333333333333`, $CellContext`dOf[
+          27, 4, 10] = -1.3333333333333333`, $CellContext`dOf[28, 1, 1] = 
+         0., $CellContext`dOf[28, 1, 2] = 0., $CellContext`dOf[28, 1, 3] = 
+         1., $CellContext`dOf[28, 1, 4] = 1., $CellContext`dOf[28, 1, 7] = 
+         0., $CellContext`dOf[28, 1, 8] = 
+         0., $CellContext`dOf[28, 3, 6] = -1., $CellContext`dOf[
+          28, 3, 7] = -1., $CellContext`dOf[28, 3, 8] = -1., $CellContext`dOf[
+          28, 3, 9] = -1., $CellContext`dOf[
+          28, 3, 10] = -1., $CellContext`dOf[
+          28, 3, 11] = -1., $CellContext`dOf[28, 7, 5] = 
+         1., $CellContext`dOf[28, 7, 6] = 0., $CellContext`dOf[28, 7, 9] = 
+         0., $CellContext`dOf[28, 7, 10] = 0., $CellContext`dOf[28, 7, 11] = 
+         0., $CellContext`dOf[29, 1, 1] = 0., $CellContext`dOf[29, 1, 2] = 
+         0., $CellContext`dOf[29, 1, 5] = 1., $CellContext`dOf[29, 1, 6] = 
+         0.5, $CellContext`dOf[29, 1, 7] = 0.5, $CellContext`dOf[29, 1, 8] = 
+         0., $CellContext`dOf[29, 1, 9] = 0., $CellContext`dOf[29, 1, 10] = 
+         0., $CellContext`dOf[29, 1, 12] = 0., $CellContext`dOf[29, 1, 13] = 
+         0., $CellContext`dOf[29, 1, 14] = 
+         0., $CellContext`dOf[29, 5, 8] = -1., $CellContext`dOf[
+          29, 5, 9] = -1., $CellContext`dOf[
+          29, 5, 10] = -1., $CellContext`dOf[
+          29, 5, 11] = -1., $CellContext`dOf[
+          29, 5, 12] = -1., $CellContext`dOf[
+          29, 5, 13] = -1., $CellContext`dOf[
+          29, 5, 14] = -1., $CellContext`dOf[
+          29, 5, 15] = -1., $CellContext`dOf[
+          29, 5, 16] = -1., $CellContext`dOf[
+          29, 5, 17] = -1., $CellContext`dOf[29, 12, 3] = 
+         0., $CellContext`dOf[29, 12, 4] = 0., $CellContext`dOf[29, 12, 11] = 
+         0., $CellContext`dOf[29, 12, 15] = 0., $CellContext`dOf[29, 12, 16] = 
+         0., $CellContext`dOf[29, 12, 17] = 0., $CellContext`dOf[30, 1, 1] = 
+         0., $CellContext`dOf[30, 1, 2] = 1., $CellContext`dOf[30, 1, 4] = 
+         0., $CellContext`dOf[30, 1, 5] = 
+         0., $CellContext`dOf[30, 2, 3] = -1., $CellContext`dOf[
+          30, 2, 4] = -1., $CellContext`dOf[30, 2, 5] = -1., $CellContext`dOf[
+          30, 2, 6] = -1., $CellContext`dOf[30, 2, 7] = -1., $CellContext`dOf[
+          30, 5, 3] = 0., $CellContext`dOf[30, 5, 6] = 
+         0., $CellContext`dOf[30, 5, 7] = 0., $CellContext`dOf[31, 2, 1] = 
+         0., $CellContext`dOf[31, 2, 2] = 0., $CellContext`dOf[31, 2, 7] = 
+         1.5, $CellContext`dOf[31, 2, 8] = 1.5, $CellContext`dOf[31, 2, 10] = 
+         0., $CellContext`dOf[31, 2, 12] = 0., $CellContext`dOf[31, 2, 13] = 
+         0., $CellContext`dOf[31, 7, 3] = -1.5, $CellContext`dOf[
+          31, 7, 4] = -1.5, $CellContext`dOf[
+          31, 7, 5] = -0.5, $CellContext`dOf[
+          31, 7, 6] = -1., $CellContext`dOf[
+          31, 7, 9] = -1.5, $CellContext`dOf[
+          31, 7, 10] = -1.5, $CellContext`dOf[
+          31, 7, 11] = -1.5, $CellContext`dOf[
+          31, 7, 12] = -1.5, $CellContext`dOf[
+          31, 7, 13] = -1.5, $CellContext`dOf[
+          31, 7, 14] = -1.5, $CellContext`dOf[
+          31, 7, 15] = -1.5, $CellContext`dOf[
+          31, 7, 16] = -1.5, $CellContext`dOf[32, 1, 1] = 
+         0., $CellContext`dOf[32, 1, 2] = 0., $CellContext`dOf[32, 1, 6] = 
+         2., $CellContext`dOf[32, 1, 7] = 2., $CellContext`dOf[32, 1, 8] = 
+         2., $CellContext`dOf[32, 1, 9] = 2., $CellContext`dOf[32, 1, 14] = 
+         0., $CellContext`dOf[32, 6, 3] = -2., $CellContext`dOf[
+          32, 6, 4] = -2., $CellContext`dOf[32, 6, 5] = -1., $CellContext`dOf[
+          32, 6, 10] = 
+         0., $CellContext`dOf[32, 6, 11] = -2., $CellContext`dOf[
+          32, 6, 12] = -2., $CellContext`dOf[
+          32, 6, 13] = -2., $CellContext`dOf[
+          32, 6, 14] = -2., $CellContext`dOf[
+          32, 6, 15] = -2., $CellContext`dOf[33, 1, 1] = 
+         0., $CellContext`dOf[33, 1, 2] = 0., $CellContext`dOf[33, 1, 7] = 
+         1.5, $CellContext`dOf[33, 1, 8] = 1.5, $CellContext`dOf[33, 1, 9] = 
+         1.5, $CellContext`dOf[33, 1, 10] = 2.5, $CellContext`dOf[33, 1, 16] = 
+         0., $CellContext`dOf[33, 10, 3] = -2.5, $CellContext`dOf[
+          33, 10, 4] = -2.5, $CellContext`dOf[
+          33, 10, 5] = -1.5, $CellContext`dOf[
+          33, 10, 6] = -0.5, $CellContext`dOf[
+          33, 10, 11] = -1., $CellContext`dOf[
+          33, 10, 12] = -0.75, $CellContext`dOf[
+          33, 10, 13] = -0.5, $CellContext`dOf[
+          33, 10, 14] = -0.25, $CellContext`dOf[33, 10, 15] = 
+         0., $CellContext`dOf[33, 10, 16] = -2.5, $CellContext`dOf[
+          33, 10, 17] = -2.5, $CellContext`dOf[37, 2, 1] = 
+         0., $CellContext`dOf[37, 2, 2] = 0., $CellContext`dOf[37, 2, 6] = 
+         0.5, $CellContext`dOf[37, 2, 7] = 0.5, $CellContext`dOf[37, 2, 8] = 
+         0.5, $CellContext`dOf[37, 2, 9] = 0.5, $CellContext`dOf[37, 2, 11] = 
+         2., $CellContext`dOf[37, 2, 12] = 2., $CellContext`dOf[37, 2, 13] = 
+         1., $CellContext`dOf[37, 2, 14] = 1., $CellContext`dOf[37, 2, 16] = 
+         0., $CellContext`dOf[37, 2, 17] = 
+         0., $CellContext`dOf[37, 11, 16] = -2., $CellContext`dOf[
+          37, 11, 17] = -2., $CellContext`dOf[
+          37, 11, 18] = -2., $CellContext`dOf[
+          37, 11, 19] = -2., $CellContext`dOf[37, 16, 3] = 
+         0., $CellContext`dOf[37, 16, 4] = 0., $CellContext`dOf[37, 16, 5] = 
+         1., $CellContext`dOf[37, 16, 10] = 0.5, $CellContext`dOf[37, 16, 15] = 
+         1., $CellContext`dOf[37, 16, 18] = 0., $CellContext`dOf[37, 16, 19] = 
+         0., $CellContext`dOf[38, 1, 1] = 0., $CellContext`dOf[38, 1, 2] = 
+         0., $CellContext`dOf[38, 1, 3] = 0., $CellContext`dOf[38, 1, 4] = 
+         1., $CellContext`dOf[38, 1, 5] = 1., $CellContext`dOf[38, 1, 7] = 
+         2., $CellContext`dOf[38, 1, 9] = 0., $CellContext`dOf[38, 1, 10] = 
+         0., $CellContext`dOf[38, 1, 11] = 
+         0., $CellContext`dOf[38, 4, 8] = -1., $CellContext`dOf[
+          38, 4, 9] = -1., $CellContext`dOf[
+          38, 4, 10] = -1., $CellContext`dOf[
+          38, 4, 11] = -1., $CellContext`dOf[
+          38, 4, 12] = -1., $CellContext`dOf[38, 9, 6] = 
+         1., $CellContext`dOf[38, 9, 8] = 0., $CellContext`dOf[38, 9, 12] = 
+         0., $CellContext`dOf[39, 1, 1] = 0., $CellContext`dOf[39, 1, 2] = 
+         0., $CellContext`dOf[39, 1, 3] = 0., $CellContext`dOf[39, 1, 8] = 
+         1.5, $CellContext`dOf[39, 1, 9] = 1.5, $CellContext`dOf[39, 1, 10] = 
+         1.5, $CellContext`dOf[39, 1, 11] = 0., $CellContext`dOf[39, 1, 12] = 
+         0., $CellContext`dOf[39, 8, 4] = -0.5, $CellContext`dOf[
+          39, 8, 5] = -1., $CellContext`dOf[39, 8, 6] = 
+         0.5, $CellContext`dOf[39, 8, 7] = -0.5, $CellContext`dOf[
+          39, 8, 11] = -1.5, $CellContext`dOf[
+          39, 8, 12] = -1.5, $CellContext`dOf[
+          39, 8, 13] = -1.5, $CellContext`dOf[40, 1, 1] = 
+         0., $CellContext`dOf[40, 1, 3] = 2., $CellContext`dOf[40, 1, 4] = 
+         2., $CellContext`dOf[40, 1, 5] = 2., $CellContext`dOf[40, 1, 6] = 
+         2., $CellContext`dOf[40, 1, 9] = 0., $CellContext`dOf[40, 1, 10] = 
+         0., $CellContext`dOf[40, 1, 12] = 0., $CellContext`dOf[40, 1, 13] = 
+         0., $CellContext`dOf[40, 1, 15] = 0., $CellContext`dOf[40, 1, 16] = 
+         0., $CellContext`dOf[40, 3, 2] = -1., $CellContext`dOf[40, 3, 7] = 
+         0., $CellContext`dOf[40, 3, 8] = -2., $CellContext`dOf[
+          40, 3, 9] = -2., $CellContext`dOf[
+          40, 3, 10] = -2., $CellContext`dOf[
+          40, 3, 11] = -2., $CellContext`dOf[
+          40, 3, 12] = -2., $CellContext`dOf[
+          40, 3, 13] = -2., $CellContext`dOf[
+          40, 3, 14] = -2., $CellContext`dOf[
+          40, 3, 15] = -2., $CellContext`dOf[
+          40, 3, 16] = -2., $CellContext`dOf[
+          40, 3, 17] = -2., $CellContext`dOf[41, 1, 1] = 
+         0., $CellContext`dOf[41, 1, 2] = 1., $CellContext`dOf[41, 1, 3] = 
+         1., $CellContext`dOf[41, 1, 4] = 2., $CellContext`dOf[41, 1, 5] = 
+         2., $CellContext`dOf[41, 1, 6] = 2., $CellContext`dOf[41, 1, 8] = 
+         2.5, $CellContext`dOf[41, 1, 9] = 2.5, $CellContext`dOf[41, 1, 10] = 
+         0., $CellContext`dOf[41, 1, 11] = 1., $CellContext`dOf[41, 1, 12] = 
+         0., $CellContext`dOf[41, 1, 13] = 1., $CellContext`dOf[41, 1, 15] = 
+         0., $CellContext`dOf[41, 1, 17] = 0., $CellContext`dOf[41, 1, 18] = 
+         0., $CellContext`dOf[41, 8, 7] = -0.5, $CellContext`dOf[
+          41, 8, 10] = -2.5, $CellContext`dOf[
+          41, 8, 12] = -2.5, $CellContext`dOf[
+          41, 8, 14] = -1.5, $CellContext`dOf[
+          41, 8, 15] = -2.5, $CellContext`dOf[
+          41, 8, 16] = -2.5, $CellContext`dOf[
+          41, 8, 17] = -2.5, $CellContext`dOf[
+          41, 8, 18] = -2.5, $CellContext`dOf[
+          41, 8, 19] = -2.5, $CellContext`dOf[42, 1, 1] = 
+         0., $CellContext`dOf[42, 1, 2] = 2., $CellContext`dOf[42, 1, 4] = 
+         3., $CellContext`dOf[42, 1, 5] = 3., $CellContext`dOf[42, 1, 13] = 
+         0., $CellContext`dOf[42, 1, 15] = 1., $CellContext`dOf[42, 1, 17] = 
+         2., $CellContext`dOf[42, 1, 18] = 2., $CellContext`dOf[42, 1, 20] = 
+         0., $CellContext`dOf[42, 1, 22] = 1., $CellContext`dOf[42, 1, 23] = 
+         0., $CellContext`dOf[42, 1, 24] = 0., $CellContext`dOf[42, 1, 26] = 
+         1., $CellContext`dOf[42, 1, 28] = 1., $CellContext`dOf[42, 1, 29] = 
+         1., $CellContext`dOf[42, 1, 31] = 0., $CellContext`dOf[42, 1, 32] = 
+         0., $CellContext`dOf[42, 1, 34] = 
+         0., $CellContext`dOf[42, 4, 3] = -1., $CellContext`dOf[42, 4, 6] = 
+         0., $CellContext`dOf[42, 4, 7] = 0., $CellContext`dOf[42, 4, 8] = 
+         0., $CellContext`dOf[42, 4, 9] = 0., $CellContext`dOf[42, 4, 10] = 
+         0., $CellContext`dOf[42, 4, 11] = -2., $CellContext`dOf[
+          42, 4, 12] = -1., $CellContext`dOf[
+          42, 4, 13] = -3., $CellContext`dOf[
+          42, 4, 14] = -3., $CellContext`dOf[
+          42, 4, 16] = -2., $CellContext`dOf[
+          42, 4, 19] = -1., $CellContext`dOf[
+          42, 4, 20] = -3., $CellContext`dOf[
+          42, 4, 21] = -3., $CellContext`dOf[
+          42, 4, 23] = -3., $CellContext`dOf[
+          42, 4, 24] = -3., $CellContext`dOf[
+          42, 4, 25] = -3., $CellContext`dOf[
+          42, 4, 27] = -2., $CellContext`dOf[
+          42, 4, 30] = -2., $CellContext`dOf[
+          42, 4, 31] = -3., $CellContext`dOf[
+          42, 4, 32] = -3., $CellContext`dOf[
+          42, 4, 33] = -3., $CellContext`dOf[
+          42, 4, 34] = -3., $CellContext`dOf[
+          42, 4, 35] = -3., $CellContext`dOf[44, 1, 1] = 
+         0., $CellContext`dOf[44, 1, 2] = 2., $CellContext`dOf[44, 1, 4] = 
+         4., $CellContext`dOf[44, 1, 5] = 4., $CellContext`dOf[44, 1, 7] = 
+         0., $CellContext`dOf[44, 2, 3] = 1., $CellContext`dOf[44, 2, 6] = 
+         2., $CellContext`dOf[44, 2, 7] = -2., $CellContext`dOf[
+          44, 2, 8] = -2., $CellContext`dOf[44, 2, 9] = -2., $CellContext`dOf[
+          45, 1, 1] = 0., $CellContext`dOf[45, 1, 3] = 
+         1.5, $CellContext`dOf[45, 1, 5] = 2., $CellContext`dOf[45, 1, 8] = 
+         0., $CellContext`dOf[45, 5, 7] = -2., $CellContext`dOf[
+          45, 5, 8] = -2., $CellContext`dOf[45, 5, 9] = -2., $CellContext`dOf[
+          45, 8, 2] = 0., $CellContext`dOf[45, 8, 4] = 
+         1., $CellContext`dOf[45, 8, 6] = 2., $CellContext`dOf[45, 8, 7] = 
+         0., $CellContext`dOf[45, 8, 9] = 0., $CellContext`dOf[46, 1, 1] = 
+         0., $CellContext`dOf[46, 1, 2] = 0., $CellContext`dOf[46, 1, 4] = 
+         1., $CellContext`dOf[46, 1, 5] = 0., $CellContext`dOf[46, 1, 6] = 
+         0., $CellContext`dOf[46, 4, 5] = -1., $CellContext`dOf[
+          46, 4, 6] = -1., $CellContext`dOf[46, 4, 7] = -1., $CellContext`dOf[
+          46, 4, 8] = -1., $CellContext`dOf[46, 4, 9] = -1., $CellContext`dOf[
+          46, 5, 3] = 0., $CellContext`dOf[46, 5, 7] = 
+         0., $CellContext`dOf[46, 5, 8] = 0., $CellContext`dOf[46, 5, 9] = 
+         0., $CellContext`dOf[47, 1, 1] = 0., $CellContext`dOf[47, 1, 3] = 
+         0.5, $CellContext`dOf[47, 1, 4] = 0.5, $CellContext`dOf[47, 1, 5] = 
+         0., $CellContext`dOf[47, 1, 6] = 0., $CellContext`dOf[47, 1, 7] = 
+         0., $CellContext`dOf[47, 1, 8] = 3., $CellContext`dOf[47, 5, 2] = 
+         1., $CellContext`dOf[47, 5, 7] = 0., $CellContext`dOf[48, 2, 1] = 
+         0., $CellContext`dOf[48, 2, 2] = 0., $CellContext`dOf[48, 2, 3] = 
+         1., $CellContext`dOf[48, 2, 6] = 0., $CellContext`dOf[48, 2, 7] = 
+         0., $CellContext`dOf[48, 3, 5] = -1., $CellContext`dOf[
+          48, 3, 6] = -1., $CellContext`dOf[48, 3, 7] = -1., $CellContext`dOf[
+          48, 3, 8] = -1., $CellContext`dOf[48, 6, 4] = 
+         1., $CellContext`dOf[48, 6, 5] = 0., $CellContext`dOf[48, 6, 8] = 
+         0., $CellContext`dOf[49, 2, 1] = 0., $CellContext`dOf[49, 2, 2] = 
+         0., $CellContext`dOf[49, 2, 7] = 1.5, $CellContext`dOf[49, 2, 8] = 
+         1.5, $CellContext`dOf[49, 2, 9] = 0., $CellContext`dOf[49, 2, 10] = 
+         0., $CellContext`dOf[49, 2, 11] = 0., $CellContext`dOf[49, 2, 13] = 
+         0., $CellContext`dOf[49, 2, 16] = 0., $CellContext`dOf[49, 2, 17] = 
+         0., $CellContext`dOf[49, 7, 9] = -1.5, $CellContext`dOf[
+          49, 7, 10] = -1.5, $CellContext`dOf[
+          49, 7, 11] = -1.5, $CellContext`dOf[
+          49, 7, 12] = -1.5, $CellContext`dOf[
+          49, 7, 13] = -1.5, $CellContext`dOf[
+          49, 7, 14] = -1.5, $CellContext`dOf[
+          49, 7, 15] = -1.5, $CellContext`dOf[
+          49, 7, 16] = -1.5, $CellContext`dOf[
+          49, 7, 17] = -1.5, $CellContext`dOf[
+          49, 7, 18] = -1.5, $CellContext`dOf[
+          49, 7, 19] = -1.5, $CellContext`dOf[49, 16, 3] = 
+         0., $CellContext`dOf[49, 16, 4] = 0., $CellContext`dOf[49, 16, 5] = 
+         1., $CellContext`dOf[49, 16, 6] = 0.5, $CellContext`dOf[49, 16, 12] = 
+         0., $CellContext`dOf[49, 16, 14] = 0., $CellContext`dOf[49, 16, 15] = 
+         0., $CellContext`dOf[49, 16, 18] = 0., $CellContext`dOf[49, 16, 19] = 
+         0., $CellContext`dOf[50, 2, 1] = 0., $CellContext`dOf[50, 2, 2] = 
+         0., $CellContext`dOf[50, 2, 3] = 1., $CellContext`dOf[50, 2, 4] = 
+         1., $CellContext`dOf[50, 2, 6] = 2., $CellContext`dOf[50, 2, 7] = 
+         2., $CellContext`dOf[50, 2, 10] = 0., $CellContext`dOf[50, 2, 11] = 
+         0., $CellContext`dOf[50, 2, 14] = 
+         0., $CellContext`dOf[50, 6, 5] = -1., $CellContext`dOf[50, 6, 8] = 
+         0., $CellContext`dOf[50, 6, 9] = -2., $CellContext`dOf[
+          50, 6, 10] = -2., $CellContext`dOf[
+          50, 6, 11] = -2., $CellContext`dOf[
+          50, 6, 12] = -2., $CellContext`dOf[
+          50, 6, 13] = -2., $CellContext`dOf[
+          50, 6, 14] = -2., $CellContext`dOf[
+          50, 6, 15] = -2., $CellContext`dOf[51, 1, 1] = 
+         0., $CellContext`dOf[51, 1, 2] = 0., $CellContext`dOf[51, 1, 5] = 
+         1.5, $CellContext`dOf[51, 1, 6] = 1.5, $CellContext`dOf[51, 1, 7] = 
+         1.5, $CellContext`dOf[51, 1, 10] = 1., $CellContext`dOf[51, 1, 11] = 
+         0., $CellContext`dOf[51, 1, 12] = 
+         0., $CellContext`dOf[51, 5, 9] = -1.5, $CellContext`dOf[
+          51, 5, 11] = -1.5, $CellContext`dOf[
+          51, 5, 12] = -1.5, $CellContext`dOf[
+          51, 5, 13] = -1.5, $CellContext`dOf[
+          51, 5, 14] = -1.5, $CellContext`dOf[51, 10, 3] = 
+         0., $CellContext`dOf[51, 10, 4] = 1., $CellContext`dOf[51, 10, 8] = 
+         0.5, $CellContext`dOf[51, 10, 9] = -1., $CellContext`dOf[
+          51, 10, 13] = -1., $CellContext`dOf[
+          51, 10, 14] = -1., $CellContext`dOf[55, 2, 1] = 
+         0., $CellContext`dOf[55, 2, 2] = 0., $CellContext`dOf[55, 2, 6] = 
+         0.5, $CellContext`dOf[55, 2, 7] = 0.5, $CellContext`dOf[55, 2, 9] = 
+         1., $CellContext`dOf[55, 2, 10] = 1., $CellContext`dOf[55, 2, 12] = 
+         1.5, $CellContext`dOf[55, 2, 13] = 0., $CellContext`dOf[55, 2, 14] = 
+         0., $CellContext`dOf[55, 2, 15] = 
+         0., $CellContext`dOf[55, 12, 13] = -1.5, $CellContext`dOf[
+          55, 12, 14] = -1.5, $CellContext`dOf[
+          55, 12, 15] = -1.5, $CellContext`dOf[
+          55, 12, 16] = -1.5, $CellContext`dOf[
+          55, 12, 17] = -1.5, $CellContext`dOf[55, 13, 3] = 
+         0., $CellContext`dOf[55, 13, 4] = 0., $CellContext`dOf[55, 13, 5] = 
+         1., $CellContext`dOf[55, 13, 8] = 0.5, $CellContext`dOf[55, 13, 11] = 
+         1., $CellContext`dOf[55, 13, 16] = 0., $CellContext`dOf[55, 13, 17] = 
+         0., $CellContext`dOf[56, 1, 1] = 0., $CellContext`dOf[56, 1, 2] = 
+         0., $CellContext`dOf[56, 1, 3] = 1., $CellContext`dOf[56, 1, 5] = 
+         2., $CellContext`dOf[56, 1, 7] = 0., $CellContext`dOf[56, 1, 8] = 
+         0., $CellContext`dOf[56, 1, 9] = 
+         0., $CellContext`dOf[56, 5, 6] = -2., $CellContext`dOf[
+          56, 5, 7] = -2., $CellContext`dOf[56, 5, 8] = -2., $CellContext`dOf[
+          56, 5, 9] = -2., $CellContext`dOf[
+          56, 5, 10] = -2., $CellContext`dOf[56, 7, 4] = 
+         1., $CellContext`dOf[56, 7, 6] = 0., $CellContext`dOf[56, 7, 10] = 
+         0., $CellContext`dOf[57, 2, 1] = 0., $CellContext`dOf[57, 2, 2] = 
+         0., $CellContext`dOf[57, 2, 3] = 0., $CellContext`dOf[57, 2, 4] = 
+         0., $CellContext`dOf[57, 2, 10] = 1.5, $CellContext`dOf[57, 2, 11] = 
+         1., $CellContext`dOf[57, 2, 12] = 0., $CellContext`dOf[57, 2, 13] = 
+         0., $CellContext`dOf[57, 10, 12] = -1.5, $CellContext`dOf[
+          57, 10, 13] = -1.5, $CellContext`dOf[
+          57, 10, 14] = -1.5, $CellContext`dOf[57, 12, 5] = 
+         0., $CellContext`dOf[57, 12, 6] = 1., $CellContext`dOf[57, 12, 7] = 
+         0.5, $CellContext`dOf[57, 12, 8] = 2., $CellContext`dOf[57, 12, 9] = 
+         1., $CellContext`dOf[57, 12, 14] = 0., $CellContext`dOf[58, 1, 1] = 
+         0., $CellContext`dOf[58, 1, 3] = 1.72, $CellContext`dOf[58, 1, 4] = 
+         1.83, $CellContext`dOf[58, 1, 5] = 2., $CellContext`dOf[58, 1, 6] = 
+         1.5, $CellContext`dOf[58, 1, 7] = 1., $CellContext`dOf[58, 1, 8] = 
+         0., $CellContext`dOf[58, 1, 9] = 
+         0., $CellContext`dOf[58, 5, 2] = -1., $CellContext`dOf[
+          58, 5, 8] = -2., $CellContext`dOf[58, 5, 9] = -2., $CellContext`dOf[
+          58, 5, 10] = -2., $CellContext`dOf[59, 1, 1] = 
+         0., $CellContext`dOf[59, 1, 2] = 0., $CellContext`dOf[59, 1, 3] = 
+         0., $CellContext`dOf[59, 1, 5] = 2., $CellContext`dOf[59, 1, 6] = 
+         1.5, $CellContext`dOf[59, 1, 7] = 
+         1.8333333333333333`, $CellContext`dOf[59, 1, 8] = 
+         1.7142857142857142`, $CellContext`dOf[59, 1, 9] = 
+         1., $CellContext`dOf[59, 1, 10] = 0., $CellContext`dOf[59, 1, 11] = 
+         0., $CellContext`dOf[
+          59, 8, 10] = -1.7142857142857142`, $CellContext`dOf[
+          59, 8, 11] = -1.7142857142857142`, $CellContext`dOf[
+          59, 8, 12] = -1.7142857142857142`, $CellContext`dOf[59, 10, 4] = 
+         1., $CellContext`dOf[59, 10, 12] = 0., $CellContext`dOf[60, 1, 1] = 
+         0., $CellContext`dOf[60, 1, 2] = 0., $CellContext`dOf[60, 1, 4] = 
+         1.5, $CellContext`dOf[60, 1, 5] = 1., $CellContext`dOf[60, 1, 6] = 
+         0., $CellContext`dOf[60, 1, 7] = 
+         0., $CellContext`dOf[60, 4, 6] = -1.5, $CellContext`dOf[
+          60, 4, 7] = -1.5, $CellContext`dOf[
+          60, 4, 8] = -1.5, $CellContext`dOf[60, 5, 3] = 
+         0., $CellContext`dOf[60, 5, 8] = -1., $CellContext`dOf[62, 1, 1] = 
+         0., $CellContext`dOf[62, 1, 3] = 1.5, $CellContext`dOf[62, 1, 4] = 
+         1.5, $CellContext`dOf[62, 1, 5] = 1., $CellContext`dOf[62, 1, 6] = 
+         0., $CellContext`dOf[62, 1, 7] = 0., $CellContext`dOf[62, 1, 8] = 
+         0., $CellContext`dOf[62, 4, 6] = -1.5, $CellContext`dOf[
+          62, 4, 7] = -1.5, $CellContext`dOf[
+          62, 4, 8] = -1.5, $CellContext`dOf[
+          62, 4, 9] = -1.5, $CellContext`dOf[62, 5, 2] = 
+         0., $CellContext`dOf[62, 5, 9] = -1., $CellContext`dOf[63, 1, 1] = 
+         0., $CellContext`dOf[63, 1, 2] = 0., $CellContext`dOf[63, 1, 3] = 
+         1., $CellContext`dOf[63, 1, 7] = 1.5, $CellContext`dOf[63, 1, 8] = 
+         1.5, $CellContext`dOf[63, 1, 9] = 1.5, $CellContext`dOf[63, 1, 10] = 
+         1.3333333333333333`, $CellContext`dOf[63, 1, 11] = 
+         1., $CellContext`dOf[63, 1, 12] = 0., $CellContext`dOf[63, 1, 13] = 
+         0., $CellContext`dOf[63, 7, 12] = -1.5, $CellContext`dOf[
+          63, 7, 13] = -1.5, $CellContext`dOf[
+          63, 7, 14] = -1.5, $CellContext`dOf[63, 11, 4] = 
+         0., $CellContext`dOf[63, 11, 5] = -0.5, $CellContext`dOf[63, 11, 6] = 
+         0., $CellContext`dOf[63, 11, 14] = -1., $CellContext`dOf[64, 1, 1] = 
+         0., $CellContext`dOf[64, 1, 4] = 1.5, $CellContext`dOf[64, 1, 5] = 
+         1.5, $CellContext`dOf[64, 1, 6] = 1., $CellContext`dOf[64, 1, 7] = 
+         0., $CellContext`dOf[64, 1, 8] = 
+         0., $CellContext`dOf[64, 4, 7] = -1.5, $CellContext`dOf[
+          64, 4, 8] = -1.5, $CellContext`dOf[
+          64, 4, 9] = -1.5, $CellContext`dOf[
+          64, 6, 2] = -1., $CellContext`dOf[64, 6, 3] = 
+         0., $CellContext`dOf[64, 6, 9] = -1., $CellContext`dOf[65, 1, 1] = 
+         0., $CellContext`dOf[65, 1, 3] = 2., $CellContext`dOf[65, 1, 4] = 
+         1.5, $CellContext`dOf[65, 1, 5] = 
+         1.8333333333333333`, $CellContext`dOf[65, 1, 6] = 
+         1.7142857142857142`, $CellContext`dOf[65, 1, 7] = 
+         1.8181818181818183`, $CellContext`dOf[65, 1, 8] = 
+         1.75, $CellContext`dOf[65, 1, 9] = 1., $CellContext`dOf[65, 1, 10] = 
+         0., $CellContext`dOf[65, 1, 11] = 0., $CellContext`dOf[65, 1, 12] = 
+         0., $CellContext`dOf[
+          65, 6, 2] = -0.7142857142857142, $CellContext`dOf[
+          65, 6, 10] = -1.7142857142857142`, $CellContext`dOf[
+          65, 6, 11] = -1.7142857142857142`, $CellContext`dOf[
+          65, 6, 12] = -1.7142857142857142`, $CellContext`dOf[
+          65, 6, 13] = -1.7142857142857142`, $CellContext`dOf[66, 1, 1] = 
+         0., $CellContext`dOf[66, 1, 4] = 1.5, $CellContext`dOf[66, 1, 5] = 
+         1., $CellContext`dOf[66, 1, 6] = 0., $CellContext`dOf[66, 1, 7] = 
+         0., $CellContext`dOf[66, 4, 6] = -1.5, $CellContext`dOf[
+          66, 4, 7] = -1.5, $CellContext`dOf[
+          66, 4, 8] = -1.5, $CellContext`dOf[
+          66, 5, 2] = -1., $CellContext`dOf[66, 5, 3] = 
+         0., $CellContext`dOf[66, 5, 8] = -1., $CellContext`dOf[67, 1, 1] = 
+         0., $CellContext`dOf[67, 1, 4] = 1.5, $CellContext`dOf[67, 1, 5] = 
+         1., $CellContext`dOf[67, 1, 6] = 0., $CellContext`dOf[67, 1, 7] = 
+         0., $CellContext`dOf[67, 4, 6] = -1.5, $CellContext`dOf[
+          67, 4, 7] = -1.5, $CellContext`dOf[
+          67, 4, 8] = -1.5, $CellContext`dOf[
+          67, 5, 2] = -1., $CellContext`dOf[67, 5, 3] = 
+         0., $CellContext`dOf[67, 5, 8] = -1., $CellContext`dOf[68, 1, 1] = 
+         0., $CellContext`dOf[68, 1, 3] = 1.5, $CellContext`dOf[68, 1, 4] = 
+         1., $CellContext`dOf[68, 1, 5] = 
+         0., $CellContext`dOf[68, 3, 5] = -1.5, $CellContext`dOf[
+          68, 3, 6] = -1.5, $CellContext`dOf[68, 4, 2] = 
+         0., $CellContext`dOf[68, 4, 6] = -1., $CellContext`dOf[69, 1, 1] = 
+         0., $CellContext`dOf[69, 1, 2] = 0., $CellContext`dOf[69, 1, 4] = 
+         1.5, $CellContext`dOf[69, 1, 5] = 1., $CellContext`dOf[69, 1, 6] = 
+         0., $CellContext`dOf[69, 1, 7] = 
+         0., $CellContext`dOf[69, 4, 6] = -1.5, $CellContext`dOf[
+          69, 4, 7] = -1.5, $CellContext`dOf[
+          69, 4, 8] = -1.5, $CellContext`dOf[69, 5, 3] = 
+         0., $CellContext`dOf[69, 5, 8] = -1., $CellContext`dOf[70, 1, 1] = 
+         0., $CellContext`dOf[70, 1, 2] = 0., $CellContext`dOf[70, 1, 3] = 
+         0., $CellContext`dOf[70, 1, 5] = 1.5, $CellContext`dOf[70, 1, 6] = 
+         1., $CellContext`dOf[70, 1, 7] = 0., $CellContext`dOf[70, 1, 8] = 
+         0., $CellContext`dOf[70, 1, 9] = 
+         0., $CellContext`dOf[70, 5, 7] = -1.5, $CellContext`dOf[
+          70, 5, 8] = -1.5, $CellContext`dOf[
+          70, 5, 9] = -1.5, $CellContext`dOf[
+          70, 5, 10] = -1.5, $CellContext`dOf[70, 6, 4] = 
+         0., $CellContext`dOf[70, 6, 10] = -1., $CellContext`dOf[71, 1, 1] = 
+         0., $CellContext`dOf[71, 1, 2] = 0., $CellContext`dOf[71, 1, 5] = 
+         1.5, $CellContext`dOf[71, 1, 6] = 1., $CellContext`dOf[71, 1, 7] = 
+         0., $CellContext`dOf[71, 5, 7] = -1.5, $CellContext`dOf[
+          71, 5, 8] = -1.5, $CellContext`dOf[
+          71, 6, 3] = -1., $CellContext`dOf[71, 6, 4] = 
+         0., $CellContext`dOf[71, 6, 8] = -1., $CellContext`dOf[72, 1, 1] = 
+         0., $CellContext`dOf[72, 1, 2] = 2., $CellContext`dOf[72, 1, 3] = 
+         0., $CellContext`dOf[72, 1, 5] = 0., $CellContext`dOf[72, 1, 7] = 
+         0., $CellContext`dOf[72, 2, 3] = -2., $CellContext`dOf[
+          72, 2, 4] = -2., $CellContext`dOf[72, 2, 5] = -2., $CellContext`dOf[
+          72, 2, 6] = -2., $CellContext`dOf[72, 2, 7] = -2., $CellContext`dOf[
+          72, 2, 8] = -2., $CellContext`dOf[72, 2, 9] = -2., $CellContext`dOf[
+          73, 1, 1] = 0., $CellContext`dOf[73, 1, 3] = 
+         2.5, $CellContext`dOf[73, 1, 5] = 0., $CellContext`dOf[73, 1, 7] = 
+         1., $CellContext`dOf[73, 1, 9] = 0., $CellContext`dOf[73, 1, 11] = 
+         0., $CellContext`dOf[73, 1, 12] = 
+         0., $CellContext`dOf[73, 3, 2] = -0.5, $CellContext`dOf[
+          73, 3, 4] = -2.5, $CellContext`dOf[
+          73, 3, 5] = -2.5, $CellContext`dOf[
+          73, 3, 6] = -2.5, $CellContext`dOf[
+          73, 3, 8] = -1.5, $CellContext`dOf[
+          73, 3, 9] = -2.5, $CellContext`dOf[
+          73, 3, 10] = -2.5, $CellContext`dOf[
+          73, 3, 11] = -2.5, $CellContext`dOf[
+          73, 3, 12] = -2.5, $CellContext`dOf[
+          73, 3, 13] = -2.5, $CellContext`dOf[74, 1, 1] = 
+         0., $CellContext`dOf[74, 1, 2] = 2., $CellContext`dOf[74, 1, 4] = 
+         3., $CellContext`dOf[74, 1, 5] = 3., $CellContext`dOf[74, 1, 12] = 
+         0., $CellContext`dOf[74, 1, 13] = 0., $CellContext`dOf[74, 1, 14] = 
+         1., $CellContext`dOf[74, 1, 16] = 2., $CellContext`dOf[74, 1, 18] = 
+         0., $CellContext`dOf[74, 1, 20] = 1., $CellContext`dOf[74, 1, 22] = 
+         0., $CellContext`dOf[74, 1, 24] = 1., $CellContext`dOf[74, 1, 25] = 
+         1., $CellContext`dOf[74, 1, 27] = 0., $CellContext`dOf[74, 1, 28] = 
+         0., $CellContext`dOf[74, 1, 30] = 0., $CellContext`dOf[74, 1, 31] = 
+         0., $CellContext`dOf[74, 1, 32] = 0., $CellContext`dOf[74, 1, 33] = 
+         0., $CellContext`dOf[74, 4, 3] = -1., $CellContext`dOf[74, 4, 6] = 
+         0., $CellContext`dOf[
+          74, 4, 7] = -0.3333333333333335, $CellContext`dOf[74, 4, 8] = 
+         0., $CellContext`dOf[74, 4, 9] = 0., $CellContext`dOf[74, 4, 10] = 
+         0., $CellContext`dOf[74, 4, 11] = -1., $CellContext`dOf[
+          74, 4, 12] = -3., $CellContext`dOf[
+          74, 4, 13] = -3., $CellContext`dOf[
+          74, 4, 15] = -2., $CellContext`dOf[
+          74, 4, 17] = -1., $CellContext`dOf[
+          74, 4, 18] = -3., $CellContext`dOf[
+          74, 4, 19] = -3., $CellContext`dOf[
+          74, 4, 21] = -2., $CellContext`dOf[
+          74, 4, 22] = -3., $CellContext`dOf[
+          74, 4, 23] = -3., $CellContext`dOf[
+          74, 4, 26] = -2., $CellContext`dOf[
+          74, 4, 27] = -3., $CellContext`dOf[
+          74, 4, 28] = -3., $CellContext`dOf[
+          74, 4, 29] = -3., $CellContext`dOf[
+          74, 4, 30] = -3., $CellContext`dOf[
+          74, 4, 31] = -3., $CellContext`dOf[
+          74, 4, 32] = -3., $CellContext`dOf[
+          74, 4, 33] = -3., $CellContext`dOf[
+          74, 4, 34] = -3., $CellContext`dOf[
+          74, 4, 35] = -3., $CellContext`dOf[75, 1, 1] = 
+         0., $CellContext`dOf[75, 1, 2] = 2., $CellContext`dOf[75, 1, 3] = 
+         3., $CellContext`dOf[75, 1, 5] = 1.5, $CellContext`dOf[75, 1, 7] = 
+         3.5, $CellContext`dOf[75, 1, 8] = 3.5, $CellContext`dOf[75, 1, 9] = 
+         3.5, $CellContext`dOf[75, 1, 11] = 0., $CellContext`dOf[75, 3, 4] = 
+         0., $CellContext`dOf[75, 3, 6] = 0., $CellContext`dOf[75, 3, 10] = 
+         0.5, $CellContext`dOf[75, 3, 11] = -3., $CellContext`dOf[
+          75, 3, 12] = -3., $CellContext`dOf[76, 1, 1] = 
+         0., $CellContext`dOf[76, 1, 2] = 2., $CellContext`dOf[76, 1, 4] = 
+         4., $CellContext`dOf[76, 1, 5] = 4., $CellContext`dOf[76, 1, 7] = 
+         0., $CellContext`dOf[76, 5, 3] = -1., $CellContext`dOf[76, 5, 6] = 
+         0., $CellContext`dOf[76, 5, 7] = -4., $CellContext`dOf[77, 1, 1] = 
+         0., $CellContext`dOf[77, 1, 2] = 2., $CellContext`dOf[77, 1, 3] = 
+         0., $CellContext`dOf[77, 2, 3] = -2., $CellContext`dOf[
+          77, 2, 4] = -2., $CellContext`dOf[78, 1, 1] = 
+         0., $CellContext`dOf[78, 1, 4] = 0., $CellContext`dOf[78, 1, 5] = 
+         0., $CellContext`dOf[78, 1, 6] = 0., $CellContext`dOf[78, 1, 7] = 
+         0., $CellContext`dOf[78, 5, 2] = 1., $CellContext`dOf[78, 5, 3] = 
+         2., $CellContext`dOf[78, 5, 7] = 0., $CellContext`dOf[79, 1, 1] = 
+         0., $CellContext`dOf[79, 1, 2] = 0., $CellContext`dOf[79, 1, 3] = 
+         0., $CellContext`dOf[79, 1, 4] = 1., $CellContext`dOf[79, 1, 5] = 
+         1.5, $CellContext`dOf[79, 1, 6] = 0., $CellContext`dOf[79, 1, 7] = 
+         0., $CellContext`dOf[79, 1, 8] = 0., $CellContext`dOf[79, 1, 9] = 
+         0., $CellContext`dOf[80, 1, 1] = 0., $CellContext`dOf[80, 1, 3] = 
+         1., $CellContext`dOf[80, 1, 5] = 0., $CellContext`dOf[80, 1, 7] = 
+         0., $CellContext`dOf[80, 1, 8] = 
+         0., $CellContext`dOf[80, 3, 5] = -1., $CellContext`dOf[
+          80, 3, 6] = -1., $CellContext`dOf[80, 3, 7] = -1., $CellContext`dOf[
+          80, 3, 8] = -1., $CellContext`dOf[80, 3, 9] = -1., $CellContext`dOf[
+          80, 3, 10] = -1., $CellContext`dOf[80, 8, 2] = 
+         0., $CellContext`dOf[80, 8, 4] = 1., $CellContext`dOf[80, 8, 6] = 
+         0., $CellContext`dOf[80, 8, 9] = 0., $CellContext`dOf[80, 8, 10] = 
+         0., $CellContext`dOf[81, 3, 1] = 0., $CellContext`dOf[81, 3, 2] = 
+         0., $CellContext`dOf[81, 3, 3] = 0., $CellContext`dOf[81, 3, 6] = 
+         0.5, $CellContext`dOf[81, 3, 7] = 0.5, $CellContext`dOf[81, 3, 9] = 
+         1.5, $CellContext`dOf[81, 3, 10] = 1.5, $CellContext`dOf[81, 3, 11] = 
+         0., $CellContext`dOf[81, 3, 12] = 0., $CellContext`dOf[81, 3, 15] = 
+         0., $CellContext`dOf[81, 9, 11] = -1.5, $CellContext`dOf[
+          81, 9, 12] = -1.5, $CellContext`dOf[
+          81, 9, 13] = -1.5, $CellContext`dOf[
+          81, 9, 14] = -1.5, $CellContext`dOf[
+          81, 9, 15] = -1.5, $CellContext`dOf[81, 11, 4] = 
+         0., $CellContext`dOf[81, 11, 5] = 1., $CellContext`dOf[81, 11, 8] = 
+         0.5, $CellContext`dOf[81, 11, 13] = 0., $CellContext`dOf[81, 11, 14] = 
+         0., $CellContext`dOf[82, 2, 1] = 0., $CellContext`dOf[82, 2, 2] = 
+         0., $CellContext`dOf[82, 2, 3] = 1., $CellContext`dOf[82, 2, 4] = 
+         1., $CellContext`dOf[82, 2, 5] = 1., $CellContext`dOf[82, 2, 6] = 
+         1., $CellContext`dOf[82, 2, 8] = 2., $CellContext`dOf[82, 2, 10] = 
+         1.5, $CellContext`dOf[82, 2, 11] = 
+         1.3333333333333333`, $CellContext`dOf[82, 2, 13] = 
+         0., $CellContext`dOf[82, 2, 14] = 0., $CellContext`dOf[82, 2, 16] = 
+         0.6666666666666666, $CellContext`dOf[
+          82, 11, 12] = -1.3333333333333333`, $CellContext`dOf[
+          82, 11, 13] = -1.3333333333333333`, $CellContext`dOf[
+          82, 11, 14] = -1.3333333333333333`, $CellContext`dOf[
+          82, 11, 15] = -1.3333333333333333`, $CellContext`dOf[
+          82, 11, 17] = -1.3333333333333333`, $CellContext`dOf[
+          82, 11, 18] = -1.3333333333333333`, $CellContext`dOf[82, 13, 7] = 
+         1., $CellContext`dOf[82, 13, 9] = 2., $CellContext`dOf[82, 13, 12] = 
+         0., $CellContext`dOf[82, 13, 15] = 0., $CellContext`dOf[82, 13, 17] = 
+         0., $CellContext`dOf[82, 13, 18] = 0., $CellContext`dOf[83, 1, 1] = 
+         0., $CellContext`dOf[83, 1, 2] = 0., $CellContext`dOf[83, 1, 7] = 
+         1.5, $CellContext`dOf[83, 1, 8] = 1.5, $CellContext`dOf[83, 1, 9] = 
+         1.5, $CellContext`dOf[83, 1, 13] = 0., $CellContext`dOf[83, 1, 15] = 
+         1., $CellContext`dOf[83, 1, 16] = 0., $CellContext`dOf[83, 1, 17] = 
+         0., $CellContext`dOf[83, 7, 13] = -1.5, $CellContext`dOf[
+          83, 7, 14] = -1.5, $CellContext`dOf[
+          83, 7, 16] = -1.5, $CellContext`dOf[
+          83, 7, 17] = -1.5, $CellContext`dOf[
+          83, 7, 18] = -1.5, $CellContext`dOf[
+          83, 15, 3] = -1., $CellContext`dOf[
+          83, 15, 4] = -1., $CellContext`dOf[83, 15, 5] = 
+         0., $CellContext`dOf[83, 15, 6] = 0., $CellContext`dOf[83, 15, 10] = 
+         0.5, $CellContext`dOf[83, 15, 11] = 
+         0.33333333333333326`, $CellContext`dOf[83, 15, 12] = 
+         0.5, $CellContext`dOf[83, 15, 14] = -1., $CellContext`dOf[
+          83, 15, 18] = -1., $CellContext`dOf[90, 1, 1] = 
+         0., $CellContext`dOf[90, 1, 3] = 2., $CellContext`dOf[90, 1, 5] = 
+         0., $CellContext`dOf[90, 1, 6] = 1., $CellContext`dOf[90, 1, 7] = 
+         0., $CellContext`dOf[90, 1, 8] = 0., $CellContext`dOf[90, 1, 9] = 
+         0., $CellContext`dOf[90, 3, 2] = -1., $CellContext`dOf[90, 3, 4] = 
+         0., $CellContext`dOf[90, 3, 5] = -2., $CellContext`dOf[
+          90, 3, 7] = -2., $CellContext`dOf[90, 3, 8] = -2., $CellContext`dOf[
+          90, 3, 9] = -2., $CellContext`dOf[
+          90, 3, 10] = -2., $CellContext`dOf[92, 1, 1] = 
+         0., $CellContext`dOf[92, 1, 2] = 0., $CellContext`dOf[92, 1, 3] = 
+         0., $CellContext`dOf[92, 1, 4] = 0., $CellContext`dOf[92, 1, 6] = 
+         2., $CellContext`dOf[92, 1, 7] = 2., $CellContext`dOf[92, 1, 8] = 
+         2., $CellContext`dOf[92, 1, 10] = 3., $CellContext`dOf[92, 1, 12] = 
+         2.6666666666666665`, $CellContext`dOf[92, 1, 13] = 
+         2.6666666666666665`, $CellContext`dOf[92, 1, 14] = 
+         2.6666666666666665`, $CellContext`dOf[92, 1, 15] = 
+         2.6666666666666665`, $CellContext`dOf[92, 1, 16] = 
+         2.25, $CellContext`dOf[92, 1, 17] = 
+         2.25, $CellContext`dOf[92, 1, 18] = 
+         2.25, $CellContext`dOf[92, 1, 20] = 1., $CellContext`dOf[92, 1, 21] = 
+         2., $CellContext`dOf[92, 1, 23] = 1., $CellContext`dOf[92, 1, 24] = 
+         2., $CellContext`dOf[92, 1, 25] = 2., $CellContext`dOf[92, 1, 27] = 
+         0., $CellContext`dOf[92, 1, 29] = 1., $CellContext`dOf[92, 1, 30] = 
+         2., $CellContext`dOf[92, 1, 31] = 0., $CellContext`dOf[92, 1, 33] = 
+         0., $CellContext`dOf[92, 1, 35] = 1., $CellContext`dOf[92, 1, 36] = 
+         0., $CellContext`dOf[92, 10, 5] = -2., $CellContext`dOf[
+          92, 10, 9] = -1., $CellContext`dOf[92, 10, 11] = 
+         0., $CellContext`dOf[92, 10, 19] = -3., $CellContext`dOf[
+          92, 10, 22] = -3., $CellContext`dOf[
+          92, 10, 26] = -1., $CellContext`dOf[
+          92, 10, 27] = -3., $CellContext`dOf[
+          92, 10, 28] = -3., $CellContext`dOf[
+          92, 10, 31] = -3., $CellContext`dOf[
+          92, 10, 32] = -3., $CellContext`dOf[
+          92, 10, 33] = -3., $CellContext`dOf[
+          92, 10, 34] = -3., $CellContext`dOf[
+          92, 10, 36] = -3., $CellContext`dOf[
+          92, 10, 37] = -3., $CellContext`dOf[
+          92, 10, 38] = -3., $CellContext`dOf[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`phs1, 
@@ -9069,7 +9978,644 @@ $CellContext`nOf[
             
             Blank[]]] := ($CellContext`nOf[$CellContext`el, \
 $CellContext`ncompd] = $CellContext`dataselectfun[$CellContext`el, \
-$CellContext`ncompd, 6]), $CellContext`dClf[
+$CellContext`ncompd, 6]), $CellContext`dClf[3, 2, 1] = 
+         0., $CellContext`dClf[3, 2, 2] = 0., $CellContext`dClf[3, 2, 5] = 
+         0., $CellContext`dClf[3, 2, 6] = 0., $CellContext`dClf[3, 2, 8] = 
+         0., $CellContext`dClf[3, 2, 10] = 1., $CellContext`dClf[3, 2, 11] = 
+         1., $CellContext`dClf[3, 2, 14] = 1., $CellContext`dClf[3, 2, 15] = 
+         1., $CellContext`dClf[3, 2, 16] = 1., $CellContext`dClf[3, 5, 10] = 
+         1., $CellContext`dClf[3, 5, 11] = 1., $CellContext`dClf[3, 5, 12] = 
+         1., $CellContext`dClf[3, 5, 16] = 
+         1., $CellContext`dClf[3, 10, 3] = -1., $CellContext`dClf[
+          3, 10, 4] = -1., $CellContext`dClf[
+          3, 10, 7] = -1., $CellContext`dClf[
+          3, 10, 9] = -1., $CellContext`dClf[3, 10, 12] = 
+         0., $CellContext`dClf[3, 10, 13] = 0., $CellContext`dClf[4, 1, 1] = 
+         0., $CellContext`dClf[4, 1, 3] = 0., $CellContext`dClf[4, 1, 4] = 
+         0., $CellContext`dClf[4, 1, 5] = 0., $CellContext`dClf[4, 1, 14] = 
+         2., $CellContext`dClf[4, 1, 15] = 2., $CellContext`dClf[4, 1, 16] = 
+         2., $CellContext`dClf[4, 1, 17] = 2., $CellContext`dClf[4, 1, 18] = 
+         2., $CellContext`dClf[4, 3, 2] = 0., $CellContext`dClf[4, 3, 6] = 
+         0., $CellContext`dClf[4, 3, 7] = 0., $CellContext`dClf[4, 3, 8] = 
+         0., $CellContext`dClf[4, 3, 9] = 0., $CellContext`dClf[4, 3, 10] = 
+         0., $CellContext`dClf[4, 3, 11] = 0., $CellContext`dClf[4, 3, 12] = 
+         0., $CellContext`dClf[4, 3, 13] = 1., $CellContext`dClf[4, 3, 14] = 
+         2., $CellContext`dClf[4, 3, 15] = 2., $CellContext`dClf[4, 3, 16] = 
+         2., $CellContext`dClf[4, 3, 17] = 2., $CellContext`dClf[4, 3, 18] = 
+         2., $CellContext`dClf[4, 3, 19] = 2., $CellContext`dClf[4, 3, 20] = 
+         2., $CellContext`dClf[11, 2, 1] = 0., $CellContext`dClf[11, 2, 2] = 
+         0., $CellContext`dClf[11, 2, 7] = 0., $CellContext`dClf[11, 2, 8] = 
+         0., $CellContext`dClf[11, 2, 9] = 0., $CellContext`dClf[11, 2, 10] = 
+         0., $CellContext`dClf[11, 2, 12] = 1., $CellContext`dClf[11, 2, 13] = 
+         1., $CellContext`dClf[11, 2, 15] = 1., $CellContext`dClf[11, 2, 16] = 
+         1., $CellContext`dClf[11, 8, 12] = 1., $CellContext`dClf[11, 8, 13] = 
+         1., $CellContext`dClf[11, 8, 14] = 1., $CellContext`dClf[11, 8, 17] = 
+         1., $CellContext`dClf[11, 12, 3] = -1., $CellContext`dClf[
+          11, 12, 4] = -1., $CellContext`dClf[
+          11, 12, 5] = -1., $CellContext`dClf[
+          11, 12, 6] = -1., $CellContext`dClf[
+          11, 12, 11] = -1., $CellContext`dClf[11, 12, 14] = 
+         0., $CellContext`dClf[11, 12, 17] = 0., $CellContext`dClf[12, 1, 1] = 
+         0., $CellContext`dClf[12, 1, 2] = 0., $CellContext`dClf[12, 1, 5] = 
+         0., $CellContext`dClf[12, 1, 7] = 2., $CellContext`dClf[12, 5, 6] = 
+         1., $CellContext`dClf[12, 5, 7] = 2., $CellContext`dClf[12, 5, 8] = 
+         2., $CellContext`dClf[12, 5, 9] = 
+         2., $CellContext`dClf[12, 7, 3] = -2., $CellContext`dClf[
+          12, 7, 4] = -2., $CellContext`dClf[
+          12, 7, 6] = -1., $CellContext`dClf[12, 7, 8] = 
+         0., $CellContext`dClf[12, 7, 9] = 0., $CellContext`dClf[13, 1, 1] = 
+         0., $CellContext`dClf[13, 1, 2] = 0., $CellContext`dClf[13, 1, 4] = 
+         0., $CellContext`dClf[13, 1, 5] = 0., $CellContext`dClf[13, 1, 9] = 
+         1., $CellContext`dClf[13, 1, 13] = 3., $CellContext`dClf[13, 1, 14] = 
+         3., $CellContext`dClf[13, 4, 3] = 0., $CellContext`dClf[13, 4, 6] = 
+         0., $CellContext`dClf[13, 4, 7] = 0., $CellContext`dClf[13, 4, 8] = 
+         1., $CellContext`dClf[13, 4, 10] = 1., $CellContext`dClf[13, 4, 11] = 
+         2., $CellContext`dClf[13, 4, 12] = 2., $CellContext`dClf[13, 4, 13] = 
+         3., $CellContext`dClf[13, 4, 14] = 3., $CellContext`dClf[13, 4, 15] = 
+         3., $CellContext`dClf[13, 4, 16] = 3., $CellContext`dClf[14, 1, 1] = 
+         0., $CellContext`dClf[14, 1, 4] = 0., $CellContext`dClf[14, 1, 5] = 
+         0., $CellContext`dClf[14, 1, 6] = 0., $CellContext`dClf[14, 1, 11] = 
+         4., $CellContext`dClf[14, 4, 2] = 0., $CellContext`dClf[14, 4, 3] = 
+         0., $CellContext`dClf[14, 4, 7] = 0., $CellContext`dClf[14, 4, 8] = 
+         0., $CellContext`dClf[14, 4, 9] = 2., $CellContext`dClf[14, 4, 10] = 
+         3., $CellContext`dClf[14, 4, 11] = 4., $CellContext`dClf[14, 4, 12] = 
+         4., $CellContext`dClf[19, 2, 1] = 0., $CellContext`dClf[19, 2, 2] = 
+         0., $CellContext`dClf[19, 2, 5] = 0., $CellContext`dClf[19, 2, 6] = 
+         0., $CellContext`dClf[19, 2, 7] = 0., $CellContext`dClf[19, 2, 8] = 
+         0., $CellContext`dClf[19, 2, 10] = 0., $CellContext`dClf[19, 2, 11] = 
+         0., $CellContext`dClf[19, 2, 12] = 0., $CellContext`dClf[19, 2, 13] = 
+         0., $CellContext`dClf[19, 2, 15] = 1., $CellContext`dClf[19, 2, 16] = 
+         1., $CellContext`dClf[19, 2, 18] = 1., $CellContext`dClf[19, 2, 19] = 
+         1., $CellContext`dClf[19, 10, 15] = 
+         1., $CellContext`dClf[19, 10, 16] = 
+         1., $CellContext`dClf[19, 10, 17] = 
+         1., $CellContext`dClf[19, 10, 20] = 
+         1., $CellContext`dClf[19, 15, 3] = -1., $CellContext`dClf[
+          19, 15, 4] = -1., $CellContext`dClf[
+          19, 15, 9] = -1., $CellContext`dClf[
+          19, 15, 14] = -1., $CellContext`dClf[19, 15, 17] = 
+         0., $CellContext`dClf[19, 15, 20] = 0., $CellContext`dClf[20, 1, 1] = 
+         0., $CellContext`dClf[20, 1, 2] = 0., $CellContext`dClf[20, 1, 3] = 
+         0., $CellContext`dClf[20, 1, 6] = 0., $CellContext`dClf[20, 1, 8] = 
+         0., $CellContext`dClf[20, 1, 10] = 2., $CellContext`dClf[20, 1, 11] = 
+         2., $CellContext`dClf[20, 1, 13] = 2., $CellContext`dClf[20, 6, 9] = 
+         1., $CellContext`dClf[20, 6, 10] = 2., $CellContext`dClf[20, 6, 11] = 
+         2., $CellContext`dClf[20, 6, 12] = 
+         2., $CellContext`dClf[20, 10, 4] = -2., $CellContext`dClf[
+          20, 10, 5] = -2., $CellContext`dClf[
+          20, 10, 7] = -2., $CellContext`dClf[
+          20, 10, 9] = -1., $CellContext`dClf[20, 10, 12] = 
+         0., $CellContext`dClf[21, 1, 1] = 0., $CellContext`dClf[21, 1, 2] = 
+         0., $CellContext`dClf[21, 1, 3] = 0., $CellContext`dClf[21, 1, 8] = 
+         0., $CellContext`dClf[21, 1, 9] = 0., $CellContext`dClf[21, 1, 10] = 
+         3., $CellContext`dClf[21, 1, 11] = 3., $CellContext`dClf[21, 8, 4] = 
+         0., $CellContext`dClf[21, 8, 5] = 0., $CellContext`dClf[21, 8, 6] = 
+         0., $CellContext`dClf[21, 8, 7] = 0., $CellContext`dClf[21, 8, 10] = 
+         3., $CellContext`dClf[21, 8, 11] = 3., $CellContext`dClf[21, 8, 12] = 
+         3., $CellContext`dClf[22, 1, 1] = 0., $CellContext`dClf[22, 1, 2] = 
+         0., $CellContext`dClf[22, 1, 3] = 0., $CellContext`dClf[22, 1, 4] = 
+         0., $CellContext`dClf[22, 1, 6] = 0., $CellContext`dClf[22, 1, 7] = 
+         0., $CellContext`dClf[22, 1, 8] = 0., $CellContext`dClf[22, 1, 9] = 
+         0., $CellContext`dClf[22, 1, 10] = 0., $CellContext`dClf[22, 1, 11] = 
+         2., $CellContext`dClf[22, 1, 13] = 3., $CellContext`dClf[22, 1, 15] = 
+         4., $CellContext`dClf[22, 1, 16] = 4., $CellContext`dClf[22, 4, 5] = 
+         0., $CellContext`dClf[22, 4, 11] = 2., $CellContext`dClf[22, 4, 12] = 
+         2., $CellContext`dClf[22, 4, 13] = 3., $CellContext`dClf[22, 4, 14] = 
+         3., $CellContext`dClf[22, 4, 15] = 4., $CellContext`dClf[22, 4, 16] = 
+         4., $CellContext`dClf[22, 4, 17] = 4., $CellContext`dClf[22, 4, 18] = 
+         3., $CellContext`dClf[23, 1, 1] = 0., $CellContext`dClf[23, 1, 2] = 
+         0., $CellContext`dClf[23, 1, 3] = 0., $CellContext`dClf[23, 1, 4] = 
+         0., $CellContext`dClf[23, 1, 6] = 0., $CellContext`dClf[23, 1, 7] = 
+         0., $CellContext`dClf[23, 1, 8] = 0., $CellContext`dClf[23, 1, 10] = 
+         0., $CellContext`dClf[23, 1, 11] = 0., $CellContext`dClf[23, 1, 12] = 
+         0., $CellContext`dClf[23, 1, 13] = 0., $CellContext`dClf[23, 1, 14] = 
+         0., $CellContext`dClf[23, 1, 15] = 0., $CellContext`dClf[23, 1, 16] = 
+         0., $CellContext`dClf[23, 1, 18] = 2., $CellContext`dClf[23, 1, 19] = 
+         2., $CellContext`dClf[23, 1, 21] = 3., $CellContext`dClf[23, 1, 23] = 
+         3., $CellContext`dClf[23, 1, 25] = 4., $CellContext`dClf[23, 15, 5] = 
+         0., $CellContext`dClf[23, 15, 9] = 0., $CellContext`dClf[23, 15, 17] = 
+         0., $CellContext`dClf[23, 15, 18] = 
+         2., $CellContext`dClf[23, 15, 19] = 
+         2., $CellContext`dClf[23, 15, 20] = 
+         2., $CellContext`dClf[23, 15, 21] = 
+         3., $CellContext`dClf[23, 15, 22] = 
+         3., $CellContext`dClf[23, 15, 24] = 
+         3., $CellContext`dClf[23, 15, 25] = 
+         4., $CellContext`dClf[23, 15, 26] = 
+         4., $CellContext`dClf[23, 15, 27] = 5., $CellContext`dClf[24, 1, 1] = 
+         0., $CellContext`dClf[24, 1, 4] = 0., $CellContext`dClf[24, 1, 7] = 
+         0., $CellContext`dClf[24, 1, 9] = 0., $CellContext`dClf[24, 1, 11] = 
+         0., $CellContext`dClf[24, 1, 12] = 0., $CellContext`dClf[24, 1, 14] = 
+         2., $CellContext`dClf[24, 1, 17] = 2., $CellContext`dClf[24, 1, 19] = 
+         3., $CellContext`dClf[24, 9, 2] = 0., $CellContext`dClf[24, 9, 3] = 
+         0., $CellContext`dClf[24, 9, 5] = 0., $CellContext`dClf[24, 9, 6] = 
+         0., $CellContext`dClf[24, 9, 8] = 0., $CellContext`dClf[24, 9, 10] = 
+         0., $CellContext`dClf[24, 9, 13] = 1., $CellContext`dClf[24, 9, 14] = 
+         2., $CellContext`dClf[24, 9, 15] = 2., $CellContext`dClf[24, 9, 16] = 
+         2., $CellContext`dClf[24, 9, 18] = 2., $CellContext`dClf[24, 9, 19] = 
+         3., $CellContext`dClf[24, 9, 20] = 3., $CellContext`dClf[24, 9, 21] = 
+         3., $CellContext`dClf[24, 9, 22] = 4., $CellContext`dClf[24, 9, 23] = 
+         4., $CellContext`dClf[24, 9, 24] = 5., $CellContext`dClf[24, 9, 25] = 
+         6., $CellContext`dClf[25, 1, 1] = 0., $CellContext`dClf[25, 1, 2] = 
+         0., $CellContext`dClf[25, 1, 3] = 0., $CellContext`dClf[25, 1, 4] = 
+         0., $CellContext`dClf[25, 1, 6] = 0., $CellContext`dClf[25, 1, 8] = 
+         0., $CellContext`dClf[25, 1, 9] = 0., $CellContext`dClf[25, 1, 12] = 
+         2., $CellContext`dClf[25, 1, 13] = 2., $CellContext`dClf[25, 6, 5] = 
+         0., $CellContext`dClf[25, 6, 7] = 0., $CellContext`dClf[25, 6, 10] = 
+         1., $CellContext`dClf[25, 6, 11] = 1., $CellContext`dClf[25, 6, 12] = 
+         2., $CellContext`dClf[25, 6, 13] = 2., $CellContext`dClf[25, 6, 14] = 
+         2., $CellContext`dClf[25, 6, 15] = 4., $CellContext`dClf[25, 6, 16] = 
+         2., $CellContext`dClf[26, 1, 1] = 0., $CellContext`dClf[26, 1, 2] = 
+         0., $CellContext`dClf[26, 1, 3] = 0., $CellContext`dClf[26, 1, 4] = 
+         0., $CellContext`dClf[26, 1, 5] = 0., $CellContext`dClf[26, 1, 7] = 
+         1., $CellContext`dClf[26, 1, 9] = 2., $CellContext`dClf[26, 1, 10] = 
+         2., $CellContext`dClf[26, 1, 12] = 3., $CellContext`dClf[26, 1, 13] = 
+         3., $CellContext`dClf[26, 4, 6] = 1., $CellContext`dClf[26, 4, 8] = 
+         1., $CellContext`dClf[26, 4, 9] = 2., $CellContext`dClf[26, 4, 10] = 
+         2., $CellContext`dClf[26, 4, 11] = 2., $CellContext`dClf[26, 4, 12] = 
+         3., $CellContext`dClf[26, 4, 13] = 3., $CellContext`dClf[26, 4, 14] = 
+         3., $CellContext`dClf[27, 1, 1] = 0., $CellContext`dClf[27, 1, 2] = 
+         0., $CellContext`dClf[27, 1, 3] = 0., $CellContext`dClf[27, 1, 4] = 
+         0., $CellContext`dClf[27, 1, 6] = 2., $CellContext`dClf[27, 1, 7] = 
+         2., $CellContext`dClf[27, 4, 5] = 1., $CellContext`dClf[27, 4, 6] = 
+         2., $CellContext`dClf[27, 4, 7] = 2., $CellContext`dClf[27, 4, 8] = 
+         2., $CellContext`dClf[27, 4, 9] = 3., $CellContext`dClf[27, 4, 10] = 
+         2., $CellContext`dClf[28, 1, 1] = 0., $CellContext`dClf[28, 1, 2] = 
+         0., $CellContext`dClf[28, 1, 3] = 0., $CellContext`dClf[28, 1, 4] = 
+         0., $CellContext`dClf[28, 1, 7] = 2., $CellContext`dClf[28, 1, 8] = 
+         2., $CellContext`dClf[28, 3, 6] = 1., $CellContext`dClf[28, 3, 7] = 
+         2., $CellContext`dClf[28, 3, 8] = 2., $CellContext`dClf[28, 3, 9] = 
+         2., $CellContext`dClf[28, 3, 10] = 3., $CellContext`dClf[28, 3, 11] = 
+         2., $CellContext`dClf[28, 7, 5] = -2., $CellContext`dClf[
+          28, 7, 6] = -1., $CellContext`dClf[28, 7, 9] = 
+         0., $CellContext`dClf[28, 7, 10] = 1., $CellContext`dClf[28, 7, 11] = 
+         0., $CellContext`dClf[29, 1, 1] = 0., $CellContext`dClf[29, 1, 2] = 
+         0., $CellContext`dClf[29, 1, 5] = 0., $CellContext`dClf[29, 1, 6] = 
+         0., $CellContext`dClf[29, 1, 7] = 0., $CellContext`dClf[29, 1, 8] = 
+         1., $CellContext`dClf[29, 1, 9] = 1., $CellContext`dClf[29, 1, 10] = 
+         1., $CellContext`dClf[29, 1, 12] = 2., $CellContext`dClf[29, 1, 13] = 
+         2., $CellContext`dClf[29, 1, 14] = 2., $CellContext`dClf[29, 5, 8] = 
+         1., $CellContext`dClf[29, 5, 9] = 1., $CellContext`dClf[29, 5, 10] = 
+         1., $CellContext`dClf[29, 5, 11] = 1., $CellContext`dClf[29, 5, 12] = 
+         2., $CellContext`dClf[29, 5, 13] = 2., $CellContext`dClf[29, 5, 14] = 
+         2., $CellContext`dClf[29, 5, 15] = 2., $CellContext`dClf[29, 5, 16] = 
+         1., $CellContext`dClf[29, 5, 17] = 
+         2., $CellContext`dClf[29, 12, 3] = -2., $CellContext`dClf[
+          29, 12, 4] = -2., $CellContext`dClf[
+          29, 12, 11] = -1., $CellContext`dClf[29, 12, 15] = 
+         0., $CellContext`dClf[29, 12, 16] = -1., $CellContext`dClf[
+          29, 12, 17] = 0., $CellContext`dClf[30, 1, 1] = 
+         0., $CellContext`dClf[30, 1, 2] = 0., $CellContext`dClf[30, 1, 4] = 
+         2., $CellContext`dClf[30, 1, 5] = 2., $CellContext`dClf[30, 2, 3] = 
+         1., $CellContext`dClf[30, 2, 4] = 2., $CellContext`dClf[30, 2, 5] = 
+         2., $CellContext`dClf[30, 2, 6] = 2., $CellContext`dClf[30, 2, 7] = 
+         2., $CellContext`dClf[30, 5, 3] = -1., $CellContext`dClf[30, 5, 6] = 
+         0., $CellContext`dClf[30, 5, 7] = 0., $CellContext`dClf[31, 2, 1] = 
+         0., $CellContext`dClf[31, 2, 2] = 0., $CellContext`dClf[31, 2, 7] = 
+         0., $CellContext`dClf[31, 2, 8] = 0., $CellContext`dClf[31, 2, 10] = 
+         2., $CellContext`dClf[31, 2, 12] = 3., $CellContext`dClf[31, 2, 13] = 
+         3., $CellContext`dClf[31, 7, 3] = 0., $CellContext`dClf[31, 7, 4] = 
+         0., $CellContext`dClf[31, 7, 5] = 0., $CellContext`dClf[31, 7, 6] = 
+         0., $CellContext`dClf[31, 7, 9] = 1., $CellContext`dClf[31, 7, 10] = 
+         2., $CellContext`dClf[31, 7, 11] = 1., $CellContext`dClf[31, 7, 12] = 
+         3., $CellContext`dClf[31, 7, 13] = 3., $CellContext`dClf[31, 7, 14] = 
+         3., $CellContext`dClf[31, 7, 15] = 2., $CellContext`dClf[31, 7, 16] = 
+         3., $CellContext`dClf[32, 1, 1] = 0., $CellContext`dClf[32, 1, 2] = 
+         0., $CellContext`dClf[32, 1, 6] = 0., $CellContext`dClf[32, 1, 7] = 
+         0., $CellContext`dClf[32, 1, 8] = 0., $CellContext`dClf[32, 1, 9] = 
+         0., $CellContext`dClf[32, 1, 14] = 4., $CellContext`dClf[32, 6, 3] = 
+         0., $CellContext`dClf[32, 6, 4] = 0., $CellContext`dClf[32, 6, 5] = 
+         0., $CellContext`dClf[32, 6, 10] = 0., $CellContext`dClf[32, 6, 11] = 
+         1., $CellContext`dClf[32, 6, 12] = 2., $CellContext`dClf[32, 6, 13] = 
+         3., $CellContext`dClf[32, 6, 14] = 4., $CellContext`dClf[32, 6, 15] = 
+         4., $CellContext`dClf[33, 1, 1] = 0., $CellContext`dClf[33, 1, 2] = 
+         0., $CellContext`dClf[33, 1, 7] = 0., $CellContext`dClf[33, 1, 8] = 
+         0., $CellContext`dClf[33, 1, 9] = 0., $CellContext`dClf[33, 1, 10] = 
+         0., $CellContext`dClf[33, 1, 16] = 3., $CellContext`dClf[33, 10, 3] = 
+         0., $CellContext`dClf[33, 10, 4] = 0., $CellContext`dClf[33, 10, 5] = 
+         0., $CellContext`dClf[33, 10, 6] = 0., $CellContext`dClf[33, 10, 11] = 
+         0., $CellContext`dClf[33, 10, 12] = 
+         0., $CellContext`dClf[33, 10, 13] = 
+         0., $CellContext`dClf[33, 10, 14] = 
+         0., $CellContext`dClf[33, 10, 15] = 
+         0., $CellContext`dClf[33, 10, 16] = 
+         3., $CellContext`dClf[33, 10, 17] = 3., $CellContext`dClf[37, 2, 1] = 
+         0., $CellContext`dClf[37, 2, 2] = 0., $CellContext`dClf[37, 2, 6] = 
+         0., $CellContext`dClf[37, 2, 7] = 0., $CellContext`dClf[37, 2, 8] = 
+         0., $CellContext`dClf[37, 2, 9] = 0., $CellContext`dClf[37, 2, 11] = 
+         0., $CellContext`dClf[37, 2, 12] = 0., $CellContext`dClf[37, 2, 13] = 
+         0., $CellContext`dClf[37, 2, 14] = 0., $CellContext`dClf[37, 2, 16] = 
+         1., $CellContext`dClf[37, 2, 17] = 1., $CellContext`dClf[37, 11, 16] = 
+         1., $CellContext`dClf[37, 11, 17] = 
+         1., $CellContext`dClf[37, 11, 18] = 
+         1., $CellContext`dClf[37, 11, 19] = 
+         1., $CellContext`dClf[37, 16, 3] = -1., $CellContext`dClf[
+          37, 16, 4] = -1., $CellContext`dClf[
+          37, 16, 5] = -1., $CellContext`dClf[
+          37, 16, 10] = -1., $CellContext`dClf[
+          37, 16, 15] = -1., $CellContext`dClf[37, 16, 18] = 
+         0., $CellContext`dClf[37, 16, 19] = 0., $CellContext`dClf[38, 1, 1] = 
+         0., $CellContext`dClf[38, 1, 2] = 0., $CellContext`dClf[38, 1, 3] = 
+         0., $CellContext`dClf[38, 1, 4] = 0., $CellContext`dClf[38, 1, 5] = 
+         0., $CellContext`dClf[38, 1, 7] = 0., $CellContext`dClf[38, 1, 9] = 
+         2., $CellContext`dClf[38, 1, 10] = 2., $CellContext`dClf[38, 1, 11] = 
+         2., $CellContext`dClf[38, 4, 8] = 1., $CellContext`dClf[38, 4, 9] = 
+         2., $CellContext`dClf[38, 4, 10] = 2., $CellContext`dClf[38, 4, 11] = 
+         2., $CellContext`dClf[38, 4, 12] = 
+         2., $CellContext`dClf[38, 9, 6] = -2., $CellContext`dClf[
+          38, 9, 8] = -1., $CellContext`dClf[38, 9, 12] = 
+         0., $CellContext`dClf[39, 1, 1] = 0., $CellContext`dClf[39, 1, 2] = 
+         0., $CellContext`dClf[39, 1, 3] = 0., $CellContext`dClf[39, 1, 8] = 
+         0., $CellContext`dClf[39, 1, 9] = 0., $CellContext`dClf[39, 1, 10] = 
+         0., $CellContext`dClf[39, 1, 11] = 3., $CellContext`dClf[39, 1, 12] = 
+         3., $CellContext`dClf[39, 8, 4] = 0., $CellContext`dClf[39, 8, 5] = 
+         0., $CellContext`dClf[39, 8, 6] = 0., $CellContext`dClf[39, 8, 7] = 
+         0., $CellContext`dClf[39, 8, 11] = 3., $CellContext`dClf[39, 8, 12] = 
+         3., $CellContext`dClf[39, 8, 13] = 3., $CellContext`dClf[40, 1, 1] = 
+         0., $CellContext`dClf[40, 1, 3] = 0., $CellContext`dClf[40, 1, 4] = 
+         0., $CellContext`dClf[40, 1, 5] = 0., $CellContext`dClf[40, 1, 6] = 
+         0., $CellContext`dClf[40, 1, 9] = 2., $CellContext`dClf[40, 1, 10] = 
+         2., $CellContext`dClf[40, 1, 12] = 3., $CellContext`dClf[40, 1, 13] = 
+         3., $CellContext`dClf[40, 1, 15] = 4., $CellContext`dClf[40, 1, 16] = 
+         4., $CellContext`dClf[40, 3, 2] = 0., $CellContext`dClf[40, 3, 7] = 
+         0., $CellContext`dClf[40, 3, 8] = 1., $CellContext`dClf[40, 3, 9] = 
+         2., $CellContext`dClf[40, 3, 10] = 2., $CellContext`dClf[40, 3, 11] = 
+         2., $CellContext`dClf[40, 3, 12] = 3., $CellContext`dClf[40, 3, 13] = 
+         3., $CellContext`dClf[40, 3, 14] = 3., $CellContext`dClf[40, 3, 15] = 
+         4., $CellContext`dClf[40, 3, 16] = 4., $CellContext`dClf[40, 3, 17] = 
+         4., $CellContext`dClf[41, 1, 1] = 0., $CellContext`dClf[41, 1, 2] = 
+         0., $CellContext`dClf[41, 1, 3] = 0., $CellContext`dClf[41, 1, 4] = 
+         0., $CellContext`dClf[41, 1, 5] = 0., $CellContext`dClf[41, 1, 6] = 
+         0., $CellContext`dClf[41, 1, 8] = 0., $CellContext`dClf[41, 1, 9] = 
+         0., $CellContext`dClf[41, 1, 10] = 2., $CellContext`dClf[41, 1, 11] = 
+         2., $CellContext`dClf[41, 1, 12] = 3., $CellContext`dClf[41, 1, 13] = 
+         3., $CellContext`dClf[41, 1, 15] = 4., $CellContext`dClf[41, 1, 17] = 
+         5., $CellContext`dClf[41, 1, 18] = 5., $CellContext`dClf[41, 8, 7] = 
+         0., $CellContext`dClf[41, 8, 10] = 2., $CellContext`dClf[41, 8, 12] = 
+         3., $CellContext`dClf[41, 8, 14] = 3., $CellContext`dClf[41, 8, 15] = 
+         4., $CellContext`dClf[41, 8, 16] = 4., $CellContext`dClf[41, 8, 17] = 
+         5., $CellContext`dClf[41, 8, 18] = 5., $CellContext`dClf[41, 8, 19] = 
+         5., $CellContext`dClf[42, 1, 1] = 0., $CellContext`dClf[42, 1, 2] = 
+         0., $CellContext`dClf[42, 1, 4] = 0., $CellContext`dClf[42, 1, 5] = 
+         0., $CellContext`dClf[42, 1, 13] = 2., $CellContext`dClf[42, 1, 15] = 
+         2., $CellContext`dClf[42, 1, 17] = 2., $CellContext`dClf[42, 1, 18] = 
+         2., $CellContext`dClf[42, 1, 20] = 3., $CellContext`dClf[42, 1, 22] = 
+         3., $CellContext`dClf[42, 1, 23] = 4., $CellContext`dClf[42, 1, 24] = 
+         4., $CellContext`dClf[42, 1, 26] = 4., $CellContext`dClf[42, 1, 28] = 
+         4., $CellContext`dClf[42, 1, 29] = 4., $CellContext`dClf[42, 1, 31] = 
+         5., $CellContext`dClf[42, 1, 32] = 5., $CellContext`dClf[42, 1, 34] = 
+         6., $CellContext`dClf[42, 4, 3] = 0., $CellContext`dClf[42, 4, 6] = 
+         0., $CellContext`dClf[42, 4, 7] = 0., $CellContext`dClf[42, 4, 8] = 
+         0., $CellContext`dClf[42, 4, 9] = 0., $CellContext`dClf[42, 4, 10] = 
+         0., $CellContext`dClf[42, 4, 11] = 1., $CellContext`dClf[42, 4, 12] = 
+         1., $CellContext`dClf[42, 4, 13] = 2., $CellContext`dClf[42, 4, 14] = 
+         2., $CellContext`dClf[42, 4, 16] = 2., $CellContext`dClf[42, 4, 19] = 
+         2., $CellContext`dClf[42, 4, 20] = 3., $CellContext`dClf[42, 4, 21] = 
+         3., $CellContext`dClf[42, 4, 23] = 4., $CellContext`dClf[42, 4, 24] = 
+         4., $CellContext`dClf[42, 4, 25] = 4., $CellContext`dClf[42, 4, 27] = 
+         4., $CellContext`dClf[42, 4, 30] = 4., $CellContext`dClf[42, 4, 31] = 
+         5., $CellContext`dClf[42, 4, 32] = 5., $CellContext`dClf[42, 4, 33] = 
+         5., $CellContext`dClf[42, 4, 34] = 6., $CellContext`dClf[42, 4, 35] = 
+         6., $CellContext`dClf[44, 1, 1] = 0., $CellContext`dClf[44, 1, 2] = 
+         0., $CellContext`dClf[44, 1, 4] = 0., $CellContext`dClf[44, 1, 5] = 
+         0., $CellContext`dClf[44, 1, 7] = 3., $CellContext`dClf[44, 2, 3] = 
+         0., $CellContext`dClf[44, 2, 6] = 0., $CellContext`dClf[44, 2, 7] = 
+         3., $CellContext`dClf[44, 2, 8] = 3., $CellContext`dClf[44, 2, 9] = 
+         4., $CellContext`dClf[45, 1, 1] = 0., $CellContext`dClf[45, 1, 3] = 
+         0., $CellContext`dClf[45, 1, 5] = 0., $CellContext`dClf[45, 1, 8] = 
+         3., $CellContext`dClf[45, 5, 7] = 2., $CellContext`dClf[45, 5, 8] = 
+         3., $CellContext`dClf[45, 5, 9] = 
+         3., $CellContext`dClf[45, 8, 2] = -3., $CellContext`dClf[
+          45, 8, 4] = -3., $CellContext`dClf[
+          45, 8, 6] = -3., $CellContext`dClf[
+          45, 8, 7] = -1., $CellContext`dClf[45, 8, 9] = 
+         0., $CellContext`dClf[46, 1, 1] = 0., $CellContext`dClf[46, 1, 2] = 
+         0., $CellContext`dClf[46, 1, 4] = 0., $CellContext`dClf[46, 1, 5] = 
+         2., $CellContext`dClf[46, 1, 6] = 2., $CellContext`dClf[46, 4, 5] = 
+         2., $CellContext`dClf[46, 4, 6] = 2., $CellContext`dClf[46, 4, 7] = 
+         2., $CellContext`dClf[46, 4, 8] = 2., $CellContext`dClf[46, 4, 9] = 
+         2., $CellContext`dClf[46, 5, 3] = -2., $CellContext`dClf[46, 5, 7] = 
+         0., $CellContext`dClf[46, 5, 8] = 0., $CellContext`dClf[46, 5, 9] = 
+         0., $CellContext`dClf[47, 1, 1] = 0., $CellContext`dClf[47, 1, 3] = 
+         0., $CellContext`dClf[47, 1, 4] = 0., $CellContext`dClf[47, 1, 5] = 
+         1., $CellContext`dClf[47, 1, 6] = 1., $CellContext`dClf[47, 1, 7] = 
+         1., $CellContext`dClf[47, 1, 8] = 
+         1., $CellContext`dClf[47, 5, 2] = -1., $CellContext`dClf[47, 5, 7] = 
+         0., $CellContext`dClf[48, 2, 1] = 0., $CellContext`dClf[48, 2, 2] = 
+         0., $CellContext`dClf[48, 2, 3] = 0., $CellContext`dClf[48, 2, 6] = 
+         2., $CellContext`dClf[48, 2, 7] = 2., $CellContext`dClf[48, 3, 5] = 
+         1., $CellContext`dClf[48, 3, 6] = 2., $CellContext`dClf[48, 3, 7] = 
+         2., $CellContext`dClf[48, 3, 8] = 
+         2., $CellContext`dClf[48, 6, 4] = -2., $CellContext`dClf[
+          48, 6, 5] = -1., $CellContext`dClf[48, 6, 8] = 
+         0., $CellContext`dClf[49, 2, 1] = 0., $CellContext`dClf[49, 2, 2] = 
+         0., $CellContext`dClf[49, 2, 7] = 0., $CellContext`dClf[49, 2, 8] = 
+         0., $CellContext`dClf[49, 2, 9] = 1., $CellContext`dClf[49, 2, 10] = 
+         1., $CellContext`dClf[49, 2, 11] = 1., $CellContext`dClf[49, 2, 13] = 
+         2., $CellContext`dClf[49, 2, 16] = 3., $CellContext`dClf[49, 2, 17] = 
+         3., $CellContext`dClf[49, 7, 9] = 1., $CellContext`dClf[49, 7, 10] = 
+         1., $CellContext`dClf[49, 7, 11] = 1., $CellContext`dClf[49, 7, 12] = 
+         1., $CellContext`dClf[49, 7, 13] = 2., $CellContext`dClf[49, 7, 14] = 
+         2., $CellContext`dClf[49, 7, 15] = 1., $CellContext`dClf[49, 7, 16] = 
+         3., $CellContext`dClf[49, 7, 17] = 3., $CellContext`dClf[49, 7, 18] = 
+         3., $CellContext`dClf[49, 7, 19] = 
+         3., $CellContext`dClf[49, 16, 3] = -3., $CellContext`dClf[
+          49, 16, 4] = -3., $CellContext`dClf[
+          49, 16, 5] = -3., $CellContext`dClf[
+          49, 16, 6] = -3., $CellContext`dClf[
+          49, 16, 12] = -2., $CellContext`dClf[
+          49, 16, 14] = -1., $CellContext`dClf[
+          49, 16, 15] = -2., $CellContext`dClf[49, 16, 18] = 
+         0., $CellContext`dClf[49, 16, 19] = 0., $CellContext`dClf[50, 2, 1] = 
+         0., $CellContext`dClf[50, 2, 2] = 0., $CellContext`dClf[50, 2, 3] = 
+         0., $CellContext`dClf[50, 2, 4] = 0., $CellContext`dClf[50, 2, 6] = 
+         0., $CellContext`dClf[50, 2, 7] = 0., $CellContext`dClf[50, 2, 10] = 
+         2., $CellContext`dClf[50, 2, 11] = 2., $CellContext`dClf[50, 2, 14] = 
+         4., $CellContext`dClf[50, 6, 5] = 0., $CellContext`dClf[50, 6, 8] = 
+         0., $CellContext`dClf[50, 6, 9] = 1., $CellContext`dClf[50, 6, 10] = 
+         2., $CellContext`dClf[50, 6, 11] = 2., $CellContext`dClf[50, 6, 12] = 
+         2., $CellContext`dClf[50, 6, 13] = 3., $CellContext`dClf[50, 6, 14] = 
+         4., $CellContext`dClf[50, 6, 15] = 4., $CellContext`dClf[51, 1, 1] = 
+         0., $CellContext`dClf[51, 1, 2] = 0., $CellContext`dClf[51, 1, 5] = 
+         0., $CellContext`dClf[51, 1, 6] = 0., $CellContext`dClf[51, 1, 7] = 
+         0., $CellContext`dClf[51, 1, 10] = 1., $CellContext`dClf[51, 1, 11] = 
+         3., $CellContext`dClf[51, 1, 12] = 3., $CellContext`dClf[51, 5, 9] = 
+         1., $CellContext`dClf[51, 5, 11] = 3., $CellContext`dClf[51, 5, 12] = 
+         3., $CellContext`dClf[51, 5, 13] = 3., $CellContext`dClf[51, 5, 14] = 
+         5., $CellContext`dClf[51, 10, 3] = -1., $CellContext`dClf[
+          51, 10, 4] = -1., $CellContext`dClf[
+          51, 10, 8] = -1., $CellContext`dClf[51, 10, 9] = 
+         0., $CellContext`dClf[51, 10, 13] = 
+         2., $CellContext`dClf[51, 10, 14] = 4., $CellContext`dClf[55, 2, 1] = 
+         0., $CellContext`dClf[55, 2, 2] = 0., $CellContext`dClf[55, 2, 6] = 
+         0., $CellContext`dClf[55, 2, 7] = 0., $CellContext`dClf[55, 2, 9] = 
+         0., $CellContext`dClf[55, 2, 10] = 0., $CellContext`dClf[55, 2, 12] = 
+         0., $CellContext`dClf[55, 2, 13] = 1., $CellContext`dClf[55, 2, 14] = 
+         1., $CellContext`dClf[55, 2, 15] = 1., $CellContext`dClf[55, 12, 13] = 
+         1., $CellContext`dClf[55, 12, 14] = 
+         1., $CellContext`dClf[55, 12, 15] = 
+         1., $CellContext`dClf[55, 12, 16] = 
+         1., $CellContext`dClf[55, 12, 17] = 
+         1., $CellContext`dClf[55, 13, 3] = -1., $CellContext`dClf[
+          55, 13, 4] = -1., $CellContext`dClf[
+          55, 13, 5] = -1., $CellContext`dClf[
+          55, 13, 8] = -1., $CellContext`dClf[
+          55, 13, 11] = -1., $CellContext`dClf[55, 13, 16] = 
+         0., $CellContext`dClf[55, 13, 17] = 0., $CellContext`dClf[56, 1, 1] = 
+         0., $CellContext`dClf[56, 1, 2] = 0., $CellContext`dClf[56, 1, 3] = 
+         0., $CellContext`dClf[56, 1, 5] = 0., $CellContext`dClf[56, 1, 7] = 
+         2., $CellContext`dClf[56, 1, 8] = 2., $CellContext`dClf[56, 1, 9] = 
+         2., $CellContext`dClf[56, 5, 6] = 1., $CellContext`dClf[56, 5, 7] = 
+         2., $CellContext`dClf[56, 5, 8] = 2., $CellContext`dClf[56, 5, 9] = 
+         2., $CellContext`dClf[56, 5, 10] = 
+         2., $CellContext`dClf[56, 7, 4] = -2., $CellContext`dClf[
+          56, 7, 6] = -1., $CellContext`dClf[56, 7, 10] = 
+         0., $CellContext`dClf[57, 2, 1] = 0., $CellContext`dClf[57, 2, 2] = 
+         0., $CellContext`dClf[57, 2, 3] = 0., $CellContext`dClf[57, 2, 4] = 
+         0., $CellContext`dClf[57, 2, 10] = 0., $CellContext`dClf[57, 2, 11] = 
+         1., $CellContext`dClf[57, 2, 12] = 3., $CellContext`dClf[57, 2, 13] = 
+         3., $CellContext`dClf[57, 10, 12] = 
+         3., $CellContext`dClf[57, 10, 13] = 
+         3., $CellContext`dClf[57, 10, 14] = 
+         3., $CellContext`dClf[57, 12, 5] = -3., $CellContext`dClf[
+          57, 12, 6] = -3., $CellContext`dClf[
+          57, 12, 7] = -3., $CellContext`dClf[
+          57, 12, 8] = -3., $CellContext`dClf[
+          57, 12, 9] = -3., $CellContext`dClf[57, 12, 14] = 
+         0., $CellContext`dClf[58, 1, 1] = 0., $CellContext`dClf[58, 1, 3] = 
+         0., $CellContext`dClf[58, 1, 4] = 0., $CellContext`dClf[58, 1, 5] = 
+         0., $CellContext`dClf[58, 1, 6] = 0., $CellContext`dClf[58, 1, 7] = 
+         1., $CellContext`dClf[58, 1, 8] = 3., $CellContext`dClf[58, 1, 9] = 
+         3., $CellContext`dClf[58, 5, 2] = 0., $CellContext`dClf[58, 5, 8] = 
+         3., $CellContext`dClf[58, 5, 9] = 3., $CellContext`dClf[58, 5, 10] = 
+         3., $CellContext`dClf[59, 1, 1] = 0., $CellContext`dClf[59, 1, 2] = 
+         0., $CellContext`dClf[59, 1, 3] = 0., $CellContext`dClf[59, 1, 5] = 
+         0., $CellContext`dClf[59, 1, 6] = 0., $CellContext`dClf[59, 1, 7] = 
+         0., $CellContext`dClf[59, 1, 8] = 0., $CellContext`dClf[59, 1, 9] = 
+         1., $CellContext`dClf[59, 1, 10] = 3., $CellContext`dClf[59, 1, 11] = 
+         3., $CellContext`dClf[59, 8, 10] = 3., $CellContext`dClf[59, 8, 11] = 
+         3., $CellContext`dClf[59, 8, 12] = 
+         3., $CellContext`dClf[59, 10, 4] = -3., $CellContext`dClf[
+          59, 10, 12] = 0., $CellContext`dClf[60, 1, 1] = 
+         0., $CellContext`dClf[60, 1, 2] = 0., $CellContext`dClf[60, 1, 4] = 
+         0., $CellContext`dClf[60, 1, 5] = 1., $CellContext`dClf[60, 1, 6] = 
+         3., $CellContext`dClf[60, 1, 7] = 3., $CellContext`dClf[60, 4, 6] = 
+         3., $CellContext`dClf[60, 4, 7] = 3., $CellContext`dClf[60, 4, 8] = 
+         3., $CellContext`dClf[60, 5, 3] = -1., $CellContext`dClf[60, 5, 8] = 
+         2., $CellContext`dClf[62, 1, 1] = 0., $CellContext`dClf[62, 1, 3] = 
+         0., $CellContext`dClf[62, 1, 4] = 0., $CellContext`dClf[62, 1, 5] = 
+         1., $CellContext`dClf[62, 1, 6] = 2., $CellContext`dClf[62, 1, 7] = 
+         3., $CellContext`dClf[62, 1, 8] = 3., $CellContext`dClf[62, 4, 6] = 
+         2., $CellContext`dClf[62, 4, 7] = 3., $CellContext`dClf[62, 4, 8] = 
+         3., $CellContext`dClf[62, 4, 9] = 
+         3., $CellContext`dClf[62, 5, 2] = -1., $CellContext`dClf[62, 5, 9] = 
+         2., $CellContext`dClf[63, 1, 1] = 0., $CellContext`dClf[63, 1, 2] = 
+         0., $CellContext`dClf[63, 1, 3] = 0., $CellContext`dClf[63, 1, 7] = 
+         0., $CellContext`dClf[63, 1, 8] = 0., $CellContext`dClf[63, 1, 9] = 
+         0., $CellContext`dClf[63, 1, 10] = 0., $CellContext`dClf[63, 1, 11] = 
+         1., $CellContext`dClf[63, 1, 12] = 3., $CellContext`dClf[63, 1, 13] = 
+         3., $CellContext`dClf[63, 7, 12] = 3., $CellContext`dClf[63, 7, 13] = 
+         3., $CellContext`dClf[63, 7, 14] = 
+         3., $CellContext`dClf[63, 11, 4] = -1., $CellContext`dClf[
+          63, 11, 5] = -1., $CellContext`dClf[
+          63, 11, 6] = -1., $CellContext`dClf[63, 11, 14] = 
+         2., $CellContext`dClf[64, 1, 1] = 0., $CellContext`dClf[64, 1, 4] = 
+         0., $CellContext`dClf[64, 1, 5] = 0., $CellContext`dClf[64, 1, 6] = 
+         1., $CellContext`dClf[64, 1, 7] = 3., $CellContext`dClf[64, 1, 8] = 
+         3., $CellContext`dClf[64, 4, 7] = 3., $CellContext`dClf[64, 4, 8] = 
+         3., $CellContext`dClf[64, 4, 9] = 
+         3., $CellContext`dClf[64, 6, 2] = -1., $CellContext`dClf[
+          64, 6, 3] = -1., $CellContext`dClf[64, 6, 9] = 
+         2., $CellContext`dClf[65, 1, 1] = 0., $CellContext`dClf[65, 1, 3] = 
+         0., $CellContext`dClf[65, 1, 4] = 0., $CellContext`dClf[65, 1, 5] = 
+         0., $CellContext`dClf[65, 1, 6] = 0., $CellContext`dClf[65, 1, 7] = 
+         0., $CellContext`dClf[65, 1, 8] = 0., $CellContext`dClf[65, 1, 9] = 
+         1., $CellContext`dClf[65, 1, 10] = 3., $CellContext`dClf[65, 1, 11] = 
+         3., $CellContext`dClf[65, 1, 12] = 3., $CellContext`dClf[65, 6, 2] = 
+         0., $CellContext`dClf[65, 6, 10] = 3., $CellContext`dClf[65, 6, 11] = 
+         3., $CellContext`dClf[65, 6, 12] = 3., $CellContext`dClf[65, 6, 13] = 
+         3., $CellContext`dClf[66, 1, 1] = 0., $CellContext`dClf[66, 1, 4] = 
+         0., $CellContext`dClf[66, 1, 5] = 1., $CellContext`dClf[66, 1, 6] = 
+         3., $CellContext`dClf[66, 1, 7] = 3., $CellContext`dClf[66, 4, 6] = 
+         3., $CellContext`dClf[66, 4, 7] = 3., $CellContext`dClf[66, 4, 8] = 
+         3., $CellContext`dClf[66, 5, 2] = -1., $CellContext`dClf[
+          66, 5, 3] = -1., $CellContext`dClf[66, 5, 8] = 
+         2., $CellContext`dClf[67, 1, 1] = 0., $CellContext`dClf[67, 1, 4] = 
+         0., $CellContext`dClf[67, 1, 5] = 1., $CellContext`dClf[67, 1, 6] = 
+         3., $CellContext`dClf[67, 1, 7] = 3., $CellContext`dClf[67, 4, 6] = 
+         3., $CellContext`dClf[67, 4, 7] = 3., $CellContext`dClf[67, 4, 8] = 
+         3., $CellContext`dClf[67, 5, 2] = -1., $CellContext`dClf[
+          67, 5, 3] = -1., $CellContext`dClf[67, 5, 8] = 
+         2., $CellContext`dClf[68, 1, 1] = 0., $CellContext`dClf[68, 1, 3] = 
+         0., $CellContext`dClf[68, 1, 4] = 1., $CellContext`dClf[68, 1, 5] = 
+         3., $CellContext`dClf[68, 3, 5] = 3., $CellContext`dClf[68, 3, 6] = 
+         3., $CellContext`dClf[68, 4, 2] = -1., $CellContext`dClf[68, 4, 6] = 
+         2., $CellContext`dClf[69, 1, 1] = 0., $CellContext`dClf[69, 1, 2] = 
+         0., $CellContext`dClf[69, 1, 4] = 0., $CellContext`dClf[69, 1, 5] = 
+         1., $CellContext`dClf[69, 1, 6] = 3., $CellContext`dClf[69, 1, 7] = 
+         3., $CellContext`dClf[69, 4, 6] = 3., $CellContext`dClf[69, 4, 7] = 
+         3., $CellContext`dClf[69, 4, 8] = 
+         3., $CellContext`dClf[69, 5, 3] = -1., $CellContext`dClf[69, 5, 8] = 
+         2., $CellContext`dClf[70, 1, 1] = 0., $CellContext`dClf[70, 1, 2] = 
+         0., $CellContext`dClf[70, 1, 3] = 0., $CellContext`dClf[70, 1, 5] = 
+         0., $CellContext`dClf[70, 1, 6] = 1., $CellContext`dClf[70, 1, 7] = 
+         2., $CellContext`dClf[70, 1, 8] = 3., $CellContext`dClf[70, 1, 9] = 
+         3., $CellContext`dClf[70, 5, 7] = 2., $CellContext`dClf[70, 5, 8] = 
+         3., $CellContext`dClf[70, 5, 9] = 3., $CellContext`dClf[70, 5, 10] = 
+         3., $CellContext`dClf[70, 6, 4] = -1., $CellContext`dClf[70, 6, 10] = 
+         2., $CellContext`dClf[71, 1, 1] = 0., $CellContext`dClf[71, 1, 2] = 
+         0., $CellContext`dClf[71, 1, 5] = 0., $CellContext`dClf[71, 1, 6] = 
+         1., $CellContext`dClf[71, 1, 7] = 3., $CellContext`dClf[71, 5, 7] = 
+         3., $CellContext`dClf[71, 5, 8] = 
+         3., $CellContext`dClf[71, 6, 3] = -1., $CellContext`dClf[
+          71, 6, 4] = -1., $CellContext`dClf[71, 6, 8] = 
+         2., $CellContext`dClf[72, 1, 1] = 0., $CellContext`dClf[72, 1, 2] = 
+         0., $CellContext`dClf[72, 1, 3] = 2., $CellContext`dClf[72, 1, 5] = 
+         3., $CellContext`dClf[72, 1, 7] = 4., $CellContext`dClf[72, 2, 3] = 
+         2., $CellContext`dClf[72, 2, 4] = 2., $CellContext`dClf[72, 2, 5] = 
+         3., $CellContext`dClf[72, 2, 6] = 3., $CellContext`dClf[72, 2, 7] = 
+         4., $CellContext`dClf[72, 2, 8] = 4., $CellContext`dClf[72, 2, 9] = 
+         4., $CellContext`dClf[73, 1, 1] = 0., $CellContext`dClf[73, 1, 3] = 
+         0., $CellContext`dClf[73, 1, 5] = 3., $CellContext`dClf[73, 1, 7] = 
+         3., $CellContext`dClf[73, 1, 9] = 4., $CellContext`dClf[73, 1, 11] = 
+         5., $CellContext`dClf[73, 1, 12] = 5., $CellContext`dClf[73, 3, 2] = 
+         0., $CellContext`dClf[73, 3, 4] = 2., $CellContext`dClf[73, 3, 5] = 
+         3., $CellContext`dClf[73, 3, 6] = 3., $CellContext`dClf[73, 3, 8] = 
+         3., $CellContext`dClf[73, 3, 9] = 4., $CellContext`dClf[73, 3, 10] = 
+         4., $CellContext`dClf[73, 3, 11] = 5., $CellContext`dClf[73, 3, 12] = 
+         5., $CellContext`dClf[73, 3, 13] = 5., $CellContext`dClf[74, 1, 1] = 
+         0., $CellContext`dClf[74, 1, 2] = 0., $CellContext`dClf[74, 1, 4] = 
+         0., $CellContext`dClf[74, 1, 5] = 0., $CellContext`dClf[74, 1, 12] = 
+         2., $CellContext`dClf[74, 1, 13] = 2., $CellContext`dClf[74, 1, 14] = 
+         2., $CellContext`dClf[74, 1, 16] = 2., $CellContext`dClf[74, 1, 18] = 
+         3., $CellContext`dClf[74, 1, 20] = 3., $CellContext`dClf[74, 1, 22] = 
+         4., $CellContext`dClf[74, 1, 24] = 4., $CellContext`dClf[74, 1, 25] = 
+         4., $CellContext`dClf[74, 1, 27] = 5., $CellContext`dClf[74, 1, 28] = 
+         5., $CellContext`dClf[74, 1, 30] = 6., $CellContext`dClf[74, 1, 31] = 
+         6., $CellContext`dClf[74, 1, 32] = 6., $CellContext`dClf[74, 1, 33] = 
+         6., $CellContext`dClf[74, 4, 3] = 0., $CellContext`dClf[74, 4, 6] = 
+         0., $CellContext`dClf[74, 4, 7] = 0., $CellContext`dClf[74, 4, 8] = 
+         0., $CellContext`dClf[74, 4, 9] = 0., $CellContext`dClf[74, 4, 10] = 
+         0., $CellContext`dClf[74, 4, 11] = 1., $CellContext`dClf[74, 4, 12] = 
+         2., $CellContext`dClf[74, 4, 13] = 2., $CellContext`dClf[74, 4, 15] = 
+         2., $CellContext`dClf[74, 4, 17] = 2., $CellContext`dClf[74, 4, 18] = 
+         3., $CellContext`dClf[74, 4, 19] = 3., $CellContext`dClf[74, 4, 21] = 
+         3., $CellContext`dClf[74, 4, 22] = 4., $CellContext`dClf[74, 4, 23] = 
+         4., $CellContext`dClf[74, 4, 26] = 4., $CellContext`dClf[74, 4, 27] = 
+         5., $CellContext`dClf[74, 4, 28] = 5., $CellContext`dClf[74, 4, 29] = 
+         5., $CellContext`dClf[74, 4, 30] = 6., $CellContext`dClf[74, 4, 31] = 
+         6., $CellContext`dClf[74, 4, 32] = 6., $CellContext`dClf[74, 4, 33] = 
+         6., $CellContext`dClf[74, 4, 34] = 6., $CellContext`dClf[74, 4, 35] = 
+         5., $CellContext`dClf[75, 1, 1] = 0., $CellContext`dClf[75, 1, 2] = 
+         0., $CellContext`dClf[75, 1, 3] = 0., $CellContext`dClf[75, 1, 5] = 
+         0., $CellContext`dClf[75, 1, 7] = 0., $CellContext`dClf[75, 1, 8] = 
+         0., $CellContext`dClf[75, 1, 9] = 0., $CellContext`dClf[75, 1, 11] = 
+         3., $CellContext`dClf[75, 3, 4] = 0., $CellContext`dClf[75, 3, 6] = 
+         0., $CellContext`dClf[75, 3, 10] = 0., $CellContext`dClf[75, 3, 11] = 
+         3., $CellContext`dClf[75, 3, 12] = 3., $CellContext`dClf[76, 1, 1] = 
+         0., $CellContext`dClf[76, 1, 2] = 0., $CellContext`dClf[76, 1, 4] = 
+         0., $CellContext`dClf[76, 1, 5] = 0., $CellContext`dClf[76, 1, 7] = 
+         3., $CellContext`dClf[76, 5, 3] = 0., $CellContext`dClf[76, 5, 6] = 
+         0., $CellContext`dClf[76, 5, 7] = 3., $CellContext`dClf[77, 1, 1] = 
+         0., $CellContext`dClf[77, 1, 2] = 0., $CellContext`dClf[77, 1, 3] = 
+         3., $CellContext`dClf[77, 2, 3] = 3., $CellContext`dClf[77, 2, 4] = 
+         3., $CellContext`dClf[78, 1, 1] = 0., $CellContext`dClf[78, 1, 4] = 
+         2., $CellContext`dClf[78, 1, 5] = 3., $CellContext`dClf[78, 1, 6] = 
+         4., $CellContext`dClf[78, 1, 7] = 
+         2., $CellContext`dClf[78, 5, 2] = -3., $CellContext`dClf[
+          78, 5, 3] = -3., $CellContext`dClf[
+          78, 5, 7] = -1., $CellContext`dClf[79, 1, 1] = 
+         0., $CellContext`dClf[79, 1, 2] = 0., $CellContext`dClf[79, 1, 3] = 
+         0., $CellContext`dClf[79, 1, 4] = 0., $CellContext`dClf[79, 1, 5] = 
+         0., $CellContext`dClf[79, 1, 6] = 1., $CellContext`dClf[79, 1, 7] = 
+         1., $CellContext`dClf[79, 1, 8] = 3., $CellContext`dClf[79, 1, 9] = 
+         3., $CellContext`dClf[80, 1, 1] = 0., $CellContext`dClf[80, 1, 3] = 
+         0., $CellContext`dClf[80, 1, 5] = 1., $CellContext`dClf[80, 1, 7] = 
+         2., $CellContext`dClf[80, 1, 8] = 2., $CellContext`dClf[80, 3, 5] = 
+         1., $CellContext`dClf[80, 3, 6] = 1., $CellContext`dClf[80, 3, 7] = 
+         2., $CellContext`dClf[80, 3, 8] = 2., $CellContext`dClf[80, 3, 9] = 
+         2., $CellContext`dClf[80, 3, 10] = 
+         1., $CellContext`dClf[80, 8, 2] = -2., $CellContext`dClf[
+          80, 8, 4] = -2., $CellContext`dClf[
+          80, 8, 6] = -1., $CellContext`dClf[80, 8, 9] = 
+         0., $CellContext`dClf[80, 8, 10] = -1., $CellContext`dClf[81, 3, 1] = 
+         0., $CellContext`dClf[81, 3, 2] = 0., $CellContext`dClf[81, 3, 3] = 
+         0., $CellContext`dClf[81, 3, 6] = 0., $CellContext`dClf[81, 3, 7] = 
+         0., $CellContext`dClf[81, 3, 9] = 0., $CellContext`dClf[81, 3, 10] = 
+         0., $CellContext`dClf[81, 3, 11] = 1., $CellContext`dClf[81, 3, 12] = 
+         1., $CellContext`dClf[81, 3, 15] = 3., $CellContext`dClf[81, 9, 11] = 
+         1., $CellContext`dClf[81, 9, 12] = 1., $CellContext`dClf[81, 9, 13] = 
+         1., $CellContext`dClf[81, 9, 14] = 1., $CellContext`dClf[81, 9, 15] = 
+         3., $CellContext`dClf[81, 11, 4] = -1., $CellContext`dClf[
+          81, 11, 5] = -1., $CellContext`dClf[
+          81, 11, 8] = -1., $CellContext`dClf[81, 11, 13] = 
+         0., $CellContext`dClf[81, 11, 14] = 0., $CellContext`dClf[82, 2, 1] = 
+         0., $CellContext`dClf[82, 2, 2] = 0., $CellContext`dClf[82, 2, 3] = 
+         0., $CellContext`dClf[82, 2, 4] = 0., $CellContext`dClf[82, 2, 5] = 
+         0., $CellContext`dClf[82, 2, 6] = 0., $CellContext`dClf[82, 2, 8] = 
+         0., $CellContext`dClf[82, 2, 10] = 0., $CellContext`dClf[82, 2, 11] = 
+         0., $CellContext`dClf[82, 2, 13] = 2., $CellContext`dClf[82, 2, 14] = 
+         2., $CellContext`dClf[82, 2, 16] = 
+         0.6666666666666666, $CellContext`dClf[82, 11, 12] = 
+         1., $CellContext`dClf[82, 11, 13] = 
+         2., $CellContext`dClf[82, 11, 14] = 
+         2., $CellContext`dClf[82, 11, 15] = 
+         2., $CellContext`dClf[82, 11, 17] = 
+         3., $CellContext`dClf[82, 11, 18] = 
+         4., $CellContext`dClf[82, 13, 7] = -2., $CellContext`dClf[
+          82, 13, 9] = -2., $CellContext`dClf[
+          82, 13, 12] = -1., $CellContext`dClf[82, 13, 15] = 
+         0., $CellContext`dClf[82, 13, 17] = 
+         1., $CellContext`dClf[82, 13, 18] = 2., $CellContext`dClf[83, 1, 1] = 
+         0., $CellContext`dClf[83, 1, 2] = 0., $CellContext`dClf[83, 1, 7] = 
+         0., $CellContext`dClf[83, 1, 8] = 0., $CellContext`dClf[83, 1, 9] = 
+         0., $CellContext`dClf[83, 1, 13] = 1., $CellContext`dClf[83, 1, 15] = 
+         1., $CellContext`dClf[83, 1, 16] = 3., $CellContext`dClf[83, 1, 17] = 
+         3., $CellContext`dClf[83, 7, 13] = 1., $CellContext`dClf[83, 7, 14] = 
+         1., $CellContext`dClf[83, 7, 16] = 3., $CellContext`dClf[83, 7, 17] = 
+         3., $CellContext`dClf[83, 7, 18] = 
+         3., $CellContext`dClf[83, 15, 3] = -1., $CellContext`dClf[
+          83, 15, 4] = -1., $CellContext`dClf[
+          83, 15, 5] = -1., $CellContext`dClf[
+          83, 15, 6] = -1., $CellContext`dClf[
+          83, 15, 10] = -1., $CellContext`dClf[
+          83, 15, 11] = -1., $CellContext`dClf[
+          83, 15, 12] = -1., $CellContext`dClf[83, 15, 14] = 
+         0., $CellContext`dClf[83, 15, 18] = 2., $CellContext`dClf[90, 1, 1] = 
+         0., $CellContext`dClf[90, 1, 3] = 0., $CellContext`dClf[90, 1, 5] = 
+         2., $CellContext`dClf[90, 1, 6] = 2., $CellContext`dClf[90, 1, 7] = 
+         3., $CellContext`dClf[90, 1, 8] = 4., $CellContext`dClf[90, 1, 9] = 
+         4., $CellContext`dClf[90, 3, 2] = 0., $CellContext`dClf[90, 3, 4] = 
+         0., $CellContext`dClf[90, 3, 5] = 2., $CellContext`dClf[90, 3, 7] = 
+         3., $CellContext`dClf[90, 3, 8] = 4., $CellContext`dClf[90, 3, 9] = 
+         4., $CellContext`dClf[90, 3, 10] = 4., $CellContext`dClf[92, 1, 1] = 
+         0., $CellContext`dClf[92, 1, 2] = 0., $CellContext`dClf[92, 1, 3] = 
+         0., $CellContext`dClf[92, 1, 4] = 0., $CellContext`dClf[92, 1, 6] = 
+         0., $CellContext`dClf[92, 1, 7] = 0., $CellContext`dClf[92, 1, 8] = 
+         0., $CellContext`dClf[92, 1, 10] = 0., $CellContext`dClf[92, 1, 12] = 
+         0., $CellContext`dClf[92, 1, 13] = 0., $CellContext`dClf[92, 1, 14] = 
+         0., $CellContext`dClf[92, 1, 15] = 0., $CellContext`dClf[92, 1, 16] = 
+         0., $CellContext`dClf[92, 1, 17] = 0., $CellContext`dClf[92, 1, 18] = 
+         0., $CellContext`dClf[92, 1, 20] = 1., $CellContext`dClf[92, 1, 21] = 
+         1., $CellContext`dClf[92, 1, 23] = 2., $CellContext`dClf[92, 1, 24] = 
+         2., $CellContext`dClf[92, 1, 25] = 2., $CellContext`dClf[92, 1, 27] = 
+         3., $CellContext`dClf[92, 1, 29] = 3., $CellContext`dClf[92, 1, 30] = 
+         1.5, $CellContext`dClf[92, 1, 31] = 4., $CellContext`dClf[92, 1, 33] = 
+         5., $CellContext`dClf[92, 1, 35] = 2.5, $CellContext`dClf[92, 1, 36] = 
+         6., $CellContext`dClf[92, 10, 5] = 0., $CellContext`dClf[92, 10, 9] = 
+         0., $CellContext`dClf[92, 10, 11] = 
+         0., $CellContext`dClf[92, 10, 19] = 
+         1., $CellContext`dClf[92, 10, 22] = 
+         2., $CellContext`dClf[92, 10, 26] = 
+         2., $CellContext`dClf[92, 10, 27] = 
+         3., $CellContext`dClf[92, 10, 28] = 
+         3., $CellContext`dClf[92, 10, 31] = 
+         4., $CellContext`dClf[92, 10, 32] = 
+         4., $CellContext`dClf[92, 10, 33] = 
+         5., $CellContext`dClf[92, 10, 34] = 
+         5., $CellContext`dClf[92, 10, 36] = 
+         6., $CellContext`dClf[92, 10, 37] = 
+         6., $CellContext`dClf[92, 10, 38] = 4., $CellContext`dClf[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`phs1, 
@@ -9105,7 +10651,7 @@ $CellContext`p0H2O]; Part[
              $CellContext`oxmetphases[$CellContext`el], $CellContext`T, \
 $CellContext`solxeq, $CellContext`p0HCl, $CellContext`p0O2, \
 $CellContext`p0H2O], 1]), $CellContext`xggw[650, 1, 1, 1/1000000] = 
-         Part[{}, 1], $CellContext`xggw[
+         0.8855764939082783, $CellContext`xggw[
            Pattern[$CellContext`T, 
             Blank[]], 
            Pattern[$CellContext`p0HCl, 
@@ -9130,108 +10676,23 @@ $CellContext`p0HCl, $CellContext`p0O2, $CellContext`p0H2O], 2]^(1/
               Re[#] == #& ]; Part[
              Select[$CellContext`xret, And[# < 1, # > 0]& ], 
              1])), $CellContext`sol = {{$CellContext`xsolinmod -> 
-            Root[1.`14.85583028601747 - 6.25`14.85583028601747*^22 
-              E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) + (1.`14.85583028601747*^6 + 
-                2.65625`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) # + (
-                3.75`14.85583028601747*^11 - 4.375`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^2 + (
-                6.25`14.85583028601747*^16 + 
-                3.4375`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^3 + (
-                3.90625`14.85583028601747*^21 - 1.25`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^4 + 
-              1.5625`14.85583028601747*^22 
-               E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) #^5& , 1]}, {$CellContext`xsolinmod -> 
-            Root[
-             1.`14.85583028601747 - 6.25`14.85583028601747*^22 
-              E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) + (1.`14.85583028601747*^6 + 
-                2.65625`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) # + (
-                3.75`14.85583028601747*^11 - 4.375`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^2 + (
-                6.25`14.85583028601747*^16 + 
-                3.4375`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^3 + (
-                3.90625`14.85583028601747*^21 - 1.25`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^4 + 
-              1.5625`14.85583028601747*^22 
-               E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) #^5& , 2]}, {$CellContext`xsolinmod -> 
-            Root[1.`14.85583028601747 - 6.25`14.85583028601747*^22 
-              E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) + (1.`14.85583028601747*^6 + 
-                2.65625`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) # + (
-                3.75`14.85583028601747*^11 - 4.375`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^2 + (
-                6.25`14.85583028601747*^16 + 
-                3.4375`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^3 + (
-                3.90625`14.85583028601747*^21 - 1.25`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^4 + 
-              1.5625`14.85583028601747*^22 
-               E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) #^5& , 3]}, {$CellContext`xsolinmod -> 
-            Root[1.`14.85583028601747 - 6.25`14.85583028601747*^22 
-              E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) + (1.`14.85583028601747*^6 + 
-                2.65625`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) # + (
-                3.75`14.85583028601747*^11 - 4.375`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^2 + (
-                6.25`14.85583028601747*^16 + 
-                3.4375`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^3 + (
-                3.90625`14.85583028601747*^21 - 1.25`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^4 + 
-              1.5625`14.85583028601747*^22 
-               E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) #^5& , 4]}, {$CellContext`xsolinmod -> 
-            Root[1.`14.85583028601747 - 6.25`14.85583028601747*^22 
-              E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) + (1.`14.85583028601747*^6 + 
-                2.65625`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) # + (
-                3.75`14.85583028601747*^11 - 4.375`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^2 + (
-                6.25`14.85583028601747*^16 + 
-                3.4375`14.85583028601747*^23 
-                 E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^3 + (
-                3.90625`14.85583028601747*^21 - 1.25`14.85583028601747*^23 
-                E^((0.00153846153846153846153846153846153846`14.\
-85583028601747 $CellContext`Gf0gas[650])/$CellContext`R)) #^4 + 
-              1.5625`14.85583028601747*^22 
-               E^((0.00153846153846153846153846153846153846`14.85583028601747 \
-$CellContext`Gf0gas[650])/$CellContext`R) #^5& , 5]}}, $CellContext`KTx[650] = 
-         E^($CellContext`Gf0gas[650]/(1300 $CellContext`R)), $CellContext`KTx[
+            0.8855764939082783}, {$CellContext`xsolinmod -> 
+            1.1522488037183456`}, {$CellContext`xsolinmod -> 
+            3.9972541234125836`}}, $CellContext`KTx[650] = 
+         16.970973376956092`, $CellContext`KTx[
            Pattern[$CellContext`T, 
             Blank[]]] := ($CellContext`KTx[$CellContext`T] = 
           Exp[-Total[{-2, (-1)/2, 1, 
                 1} $CellContext`Gf0gas[$CellContext`T]]/($CellContext`R \
-$CellContext`T)]), $CellContext`xret = {}, $CellContext`minDGphs1group[
+$CellContext`T)]), $CellContext`Gf0gas[
+           Pattern[$CellContext`T, 
+            Blank[]]] := $CellContext`Hf0gas 
+           1000 - $CellContext`T $CellContext`S0gas, $CellContext`xret = {
+          0.8855764939082783, 1.1522488037183456`, 
+          3.9972541234125836`}, $CellContext`minDGphs1group[
+          "Na", 2, {1, 2, 7, 8, 9, 10, 12, 13, 15, 16}, 650, 
+           0.8855764939082783, 1, 1, 1/1000000] = {
+          12, -347996.6627280596, 7}, $CellContext`minDGphs1group[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`phs1, 
@@ -9259,7 +10720,11 @@ $CellContext`p0HCl, $CellContext`p0O2, $CellContext`p0H2O]; $CellContext`res =
              Part[$CellContext`grp2, $CellContext`res], 
              
              Part[$CellContext`phs1groupG, $CellContext`res], \
-$CellContext`res})), $CellContext`minmetphase[
+$CellContext`res})), $CellContext`phs1groupG = {1954.300000000003, 
+          0., -166003.77306247206`, -184771.73653123603`, -184278.836531236, \
+-180425.211531236, -347996.6627280596, -336883.6127280595, \
+-95834.25885300356, -97494.10885300353}, $CellContext`res = 
+         7, $CellContext`minmetphase["Na", 650] = 2, $CellContext`minmetphase[
            Pattern[$CellContext`el, 
             Blank[Integer]], 
            Pattern[$CellContext`T, 
@@ -9497,7 +10962,186 @@ $CellContext`T] = Part[
            10}, $CellContext`oxmetphases["Yb"] = {1, 2, 3, 
           5}, $CellContext`oxmetphases["Zn"] = {1, 
           2}, $CellContext`oxmetphases["Zr"] = {1, 3, 4, 5, 
-          6}, $CellContext`Tset = 
+          6}, $CellContext`plotx = CompressedData["
+1:eJw1yz0OAVEUxfHn+5sxxtDagYTSKqxABK0tWIISO1HdV5JQqXQSiUSiIEQI
+EXHn7zQv75zfrXWH7X7IGNMy/1TtbPpLxTY0Fbte/eLbgca3gfNxZVwZ5+E8
+nIcr4Uo4F+fiXFwRV8Q5OAfnsBfo81bPpjmrfJXFZXEZXBqXwiVxSVwCF8fF
+cFFcFBfBhXEhnMEZ29P9I0H/lqbevWSi/ikBe0jg7rib1NVdcRfcWRa6n+iP
+0tG7A36P28lY9y39Rkb6X/LO5Qsb69F0
+          "], $CellContext`ploty = CompressedData["
+1:eJwNlGs41AkDxaehVpl2RZLa6aKGIus649YytYUVMmOmxsx/Zv6j5FYuDeZ1
+2dpe2azZykq5paWkomSly8rl2LCvUGlLbtHFppXkTkZ658P5dD78znPO85y1
+/uHcACqFQtmslqZasxv72D1KGajFsUeD+0g4bApaFFLmgIc3nFs7i/lwXh7S
+cPOoDNuyPi/c8pyE67kMlnGsA7ipHt0/5/KxWsg6o0iQgdHV1EF9SsLn2sdy
+WzsH6C99Hb/4OB+3lVuVy+UyVNPaH1xoIqHvKBJvHrSHq0IVsDOOj0UR+jXp
+QTLojBRR19SSuEqMquiZ9hh0yW9xC+DjpargwwdChrcJjjbxN0nsvRv245Sj
+PbJ345s5Lz64ozF0po8MAjlNhsskBsLmhtY8tUP8tr0pybZ82NWlxkRvlcF5
+u3EFJUfNn2u+vS7QDq5vMzYvNOTDNSCvvsFGBs83zIXcX0gcW+BhWTLCgr/p
+7c5iFQ+XB1KvbVkvQ0mo8UhzAolsqwfhSdEsmDAzi/K7eYhOpE5+1pMhXjPT
+QbmfBGVaeEMxxkTtvninVZU8UE8krFipIYPWV7qSQhGJUE+zZz77meiKDz/K
+y+ahZnSEWTxCol5+LJblQcL7YFtZ6wtb8LYL70YpeLjwe7h3Qy+JK9bz0zj2
+JCKD62KKOLag3+MPFvnycC5yYOJwC4mC0cMO2sYk3IOzyxQ1NtD7bofTKgse
+5Jx75v9WkIh9LIiM0iMxHCiLrDW1QRX1U9HwQh6q58xiddS91R2urcyhqPd9
+XNisOmUNrvjBFpc+X0zNVdGop0nMfC7MW9Elhc4TVnCyygr14tEgo2pfpF33
+W/y/IyQsZD35heVS/CNYGnZHZoWZ6o0hJRm+uNUgeBISpuaf7LYYPC4FTXdx
+4YMGS2x7bzI9FuELuiDdekSo5pb5Dk7vk4Kd+2/GPDNL6Oj8Vk7x8MWCztAS
+0o2E4S1q3zMXKQz8dryf+doCr/W8r/Ya+UKb+qqiyobEugUfZn9dLkVwx7Xy
+plfmGNrjWJ+l4kLJY/Rrr1H7xdH8b0YkCJ73+j8llzZhSKuWznrCxVX93AXe
+NBIB5gHpZY0SROtJIx6FmsFCWUpUXOWixXLmAm1Eig5rhtm68xKsdJEa8y1M
+UZAaMWaaxMWAykjzQKMUk5+8lIlxElAyL5oIRjegVpTlqxRz8bPiY2NNvhRn
+Ytdz2rgSzEX57RoqNwH5LNywh8lFqcL0+YI4Kapi+XvpZhIwY15+MFYY49iz
+vE2ML7koqhpM/o4rxa0aAx2hhgSahWNeNAcGjtD3tMvecOD+JOKXGFMpeG05
+ese7xBgVLg0pmFmH1bb9XenVHBDuzuvzqOpePIKLb90Q44zq8IaRu0awuVwu
+rz7DwWheKw2d6lznZ0+1KcXYihUHhhPWopHiTvSEccAu/uHQ0zIJPK9dnj+4
+R4xS3fiZnG/XwEB7vGXMlQOejpNRb4oEpO6+KxNOYlyOabZ8rKLDLOL3yE+r
+OKhvK5nr9Jegtb0jaURPjLLnWtMn41fiLIvh/XHSB30F3xINjhIMFwa97n5H
+4FzNxKPtM8tRoVle3PfAB0lmMedydSVIM89nlN8jULHx0PgfimUglIPv7xb6
+4N6lAzrEgBgPr2RmHMwhkPZ+Qi9/TA/ZX/RJ4w75wPWn+jxVrRjc5GETXTmB
+e0/lhtkHloD+xmnYcJcPhJ9eJEdliRH4WVtH6UFA/8QuFuf+YliJd7enmfsg
+YIVVR2WEGJFfE+TfawkQFkK26IYWnOIubejS9IGEz3r1l5sYobtlwT3TImSe
+mCerTNdAaIjfnubbO8Ge+DUsaZUYnlOVEzkPRTii/669q322xrxIJ8EtYCda
+j5ZXvRgn8Pyn3m1TF0Xo+ngi/3r4aI1PI3/F3JKdODcvwaTmPoEijUslT+NF
+cCy/47Uht7dm4M++9xVV3jCR92+f+42ATbRuy1KOCKuTio8fdGtwmb1419Qh
+yBsb4RwRGUWA+Wfw1DGGCFvJOoWb4J0LhR1yePUSb/gfesnscSMQ/iOtanxa
+iKZ8a9/RR9Mu8srriz7e9sJXp6T8KUMCK0+ndC9uEqr/t82Bz6Cym/4p/t6M
+8EJ9/jsef0CE1gvLukNzhDjbx3M/bajFttOoc++f9UTHOMcl9I4IbyYTGo4E
+C0H7b4rq2a4v2eSVVLpelidSNea1RCWKcHb+Jp7SVojz/CdGf8fpslsahuyN
+LTwheDhbKvAQIaDVxD5c5QeDLIPX6bRlbInkDWWocgeEuv2UKG0RApfqJqdU
++mEySN7XO2PI9u+ryFvvsgPsJYFhzDohPPXSJnZE+yEvTk5rDFvFNn9VEX+p
+1AMHBKdfukYIEStEkHitH94m/jXY3raWfSzCwP++lgcKbiVq/fCFEKV3Sk6e
+uiOAeRrvpgmdwZ7cNH6dZfc9KIOdUVEKP9CG5s+mbBDAsz+buz93I7sk43wy
+w8AdQisn6/AkAQJt9v2RxNoNZ0mzTdMZS7a/0R6NlTau+D8Jw9Bn
+          "], $CellContext`ndat = 60, $CellContext`grouplen = 
+         4, $CellContext`plotdat = {{
+            Tooltip[{8.740911872056225, -9.215644363177846}, "Li"], 
+            Tooltip[{-9.459240691721316, -10.654957618220028`}, "Be"], 
+            Tooltip[{18.095754961319436`, -5.0761005422203285`}, "Na"], 
+            Tooltip[{3.1003892109467954`, -7.169995682488565}, "Mg"], 
+            Tooltip[{32.022883296685215`, -5.371920010380774}, "K"], 
+            Tooltip[{12.961737315445514`, -16.52485239807271}, "Ca"], 
+            Tooltip[{32.6834463207181, -5.322598683812788}, "Rb"], 
+            Tooltip[{18.603688022638554`, -18.05354229356168}, "Sr"], 
+            Tooltip[{26.968828269025643`, -4.882425583573232}, "Cs"], 
+            Tooltip[{32.66061273104127, -18.165404806114225`}, "Ba"]}, {
+            Tooltip[{-4.038278143762703, -9.22214665849137}, "Sc"], 
+            Tooltip[{-2.52219203891232, -2.52219203891232}, "Ti"], 
+            Tooltip[{3.267977908275494, 3.2832894248800515`}, "V"], 
+            Tooltip[{0.3061212616250695, -0.057414341221032526`}, "Cr"], 
+            Tooltip[{13.655562015034697`, 8.01602021535541}, "Mn"], 
+            Tooltip[{2.718512660892146, -1.1833872207420095`}, "Fe"], 
+            Tooltip[{5.942593075641194, 1.012937635659945}, "Co"], 
+            Tooltip[{4.762426904185988, -4.732734379319376}, "Ni"], 
+            Tooltip[{5.280585225090973, -3.5386047738099777`}, "Cu"], 
+            Tooltip[{5.300840838126366, -2.276315136536664}, "Zn"], 
+            Tooltip[{4.400866233757256, -8.64200377621023}, "Y"], 
+            Tooltip[{-5.865104720510721, -5.865104720510721}, "Zr"], 
+            Tooltip[{-5.952717325202232, -4.739115529781078}, "Nb"], 
+            Tooltip[{1.0308982828315991`, 1.0738339294443253`}, "Mo"], 
+            Tooltip[{4.1848580838188205`, -4.231407601508412}, "Ru"], 
+            Tooltip[{13.314135377604645`, -16.52426975989175}, "Rh"], 
+            Tooltip[{4.419650816833432, -1.2565686660954023`}, "Pd"], 
+            Tooltip[{8.171252854837723, -9.81927359144374}, "Ag"], 
+            Tooltip[{10.189536813985182`, -6.934804739801347}, "Cd"], 
+            Tooltip[{5.006243376566064, -12.503076488938289`}, "Lu"], 
+            Tooltip[{-5.975540774068469, -5.975540774068469}, "Hf"], 
+            Tooltip[{-6.672982680910308, -6.672081835264471}, "Ta"], 
+            Tooltip[{-10.983567551089601`, -2.7129797085495353`}, "W"], 
+            Tooltip[{-0.6896489618190552, -4.462476055504982}, "Re"], 
+            Tooltip[{22.12774298730633, 1.8782450518622615`}, "Os"], 
+            Tooltip[{7.714825748870166, -8.395943684887559}, "Ir"], 
+            Tooltip[{12.97072324469945, -5.049205256784903}, "Pt"], 
+            Tooltip[{3.6123036031206746`, 3.0727513983550376`}, "Au"], 
+            Tooltip[{12.578204682785284`, 0.8312237745315234}, "Hg"]}, {
+            Tooltip[{13.977143539985901`, -14.196983828005788`}, "La"], 
+            Tooltip[{6.3563586206955485`, -4.709523604564619}, "Ce"], 
+            Tooltip[{11.782998493648604`, -14.63492281218588}, "Pr"], 
+            Tooltip[{11.018028691874916`, -12.49121343981443}, "Nd"], 
+            Tooltip[{9.176172783209937, -12.345967768589272`}, "Sm"], 
+            Tooltip[{8.668385526616994, -9.371542260600823}, "Eu"], 
+            Tooltip[{7.61968100100267, -12.249273939713794`}, "Gd"], 
+            Tooltip[{6.357014252295594, -6.946524061645057}, "Tb"], 
+            Tooltip[{5.50635186375321, -13.852024514694111`}, "Dy"], 
+            Tooltip[{5.484758087308032, -15.12188242102854}, "Ho"], 
+            Tooltip[{3.2763464171180456`, -14.732461794245188`}, "Er"], 
+            Tooltip[{3.4460146736118826`, -14.955843933432297`}, "Tm"], 
+            Tooltip[{4.487160975650954, -14.634748683402535`}, "Yb"], 
+            Tooltip[{-0.5600474641395883, -7.731158195560707}, "Th"], 
+            Tooltip[{2.7093458453447536`, -1.5895754499065227`}, "U"]}, {
+            Tooltip[{-8.155326103643121, -8.155326103643121}, "Al"], 
+            Tooltip[{-8.705397543452275, -8.705397543452275}, "Si"], 
+            Tooltip[{4.377421354758231, 4.377421354758231}, "Sn"], 
+            Tooltip[{11.79436900898728, 7.231121663708725}, "Sb"], 
+            Tooltip[{15.853334541966477`, 1.3002530424988148`}, "Pb"], 
+            Tooltip[{1.690895508219234, 1.690895508219234}, "Ga"], 
+            Tooltip[{5.820668365556007, 5.820668365556007}, "Ge"], 
+            Tooltip[{12.45811126349918, 12.458111263499312`}, "As"], 
+            Tooltip[{6.292226296833238, -0.7748525259737589}, "In"], 
+            Tooltip[{8.878521018425186, 1.2041269507619337`}, "Bi"], 
+            
+            Tooltip[{15.529832589058792`, -2.465889527848017}, 
+             "Tl"]}}, $CellContext`phasenames = {
+           Subscript[
+            Row[{
+              Subscript["Li", ""], "", 
+              Subscript["Cl", ""]}], "(s)"], 
+           Subscript[
+            Row[{
+              Subscript["Li", ""], "", 
+              Subscript["Cl", ""]}], "(l)"], 
+           Subscript[
+            Row[{
+              Subscript["Li", ""], "", 
+              Subscript["Cl", ""]}], "(g)"], 
+           Subscript[
+            Row[{
+              Subscript["Li", "2"], "", 
+              Subscript["Cl", "2"]}], 
+            "(s)"]}, $CellContext`ally = CompressedData["
+1:eJwNlFlUk4cChAOoRYktEhHRxgUNKEhZE7YWolWgCJiEREPyJ/mDIpuyGCCX
+pVqvUimpShFlEwuKqKBIEZciy1CBXgRUrCKb4JJKi4jsIEG8PMzTPHxzZs6Z
+tQERvEAtCoUyNKeZjWp2j0oO7eK4oyFqEk6bgheFljnh4Q3X1s5iAVyXhzbc
+PCrH1qxPCzc/J+F+LoNlGucEXqpX90+5AqwWsc4oE+VgdDV1aD8lwbn2odze
+wQmGS18nLD4uwG3VFtVyhRzV1PYHF5pIGDqLJV8POMJdqQncES/AokjDmvRg
+OfSHi7TX1JK4Soxo6JmOGHDLb/EIFOClpuD9e0KOfxKd7RJukthzN/yHSWdH
+ZO/CV7M+AvBGYulMjhxCBVWOyyT6w2cH1zx1QMLWPSnJ9gI41KXGxmyRw3Wb
+aQUlZ44/23x7XZAD3P/J+HqhsQDugXn1DXZyeL9hLuT9TOLYAi/rkmEWAsxv
+dxZr+Ljcn3pt83o5SsJMh5sTSWTbPIhIimHBjJlZlN/NR8wR7YlPNDkS5mU6
+qfaRoEyJbihHmajdm+CyqpIP7ROJK1bqyKH7hYG0UEwizNviGWcfE10JEUf5
+2XzUjAwzi4dJ1CuOxbG8SPgeaCtrfWEP/jbR3WglHxd+i/Bt6CVxxXZ+GteR
+RFRIXWwR1x70e4KBIj8+zkX1jx9qIVEwcshJz5SEZ0h2mbLGDrRvt7ussuJD
+wb1n+W8FibjHwqhoGomhIHlUrbkdqrQ/Fg0t5KN61iJOf663ukO1lTmUuX0f
+FzZrTtmCJ3mw2U3th8nZKqr2aRLTnwrzVnTJoP+EFZKssUG9ZCTYpNoPadf9
+F//vMAkreU9+YbkMfwuXht+R22C6emNoSYYfbjUIn4SGz/FPdlsNHJeBarC4
+8EGDNba+M5sajfQDXZhuOyya45b5DUztlYGd+2+GloU19PV/Lad4+WFBZ1gJ
+6UHC+Ja2+pmbDEb+299Nf2mF1zTfq70mftDTflVRZUdi3YL3M78slyGk41p5
+0ytLDO52rs/S8KDiM/r01sz5xTGCr4alCNF6/Z+SS5swqFtLZz3h4aph7gJf
+KolAy8D0skYpYmiyyEdhFrBSlRIVV3losZ6+QB2WocOWYbHuvBQr3WSmAitz
+FKRGjpon8dCvMZm3v1GGiY8+qiPxUlAyL5oJRzagVpzlp5Lw8JPyQ2NNvgxn
+4tZz23hSzEb77xwsNwP5LMK4h8lDqdL8+YJ4GariBHvoFlIwY1++N1Wa4tiz
+vE2Mz3koqhpI/pYnw60aI32RjhTzCkd9qE4MHKbvbpe/4cLzSeTPseYy8Nty
+aMe7JBgRLQ0tmF6H1fZ9XenVXBCeruvztOd68QopvnVDgjOaQxuG75rA7nK5
+ovoMFyN5rVR0zuU6P3OqTSXBFqzYP5S4Fo0UT6InnAt28fcHn5ZJ4X3t8vyB
+3RKUGiRM53yzBkZ6Yy2j7lzw9V1MelOkIA32Xhl3keBybLP1Yw0dFpG/RX1c
+xUV9W8lsZ4AUre0dScM0Ccqe606dTFiJsyyG74cJDtQF3xANzlIMFQa/7n5L
+4FzN+KNt08tRMa+8WP2AgySL2HO5BlKkWeYzyu8RqNh4cOx35TIQqoF3dws5
+uHdpvz7RL8HDK5kZB3IIpL0bp+WP0pD9mVoWf5AD9x/r8zS1EvCSh8wMFATu
+PVUYZ+9fAvoblyHjnRyIPr5Ijs6SIOiTnr7Ki4DhiZ0s7v3FsJHsak+z5CBw
+hU1HZaQEUV8S5F9rCRBWIrb4hi5c4i9t6JrHgVTAevWnhwRhu+QhPVNiZJ7Q
+klem6yAs1H938+0dYI//Ep60SgLvycrxnIdiHDZ8297VPlNjWaSf6BG4A61H
+y6tejBF4/mPv1smLYnR9OJF/PWKkhtMoWDG7ZAfOaSWa1dwnUKRzqeRpghjO
+5Xd8NuT21vT/oX5XUeULM0XfttlfCdjFGLQs5YqxOqn4+AGPBreZi3fNnYJ9
+sRGukVHRBJh/hEweY4ixhaxTegjfulHYoYdWL/FFwMGXzB4PAhE/UKvGpkRo
+yrf1G3k05aaovL7ow20ffHFKJpg0JrDydEr34ibR3P+2OQkY2uymv4u/syB8
+UJ//li/oF6P1wrLusBwRzqr5nqeNddkOOnWefTPe6BjjuoXdEePNRGLD4RAR
+qP9N0Tzb+TmbvJJKp2V5I1VHqyX6iBhn52/iq+xFOC94YvJXvAG7pWHQ0dTK
+G8KHM6VCLzECW80cIzT+MMoyep1OXcaWSt9QBiu3Q2TQR4nWEyNoqUFySqU/
+JoIV6t5pY3aAuiJvvdt2sJcEhTPrRPCmpY1vj/FHXryC2hi+im35qiLhUqkX
+9gtPv3SPFCFOhGDJWn/8c+TPgfa2texjkUYB93W9UHDriO73n4lQeqfk5Kk7
+Qlim8W+a0RnsiU1j11kO34Ey0BkdrfQHdXD+TMoGIbz7snn7cjeySzLOJzOM
+PCGycbGNSBIiyG7v70msXXCVNts1nbFmB5js1llp547/AyWm0RY=
+          "], $CellContext`l1 = 6.494994706672733, $CellContext`ltot = 
+         6.494994706672733, $CellContext`lmin = -143.17829816298052`, \
+$CellContext`stphs = 5, $CellContext`Tset = 
          650, $CellContext`clphases[3] = {10, 11, 12, 
           16}, $CellContext`clphases[4] = {13, 14, 15, 16, 17, 18, 19, 
           20}, $CellContext`clphases[11] = {12, 13, 14, 
@@ -9819,9 +11463,10 @@ $CellContext`p0O2, $CellContext`p0H2O]], $CellContext`T}, {$CellContext`T,
             Blank[]]] := 
          And[$CellContext`arg1 <= $CellContext`arg2 + \
 $CellContext`\[Epsilon], $CellContext`arg1 >= $CellContext`arg2 - \
-$CellContext`\[Epsilon]], $CellContext`allphases[3] = {1, 2, 3, 4, 5, 6, 7, 8,
-           9, 10, 11, 12, 13, 14, 15, 16}, $CellContext`allphases[4] = {1, 2, 
-          3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+$CellContext`\[Epsilon]], $CellContext`medfontsize = 
+         14, $CellContext`allphases[3] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+          12, 13, 14, 15, 16}, $CellContext`allphases[4] = {1, 2, 3, 4, 5, 6, 
+          7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
           20}, $CellContext`allphases[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
           11, 12, 13, 14, 15, 16, 17}, $CellContext`allphases[12] = {1, 2, 3, 
           4, 5, 6, 7, 8, 9}, $CellContext`allphases[13] = {1, 2, 3, 4, 5, 6, 
@@ -10205,7 +11850,301 @@ $CellContext`xrel1))) NIntegrate[
 $CellContext`xrel1 $CellContext`xggw[$CellContext`T, $CellContext`p0HCl, \
 $CellContext`p0O2, $CellContext`p0H2O], $CellContext`xrel2 \
 $CellContext`xggw[$CellContext`T, $CellContext`p0HCl, $CellContext`p0O2, \
-$CellContext`p0H2O]}]]), $CellContext`Qvap[
+$CellContext`p0H2O]}]]), $CellContext`qdat1 = {{
+           1/10000000000, 0.0034206644341265528`}, {
+           1/(1000000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(1000000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(1000000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/1000000000, 0.0034206644341265528`}, {
+           1/(100000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(100000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(100000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(100000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(100000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(100000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(100000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(100000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(100000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/100000000, 0.0034206644341265528`}, {
+           1/(10000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(10000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(10000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(10000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(10000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(10000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(10000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(10000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(10000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/10000000, 0.0034206644341265528`}, {
+           1/(1000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(1000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(1000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(1000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(1000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(1000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(1000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(1000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(1000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/1000000, 0.0034206644341265528`}, {
+           1/(100000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(100000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(100000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(100000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(100000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(100000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(100000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(100000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(100000 10^(1/10)), 0.0034206644341265528`}, {
+           1/100000, 0.0034206644341265528`}, {
+           1/(10000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(10000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(10000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(10000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(10000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(10000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(10000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(10000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(10000 10^(1/10)), 0.0034206644341265528`}, {
+           1/10000, 0.0034206644341265528`}, {
+           1/(1000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(1000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(1000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(1000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(1000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(1000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(1000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(1000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(1000 10^(1/10)), 0.0034206644341265528`}, {
+           1/1000, 0.0034206644341265528`}, {
+           1/(100 10^(9/10)), 0.0034206644341265528`}, {
+           1/(100 10^(4/5)), 0.0034206644341265528`}, {
+           1/(100 10^(7/10)), 0.0034206644341265528`}, {
+           1/(100 10^(3/5)), 0.0034206644341265528`}, {
+           1/(100 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(100 10^(2/5)), 0.0034206644341265528`}, {
+           1/(100 10^(3/10)), 0.0034206644341265528`}, {
+           1/(100 10^(1/5)), 0.0034206644341265528`}, {
+           1/(100 10^(1/10)), 0.0034206644341265528`}, {
+           1/100, 0.0034206644341265528`}}, $CellContext`qdat2 = {{
+           1/50, 0.0034206644341265528`}, {3/100, 0.0034206644341265528`}, {
+           1/25, 0.0034206644341265528`}, {1/20, 0.0034206644341265528`}, {
+           3/50, 0.0034206644341265528`}, {7/100, 0.0034206644341265528`}, {
+           2/25, 0.0034206644341265528`}, {9/100, 0.0034206644341265528`}, {
+           1/10, 0.0034206644341265528`}, {11/100, 0.0034206644341265528`}, {
+           3/25, 0.0034206644341265528`}, {13/100, 0.0034206644341265528`}, {
+           7/50, 0.0034206644341265528`}, {3/20, 0.0034206644341265528`}, {
+           4/25, 0.0034206644341265528`}, {17/100, 0.0034206644341265528`}, {
+           9/50, 0.0034206644341265528`}, {19/100, 0.0034206644341265528`}, {
+           1/5, 0.0034206644341265528`}, {21/100, 0.0034206644341265528`}, {
+           11/50, 0.0034206644341265528`}, {23/100, 0.0034206644341265528`}, {
+           6/25, 0.0034206644341265528`}, {1/4, 0.0034206644341265528`}, {
+           13/50, 0.0034206644341265528`}, {27/100, 0.0034206644341265528`}, {
+           7/25, 0.0034206644341265528`}, {29/100, 0.0034206644341265528`}, {
+           3/10, 0.0034206644341265528`}, {31/100, 0.0034206644341265528`}, {
+           8/25, 0.0034206644341265528`}, {33/100, 0.0034206644341265528`}, {
+           17/50, 0.0034206644341265528`}, {7/20, 0.0034206644341265528`}, {
+           9/25, 0.0034206644341265528`}, {37/100, 0.0034206644341265528`}, {
+           19/50, 0.0034206644341265528`}, {39/100, 0.0034206644341265528`}, {
+           2/5, 0.0034206644341265528`}, {41/100, 0.0034206644341265528`}, {
+           21/50, 0.0034206644341265528`}, {43/100, 0.0034206644341265528`}, {
+           11/25, 0.0034206644341265528`}, {9/20, 0.0034206644341265528`}, {
+           23/50, 0.0034206644341265528`}, {47/100, 0.0034206644341265528`}, {
+           12/25, 0.0034206644341265528`}, {49/100, 0.0034206644341265528`}, {
+           1/2, 0.0034206644341265528`}, {51/100, 0.0034206644341265528`}, {
+           13/25, 0.0034206644341265528`}, {53/100, 0.0034206644341265528`}, {
+           27/50, 0.0034206644341265528`}, {11/20, 0.0034206644341265528`}, {
+           14/25, 0.0034206644341265528`}, {57/100, 0.0034206644341265528`}, {
+           29/50, 0.0034206644341265528`}, {59/100, 0.0034206644341265528`}, {
+           3/5, 0.0034206644341265528`}, {61/100, 0.0034206644341265528`}, {
+           31/50, 0.0034206644341265528`}, {63/100, 0.0034206644341265528`}, {
+           16/25, 0.0034206644341265528`}, {13/20, 0.0034206644341265528`}, {
+           33/50, 0.0034206644341265528`}, {67/100, 0.0034206644341265528`}, {
+           17/25, 0.0034206644341265528`}, {69/100, 0.0034206644341265528`}, {
+           7/10, 0.0034206644341265528`}, {71/100, 0.0034206644341265528`}, {
+           18/25, 0.0034206644341265528`}, {73/100, 0.0034206644341265528`}, {
+           37/50, 0.0034206644341265528`}, {3/4, 0.0034206644341265528`}, {
+           19/25, 0.0034206644341265528`}, {77/100, 0.0034206644341265528`}, {
+           39/50, 0.0034206644341265528`}, {79/100, 0.0034206644341265528`}, {
+           4/5, 0.0034206644341265528`}, {81/100, 0.0034206644341265528`}, {
+           41/50, 0.0034206644341265528`}, {83/100, 0.0034206644341265528`}, {
+           21/25, 0.0034206644341265528`}, {17/20, 0.0034206644341265528`}, {
+           43/50, 0.0034206644341265528`}, {87/100, 0.0034206644341265528`}, {
+           22/25, 0.0034206644341265528`}}, $CellContext`qdat3 = {{
+          0.8855764939082783, 
+          0.0034206644341265528`}}, $CellContext`qdat = {{
+           1/10000000000, 0.0034206644341265528`}, {
+           1/(1000000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(1000000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(1000000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(1000000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/1000000000, 0.0034206644341265528`}, {
+           1/(100000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(100000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(100000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(100000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(100000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(100000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(100000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(100000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(100000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/100000000, 0.0034206644341265528`}, {
+           1/(10000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(10000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(10000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(10000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(10000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(10000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(10000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(10000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(10000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/10000000, 0.0034206644341265528`}, {
+           1/(1000000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(1000000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(1000000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(1000000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(1000000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(1000000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(1000000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(1000000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(1000000 10^(1/10)), 0.0034206644341265528`}, {
+           1/1000000, 0.0034206644341265528`}, {
+           1/(100000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(100000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(100000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(100000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(100000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(100000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(100000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(100000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(100000 10^(1/10)), 0.0034206644341265528`}, {
+           1/100000, 0.0034206644341265528`}, {
+           1/(10000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(10000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(10000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(10000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(10000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(10000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(10000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(10000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(10000 10^(1/10)), 0.0034206644341265528`}, {
+           1/10000, 0.0034206644341265528`}, {
+           1/(1000 10^(9/10)), 0.0034206644341265528`}, {
+           1/(1000 10^(4/5)), 0.0034206644341265528`}, {
+           1/(1000 10^(7/10)), 0.0034206644341265528`}, {
+           1/(1000 10^(3/5)), 0.0034206644341265528`}, {
+           1/(1000 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(1000 10^(2/5)), 0.0034206644341265528`}, {
+           1/(1000 10^(3/10)), 0.0034206644341265528`}, {
+           1/(1000 10^(1/5)), 0.0034206644341265528`}, {
+           1/(1000 10^(1/10)), 0.0034206644341265528`}, {
+           1/1000, 0.0034206644341265528`}, {
+           1/(100 10^(9/10)), 0.0034206644341265528`}, {
+           1/(100 10^(4/5)), 0.0034206644341265528`}, {
+           1/(100 10^(7/10)), 0.0034206644341265528`}, {
+           1/(100 10^(3/5)), 0.0034206644341265528`}, {
+           1/(100 Sqrt[10]), 0.0034206644341265528`}, {
+           1/(100 10^(2/5)), 0.0034206644341265528`}, {
+           1/(100 10^(3/10)), 0.0034206644341265528`}, {
+           1/(100 10^(1/5)), 0.0034206644341265528`}, {
+           1/(100 10^(1/10)), 0.0034206644341265528`}, {
+           1/100, 0.0034206644341265528`}, {1/50, 0.0034206644341265528`}, {
+           3/100, 0.0034206644341265528`}, {1/25, 0.0034206644341265528`}, {
+           1/20, 0.0034206644341265528`}, {3/50, 0.0034206644341265528`}, {
+           7/100, 0.0034206644341265528`}, {2/25, 0.0034206644341265528`}, {
+           9/100, 0.0034206644341265528`}, {1/10, 0.0034206644341265528`}, {
+           11/100, 0.0034206644341265528`}, {3/25, 0.0034206644341265528`}, {
+           13/100, 0.0034206644341265528`}, {7/50, 0.0034206644341265528`}, {
+           3/20, 0.0034206644341265528`}, {4/25, 0.0034206644341265528`}, {
+           17/100, 0.0034206644341265528`}, {9/50, 0.0034206644341265528`}, {
+           19/100, 0.0034206644341265528`}, {1/5, 0.0034206644341265528`}, {
+           21/100, 0.0034206644341265528`}, {11/50, 0.0034206644341265528`}, {
+           23/100, 0.0034206644341265528`}, {6/25, 0.0034206644341265528`}, {
+           1/4, 0.0034206644341265528`}, {13/50, 0.0034206644341265528`}, {
+           27/100, 0.0034206644341265528`}, {7/25, 0.0034206644341265528`}, {
+           29/100, 0.0034206644341265528`}, {3/10, 0.0034206644341265528`}, {
+           31/100, 0.0034206644341265528`}, {8/25, 0.0034206644341265528`}, {
+           33/100, 0.0034206644341265528`}, {17/50, 0.0034206644341265528`}, {
+           7/20, 0.0034206644341265528`}, {9/25, 0.0034206644341265528`}, {
+           37/100, 0.0034206644341265528`}, {19/50, 0.0034206644341265528`}, {
+           39/100, 0.0034206644341265528`}, {2/5, 0.0034206644341265528`}, {
+           41/100, 0.0034206644341265528`}, {21/50, 0.0034206644341265528`}, {
+           43/100, 0.0034206644341265528`}, {11/25, 0.0034206644341265528`}, {
+           9/20, 0.0034206644341265528`}, {23/50, 0.0034206644341265528`}, {
+           47/100, 0.0034206644341265528`}, {12/25, 0.0034206644341265528`}, {
+           49/100, 0.0034206644341265528`}, {1/2, 0.0034206644341265528`}, {
+           51/100, 0.0034206644341265528`}, {13/25, 0.0034206644341265528`}, {
+           53/100, 0.0034206644341265528`}, {27/50, 0.0034206644341265528`}, {
+           11/20, 0.0034206644341265528`}, {14/25, 0.0034206644341265528`}, {
+           57/100, 0.0034206644341265528`}, {29/50, 0.0034206644341265528`}, {
+           59/100, 0.0034206644341265528`}, {3/5, 0.0034206644341265528`}, {
+           61/100, 0.0034206644341265528`}, {31/50, 0.0034206644341265528`}, {
+           63/100, 0.0034206644341265528`}, {16/25, 0.0034206644341265528`}, {
+           13/20, 0.0034206644341265528`}, {33/50, 0.0034206644341265528`}, {
+           67/100, 0.0034206644341265528`}, {17/25, 0.0034206644341265528`}, {
+           69/100, 0.0034206644341265528`}, {7/10, 0.0034206644341265528`}, {
+           71/100, 0.0034206644341265528`}, {18/25, 0.0034206644341265528`}, {
+           73/100, 0.0034206644341265528`}, {37/50, 0.0034206644341265528`}, {
+           3/4, 0.0034206644341265528`}, {19/25, 0.0034206644341265528`}, {
+           77/100, 0.0034206644341265528`}, {39/50, 0.0034206644341265528`}, {
+           79/100, 0.0034206644341265528`}, {4/5, 0.0034206644341265528`}, {
+           81/100, 0.0034206644341265528`}, {41/50, 0.0034206644341265528`}, {
+           83/100, 0.0034206644341265528`}, {21/25, 0.0034206644341265528`}, {
+           17/20, 0.0034206644341265528`}, {43/50, 0.0034206644341265528`}, {
+           87/100, 0.0034206644341265528`}, {22/25, 0.0034206644341265528`}, {
+           0.8855764939082783, 0.0034206644341265528`}}, $CellContext`testint = 
+         InterpolatingFunction[{{1.*^-10, 0.8855764939082783}}, {
+           5, 7, 0, {169}, {4}, 0, 0, 0, 0, Automatic, {}, {}, 
+            False}, CompressedData["
+1:eJwtkA9Q0wUUxwcHlVA2ap4inbijCEQ7CTQk9h6KyA4FgQapcWKiFITHPJAT
+FFsFQxQDA64LarcACTJQJAQUOP7En+SPbMQGY8I29pctla6JR3IX271397v9
++b33vp/PY5/MiDvtyGAwHNaehrXnfpd8Zv7iLGdWtBqQGaXm7KmQqI4M6zjv
+H3hNGJhu5qTOpLCs+5Y4pWkj6HXfysntdosu++Q/zl1lV2xekAP8dOb8z9ZG
+Z2iU9/u9iHSFCpm30fU9N7j+0ipjQrwBClec3TOCPWD+4PCk2IsN/SWCo3fK
+3oHA8O7XLb5+8OrGEWaIuz8sfLSj7kfhLnAqkq3LdP8QRlOOVT1avxeCi3dq
+vs0Jh13cEAendQehvLMmo8ApFmTH771SlB4PLS2qJ6LnxyDULCsKWDkB48pV
+1tWk06Csb38YZkyD6g3eesMTPlxi+DtWxJ0D7q3Oyn/kucBuHBBU6wTQcbN4
+pC68AIqfGSNvDl2BGL4lPnm2FJh1h9J7girAkcdRnGmrhKLUyU+3ScTgUnVr
+Xu13A0ShXfuCf/kVrv3dKl4evA1pm5a3unq2QoMs4xLz+3uwqVKyfqSzB04V
+f+YX8sYAVDxMKnwqfABf81Lqa+9MgCWMu5LlPAXjX1V9rMhWQDL3bmp+vQqW
+Pl+43PpcC/lzgaaxlEXw1TsfThM9BRFDKF01/wt5GXt3jySsQJe6ipdQzsBq
+05fSqHknNPAUQdIDLsj2783mXmHiRYVX/g0pC3eEvWXW7N6Mb7r2NocKtmJL
+0pDGafBtHBC8G7HqvQ2bdEYHzN6J2xV9pi86AtFF6xnB3hiMzHOXk8PSQzE1
+72y54rf96CHZrot+ORJfNCxJo07GoDzKfy5GzEPxBzkewuWjeOH2+UPHj5zA
+zZ7JfeNlp7CtNEA7aEhF4ePM0axoPsZ/lxbCK8zCfuW1PW7TOdjsGHL4+n4B
+XmA1Rahz8+mzHNu3FJhj20X0uxYrf7BVA/3fhJZY27dmev87ushr+ByXNurr
+QN/Ekj6rTyf1d2Pt2lt5TQ/N9WKAvfpp/g/st/qsTQzQniGMsw8O074/UZ1r
+a3xAe0fxrG0df4z2jyPDXhOUM4Fc+4CE8iRom0oskVLuJNpj5JOU/xd62tZs
+mSKOKUyxl4x45GjrYjXJiWsan9narNPEN4N2HI6COBVoX1cwS7xKHBu1lZK4
+H6E9ljVH/HNob0ucJw8V5ajIR0V5KvJSU66a/NSUryFPDXFoyHeBeBbIe4G4
+tOSvJT4t3UFHnDq6h4549XQXPXHr6T4G4jfQnQzkYSQPI3kYycNIHibyMJGH
+iTwWyWORPBbJw0weZvIwk4cF2T6Pv6lNsOD/ZxiRAQ==
+           "], {
+           Developer`PackedArrayForm, {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+            12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 
+            28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 
+            44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 
+            60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 
+            76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 
+            92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+             107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 
+            120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 
+            133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 
+            146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 
+            159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 
+            169}, CompressedData["
+1:eJxTTMoPSmVkYGBYCcRbwhltlrPm2I/So/QoPUqP0uTRAPuSvVo=
+            "]}, {Automatic}], $CellContext`Qvap[
            Pattern[$CellContext`el, 
             Blank[]], 
            Pattern[$CellContext`T, 
@@ -10502,9 +12441,10 @@ $CellContext`p0H2O], 1]), $CellContext`condphases[3] = {1, 2, 5, 6, 8, 10, 11,
 $CellContext`xlist}]), $CellContext`colfun[
            Pattern[$CellContext`val, 
             Blank[]]] := If[$CellContext`val < 0, White, 
-           
            Blend[{{0, Blue}, {3.6, Green}, {
-             7.2, Red}}, $CellContext`val]], $CellContext`fraclists = {{0.62, 
+             7.2, Red}}, $CellContext`val]], $CellContext`ncol = 
+         5, $CellContext`xlist = {
+          0, 1/5, 2/5, 3/5, 4/5}, $CellContext`fraclists = {{0.62, 
           0.1200000000000001, 0.6200000000000001}}, $CellContext`primcolfun[
            Pattern[$CellContext`colbreak, 
             Blank[]], 
@@ -10544,6 +12484,7 @@ $CellContext`saturation =
                 
                 Transpose[{$CellContext`primlist, $CellContext`saturation^1, \
 $CellContext`luminance^1}]], "RGB"], $CellContext`collist1]; 
+          
           Blend[$CellContext`collist, $CellContext`x]), $CellContext`primlist = \
 {0.62, 0.1200000000000001}, $CellContext`temp = 1.62, $CellContext`collist1 = {
            RGBColor[0., 0.28000000000000025`, 1.], 
@@ -10844,7 +12785,6 @@ $CellContext`p0H2O]), {$CellContext`el, $CellContext`els}]; $CellContext`minq =
                 $CellContext`elname[$CellContext`el]] = If[
                 MemberQ[$CellContext`els, 
                  $CellContext`ordnum[$CellContext`el]], 
-                
                 Blend[{{-$CellContext`absq + $CellContext`setpt, 
                    Blue}, {$CellContext`setpt, 
                    White}, {$CellContext`absq + $CellContext`setpt, Red}}, 
@@ -11005,6 +12945,7 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{4, "Be"}, {2, -2}}, 1, 2]]], 
+               
                Rectangle[{
                 Part[{{4, "Be"}, {2, -2}}, 2, 1] - 
                  0.5, (Part[{{4, "Be"}, {2, -2}}, 2, 2] - 
@@ -11060,6 +13001,7 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{5, "B"}, {13, -2}}, 1, 2]]], 
+               
                Rectangle[{
                 Part[{{5, "B"}, {13, -2}}, 2, 1] - 
                  0.5, (Part[{{5, "B"}, {13, -2}}, 2, 2] - 
@@ -11839,6 +13781,7 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{25, "Mn"}, {7, -4}}, 1, 2]]], 
+               
                Rectangle[{
                 Part[{{25, "Mn"}, {7, -4}}, 2, 1] - 
                  0.5, (Part[{{25, "Mn"}, {7, -4}}, 2, 2] - 
@@ -12657,7 +14600,6 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{46, "Pd"}, {10, -5}}, 1, 2]]], 
-               
                Rectangle[{
                 Part[{{46, "Pd"}, {10, -5}}, 2, 1] - 
                  0.5, (Part[{{46, "Pd"}, {10, -5}}, 2, 2] - 
@@ -13281,6 +15223,7 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{76, "Os"}, {8, -6}}, 1, 2]]], 
+               
                Rectangle[{
                 Part[{{76, "Os"}, {8, -6}}, 2, 1] - 
                  0.5, (Part[{{76, "Os"}, {8, -6}}, 2, 2] - 
@@ -14160,6 +16103,7 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{113, "Nh"}, {13, -7}}, 1, 2]]], 
+               
                Rectangle[{
                 Part[{{113, "Nh"}, {13, -7}}, 2, 1] - 
                  0.5, (Part[{{113, "Nh"}, {13, -7}}, 2, 2] - 
@@ -14198,7 +16142,6 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{114, "Fl"}, {14, -7}}, 1, 2]]], 
-               
                Rectangle[{
                 Part[{{114, "Fl"}, {14, -7}}, 2, 1] - 
                  0.5, (Part[{{114, "Fl"}, {14, -7}}, 2, 2] - 
@@ -14593,6 +16536,7 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{62, "Sm"}, {8, (-17)/2}}, 1, 2]]], 
+               
                Rectangle[{
                 Part[{{62, "Sm"}, {8, (-17)/2}}, 2, 1] - 
                  0.5, (Part[{{62, "Sm"}, {8, (-17)/2}}, 2, 2] - 
@@ -14792,7 +16736,6 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{67, "Ho"}, {13, (-17)/2}}, 1, 2]]], 
-               
                Rectangle[{
                 Part[{{67, "Ho"}, {13, (-17)/2}}, 2, 1] - 
                  0.5, (Part[{{67, "Ho"}, {13, (-17)/2}}, 2, 2] - 
@@ -14952,7 +16895,6 @@ $CellContext`els = {3, 4, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26,
                Dynamic[
                 $CellContext`selcolfun[
                  Part[{{89, "Ac"}, {3, (-19)/2}}, 1, 2]]], 
-               
                Rectangle[{
                 Part[{{89, "Ac"}, {3, (-19)/2}}, 2, 1] - 
                  0.5, (Part[{{89, "Ac"}, {3, (-19)/2}}, 2, 2] - 
@@ -15569,12 +17511,16 @@ $CellContext`initConstants[0]; $CellContext`initTDdat[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Input"]
+  Manipulate`InterpretManipulate[1]]], "Input", "PluginEmbeddedContent"]
 },
-WindowSize->{1520, 781},
+WindowSize->{857, 638},
+WindowMargins->{{331, Automatic}, {Automatic, 63}},
 Visible->True,
-ScrollingOptions->{"VerticalScrollRange"->Fit},
-ShowCellBracket->Automatic,
+AuthoredSize->{858, 639},
+ScrollingOptions->{"HorizontalScrollRange"->Fit,
+"VerticalScrollRange"->Fit},
+ShowCellBracket->False,
+Deployed->True,
 CellContext->Notebook,
 TrackCellChangeTimes->False,
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
@@ -15591,11 +17537,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[1464, 33, 668085, 15538, 635, "Input"]
+Cell[1464, 33, 796855, 17480, 620, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
 
-(* NotebookSignature GvTH0g7y#CsC7DKEif1yhyW1 *)
+(* NotebookSignature @xT#jaTTHv9A@Cw5SeMlTG41 *)
