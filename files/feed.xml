@@ -1,17 +1,19 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0">
-  <channel>
-    <title>Example Channel</title>
-    <link>http://example.com/</link>
-    <description>My example channel</description>
+ <channel>
+  <title>information für FREQ-Mitglieder</title>
+  <link>https://hessfran.github.io/_pages/FREQ.html</link>
+  <description>Erhalten Sie hier aktuelle Informationen über das FREQ-Netzwerk des FCI</description>
+  <pubDate>Tue, 10 Mar 2020 17:13:53 +0100</pubDate>
+  <language>de</language>
+  <ttl>1440</ttl>
+  <generator>RSSWriter 1.80 https://www.rsswriter.de/</generator>
     <item>
-       <title>News for September the Second</title>
-       <link>http://example.com/2002/09/01</link>
-       <description>other things happened today</description>
+     <title>Frühjahrstreffen 2020 des FREQ-Netzwerks </title>
+     <author>Franziska Hess</author>
+     <guid isPermaLink="false">52E11CCD-C3DF-4E47-B286-F4FFA4287B5F</guid>
+     <description><![CDATA[<p><font size="2" color="#000000" face="Arial"><b>Erstellt mit RSSWriter (Unregistriert) <a href="http://www.rsswriter.de">http://www.rsswriter.de</a></b><br>In der registrierten Version erscheint dieser Text nicht mehr.</font></p><br><p align="left">Heute fand das Fr&uuml;hjahrstreffen 2020&nbsp;des FREQ-Netzwerks statt. Wir hatten heute mal wieder &auml;u&szlig;erst interessante und konstruktive Diskussionen.</p>]]></description>
+     <pubDate>Tue, 10 Mar 2020 17:08:51 +0100</pubDate>
     </item>
-    <item>
-       <title>News for September the First</title>
-       <link>http://example.com/2002/09/02</link>
-    </item>
-  </channel>
+ </channel>
 </rss>
