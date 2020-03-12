@@ -1,19 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
- <channel>
-  <title>information für FREQ-Mitglieder</title>
-  <link>https://hessfran.github.io/_pages/FREQ.html</link>
-  <description>Erhalten Sie hier aktuelle Informationen über das FREQ-Netzwerk des FCI</description>
-  <pubDate>Tue, 10 Mar 2020 17:13:53 +0100</pubDate>
-  <language>de</language>
-  <ttl>1440</ttl>
-  <generator>RSSWriter 1.80 https://www.rsswriter.de/</generator>
+  <channel>
+    <generator>RSS Builder by B!Soft</generator>
+    <title>information für FREQ-Mitglieder</title>
+    <link>https://hessfran.github.io/_pages/FREQ.html</link>
+    <description>Erhalten Sie hier aktuelle Informationen über das FREQ-Netzwerk des FCI</description>
+    <language>de</language>
     <item>
-     <title>Frühjahrstreffen 2020 des FREQ-Netzwerks </title>
-     <author>Franziska Hess</author>
-     <guid isPermaLink="false">52E11CCD-C3DF-4E47-B286-F4FFA4287B5F</guid>
-     <description><![CDATA[<p><font size="2" color="#000000" face="Arial"><b>Erstellt mit RSSWriter (Unregistriert) <a href="http://www.rsswriter.de">http://www.rsswriter.de</a></b><br>In der registrierten Version erscheint dieser Text nicht mehr.</font></p><br><p align="left">Heute fand das Fr&uuml;hjahrstreffen 2020&nbsp;des FREQ-Netzwerks statt. Wir hatten heute mal wieder &auml;u&szlig;erst interessante und konstruktive Diskussionen.</p>]]></description>
-     <pubDate>Tue, 10 Mar 2020 17:08:51 +0100</pubDate>
+      <title>Ausschreibung NWG-Leitung Freiburg</title>
+      <pubDate>Thu, 12 Mar 2020 15:00:05 +0100</pubDate>
+      <description><![CDATA[In Dusseldorf ist eine W2 Professur im Bereich "Biomedical Physics" ausgeschrieben.
+
+<b>Deadline ist der 30.04.2020.</b> Hier der Link zur Ausschreibung: https://www.nature.com/naturecareers/job/associate-professorship-w2-in-biomedical-physics-heinrich-heine-university-dusseldorf-hhu-721963
+
+Danke an Prof. Cornelia Monzel für die Information.
+]]></description>
     </item>
- </channel>
+    <item>
+      <title>Frühjahrstreffen 2020 des FREQ-Netzwerks </title>
+      <pubDate>Tue, 10 Mar 2020 17:08:51 +0100</pubDate>
+      <guid isPermaLink="false">52E11CCD-C3DF-4E47-B286-F4FFA4287B5F</guid>
+      <author>Franziska Hess</author>
+      <description><![CDATA[Heute fand das Fr&uuml;hjahrstreffen 2020&nbsp;des FREQ-Netzwerks statt. Wir hatten heute mal wieder &auml;u&szlig;erst interessante und konstruktive Diskussionen.</p>]]></description>
+    </item>
+  </channel>
 </rss>
