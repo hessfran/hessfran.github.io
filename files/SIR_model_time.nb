@@ -1,0 +1,165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6819,        155]
+NotebookOptionsPosition[      6524,        142]
+NotebookOutlinePosition[      6865,        157]
+CellTagsIndexPosition[      6822,        154]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`rval$$ = {13, 1}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`rval$$], {13, 1}}, {1, 0}, {20, 2}, {1, 0.1}}}, 
+    Typeset`size$$ = {738., {212.5, 218.5}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`rval$134074$$ = {0, 0}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`rval$$ = {13, 1}}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`rval$$, $CellContext`rval$134074$$, {0, 0}]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Column[{
+         Text["Interactive simulation of the SIR model as described in"], 
+         Text["C.M Simon"], 
+         Text[
+         "'The SIR dynamic model of infectious disease transmission from the \
+viewpoint of a chemical engineer'"], 
+         Text["ChemRXiv (2020), DOI:10.26434/chemrxiv.12021342.v1"], Null, 
+         Row[{
+           Text["Social distancing in effect from day "], 
+           Part[$CellContext`rval$$, 1]}], 
+         Row[{
+           Text["Social contacts reduced to"], 
+           100. (Part[$CellContext`rval$$, 2]/$CellContext`insoc), "%"}, 
+          "  "], 
+         Row[{
+           Plot[{
+             ReplaceAll[
+              $CellContext`S[
+               Part[$CellContext`rval$$, 1], 
+               
+               Part[$CellContext`rval$$, 
+                2]][$CellContext`t], $CellContext`sol], 
+             ReplaceAll[
+              $CellContext`II[
+               Part[$CellContext`rval$$, 1], 
+               Part[$CellContext`rval$$, 
+                2]][$CellContext`t], $CellContext`sol], 
+             ReplaceAll[
+              $CellContext`R[
+               Part[$CellContext`rval$$, 1], 
+               
+               Part[$CellContext`rval$$, 
+                2]][$CellContext`t], $CellContext`sol], ($CellContext`insoc - \
+(($CellContext`insoc - Part[$CellContext`rval$$, 2])/2) (
+               Erf[$CellContext`t - Part[$CellContext`rval$$, 1]] + 
+               1))/$CellContext`insoc}, {$CellContext`t, 
+             0, $CellContext`ttot}, ImageSize -> Medium, 
+            PlotRange -> {Automatic, {0, 1.03}}, 
+            FrameLabel -> {{
+              "fraction of population", "amount of social contacts"}, {
+              "time", None}}, Frame -> True, 
+            FrameTicks -> {{
+              Automatic, {{0, "0 %"}, {0.25, "25 %"}, {0.5, "50 %"}, {
+                0.75, "75 %"}, {1, "100 %"}}}, {Automatic, Automatic}}, 
+            FrameStyle -> {{
+               Directive[{14, Black}], 
+               Directive[14, Red]}, {
+               Directive[{14, Black}], 
+               Directive[{14, Black}]}}, PerformanceGoal -> "Speed", 
+            PlotLegends -> 
+            Placed[{"susceptible", "infected", "recovered"}, Below]], 
+           Plot[
+            
+            ReplaceAll[$CellContext`ntot ($CellContext`insoc - \
+(($CellContext`insoc - Part[$CellContext`rval$$, 2])/2) (
+               Erf[$CellContext`t - Part[$CellContext`rval$$, 1]] + 
+               1)) $CellContext`II[
+               Part[$CellContext`rval$$, 1], 
+               Part[$CellContext`rval$$, 2]][$CellContext`t] $CellContext`S[
+               Part[$CellContext`rval$$, 1], 
+               
+               Part[$CellContext`rval$$, 
+                2]][$CellContext`t], $CellContext`sol], {$CellContext`t, 
+             0, $CellContext`ttot}, ImageSize -> Medium, PlotRange -> All, 
+            FrameLabel -> {"time", "number of new infections per day"}, Frame -> 
+            True, FrameStyle -> Directive[{14, Black}]]}, "    "], Null, 
+         Text["Simulation made by F. Hess"]}], 
+      "Specifications" :> {{{$CellContext`rval$$, {13, 1}}, {1, 0}, {20, 2}, {
+         1, 0.1}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{789., {288., 294.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`pat0 = 1; $CellContext`ntot = 
+       100000; $CellContext`ttot = 25; $CellContext`insoc = 
+       2; $CellContext`sol = ParametricNDSolve[{D[
+            $CellContext`S[$CellContext`t], $CellContext`t] == \
+(-$CellContext`insoc - (($CellContext`insoc - $CellContext`r2)/2) (
+             Erf[$CellContext`t - $CellContext`r1] + 
+             1)) $CellContext`II[$CellContext`t] \
+$CellContext`S[$CellContext`t], $CellContext`S[
+           0] == ($CellContext`ntot - $CellContext`pat0)/$CellContext`ntot, D[
+            $CellContext`R[$CellContext`t], $CellContext`t] == Plus[
+            $CellContext`II[$CellContext`t]], $CellContext`R[0] == 0, D[
+            $CellContext`II[$CellContext`t], $CellContext`t] == (
+             Plus[$CellContext`insoc] - (($CellContext`insoc - \
+$CellContext`r2)/2) (Erf[$CellContext`t - $CellContext`r1] + 
+              1)) $CellContext`II[$CellContext`t] \
+$CellContext`S[$CellContext`t] - $CellContext`II[$CellContext`t], \
+$CellContext`II[
+           0] == $CellContext`pat0/$CellContext`ntot}, {$CellContext`S, \
+$CellContext`II, $CellContext`R}, {$CellContext`t, 
+          0, $CellContext`ttot}, {$CellContext`r1, $CellContext`r2}]; Null); 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",ExpressionUUID->"13e3300c-ae2e-\
+44c3-9b6b-9a0b0ef86796"]
+},
+WindowSize->{1264, 638},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5962, 120, 597, "Input",ExpressionUUID->"13e3300c-ae2e-44c3-9b6b-9a0b0ef86796"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
