@@ -29,10 +29,11 @@
 }
 
 .archive__wide {
+  
   margin-bottom: 2em;
   margin-right: 0;
   float: left;
-  margin-left: -1em;
+  
   
   @include breakpoint($medium) {
     @include span(12 of 12);
@@ -42,6 +43,8 @@
     @include span(10 of 12);
     @include prefix(0 of 12);
 	@include suffix(0 of 12);
+	padding-right: span(0.1 of 12);
+    margin-left: -1em;
   }
 
   a {
