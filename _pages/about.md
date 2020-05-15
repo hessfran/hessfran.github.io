@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to the place where surface science, catalysis and modeling come together.
+My group does research in the area of computational modeling and simulation of heterogeneous catalyst systems. My special interest is in the modeling of catalyst stability and aging under realistic reaction conditions with the ultimate goal of identifying simple descriptors that enable the prediction of new catalyst materials that are both active and stable. 
 
 <p style="text-align: center;"><img src="/images/CatalSciTechnol_cover_small.png"></p>
 
