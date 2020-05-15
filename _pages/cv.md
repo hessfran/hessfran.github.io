@@ -26,7 +26,10 @@ Education
 
 Research experience
 ======
-* **June 2019 --**
+* ** May 2020 -- **
+  * **Junior professor (W1)** in the area of chemical catalysis at the department of Technical Chemistry at TU Berlin
+  
+* **June 2019 - April 2020**
   * **Young research group leader** at Institute for Physical Chemistry, RWTH Aachen, mentored by Apl. Prof. Roger A. De Souza
   
 * **July 2017 - May 2019**
