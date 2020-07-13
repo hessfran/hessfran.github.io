@@ -5,7 +5,7 @@ pubtype: 'journal'
 date: 2020-07-10
 paperurl: 'https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/cctc.202000907'
 doi: '10.1002/cctc.202000907'
-citation: 'Y.Sun, F. Hess, I. Djerdj, Z. Wang, T. Weber, Y.Guo, B.M. Smarsly, and H. Over. <i>Acc. ChemCatChem </i> xx (<b>2020</b>) xxx.'
+citation: 'Y.Sun, F. Hess, I. Djerdj, Z. Wang, T. Weber, Y.Guo, B.M. Smarsly, and H. Over. <i>ChemCatChem </i> xx (<b>2020</b>) xxx.'
 teaser: "/images/2020-07-10-CeO2_kinetics.png"
 tags: ["catalyst degradation", "CeO2", "Deacon process", "HCl oxidation", "shaped nanoparticles"]
 newsline: "We study the degradation of of two different ZrO<sub>2</sub>-supported CeO<sub>2</sub> catalysts in the HCl oxidation and model the reoxidation kinetics using a JMAK model, as reported in ChemCatChem."
