@@ -26,7 +26,7 @@ Education
 
 Research experience
 ======
-* ** May 2020 -- **
+* **May 2020 --**
   * **Junior professor (W1)** in the area of chemical catalysis at the department of Technical Chemistry at TU Berlin
   
 * **June 2019 - April 2020**
