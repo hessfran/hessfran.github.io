@@ -2,16 +2,16 @@
 title: "Precipitation of dopants on acceptor-doped LaMnO<sub>3+-d</sub> revealed by defect chemistry from first principles"
 collection: publications
 pubtype: 'journal'
-date: 2020-02-09
+date: 2021-02-09
 paperurl: 'https://doi.org/10.1063/5.0035691'
 doi: '10.1063/5.0035691'
 citation: 'F. Hess and B. Yildiz. <i>J. Chem. Phys. </i> 154 (<b>2021</b>) 064702 .'
-teaser: "/images/2020-02-09-LSM_defects.png"
+teaser: "/images/2021-02-09-LSM_defects.png"
 tags: ["SOFC", "catalyst degradation", "defect chemistry", "perovskite oxides", "near-surface defects", "surface defects"]
 newsline: "We studied the precipitation of dopants from (Ca, Sr, Ba) doped LaMnO3 in the form of binary oxides and peroxides under SOFC conditions by a first-principles-based defect model."
 ---
 
-<img src="/images/2020-02-09-LSM_defects.png">
+<img src="/images/2021-02-09-LSM_defects.png">
 
 Abstract
 --------
