@@ -2,7 +2,7 @@
 title: "Polar or not polar? The interplay between reconstruction, Sr enrichment, and reduction at the La<sub>0.75</sub>Sr<sub>0.25</sub>MnO<sub>3</sub>(001) surface"
 collection: publications
 pubtype: 'journal'
-date: 2021-02-09
+date: 2020-02-04
 paperurl: 'https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.4.015801'
 doi: '10.1103/PhysRevMaterials.4.015801'
 citation: 'F. Hess and B. Yildiz. <i>Phys. Rev. Mater. </i> 4 (<b>2020</b>) 015801.'
