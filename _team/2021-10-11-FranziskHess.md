@@ -2,25 +2,20 @@
 title: "Franziska Hess"
 collection: team
 pubtype: 'teammember'
-teaser: "/images/CatalSciTechnol_cover_teaser.png"
-date: 2021-10-13
+teaser: "/images/photo.png"
 public: true
 tags: ["team"]
 ---
 
-Contact:
+Group Leader
 
-Technische Universität Berlin
-
-Fakultät II
-
-Institut für Chemie
-
-Sekretariat TC 8
-
-Straße des 17. Juni 124
-
+Contact:  
+Technische Universität Berlin  
+Fakultät II  
+Institut für Chemie  
+Sekretariat TC 8  
+Straße des 17. Juni 124  
 10623 Berlin
 
-Gebäude TC, Raum 320
+Gebäude TC, Raum 320  
 +49 30 314 22728
