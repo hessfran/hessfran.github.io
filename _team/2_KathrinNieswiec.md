@@ -8,10 +8,7 @@ public: true
 tags: ["team"]
 ---
 
-<table>
-<tr>
-<td><img src="/images/team_KathrinNieswiec.jpg" width="400"></td>
-<td>
+<img src="/images/team_KathrinNieswiec.jpg" width="400"></td>
 <h3> PhD student</h3> <br>
 <br>
 Kathrin works on modelling the reoxidation of CeCl<sub>3</sub> during the reactivation of the CeO<sub>2</sub> catalyst in the Deacon process using Density Functional Theory and Kinetic Monte Carlo Methods.<br>
@@ -20,7 +17,3 @@ Room: TC 316<br>
 Phone: +49 30 314 26284<br>
 e-mail: nieswiec[at]tu-berlin.de<br>
 
-
-</td>
-</tr>
-</table>
