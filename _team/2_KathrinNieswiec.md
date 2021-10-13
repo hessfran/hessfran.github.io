@@ -19,13 +19,7 @@ Kathrin works on modelling the reoxidation of CeCl<sub>3</sub> during the reacti
 Room: TC 316<br>
 Phone: +49 30 314 26284<br>
 e-mail: nieswiec[at]tu-berlin.de<br>
-<br>
-Technische Universität Berlin  <br>
-Fakultät II  <br>
-Institut für Chemie  <br>
-Sekretariat TC 8  <br>
-Straße des 17. Juni 124  <br>
-10623 Berlin<br>
+
 
 </td>
 </tr>

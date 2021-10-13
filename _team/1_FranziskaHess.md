@@ -15,14 +15,6 @@ tags: ["team"]
 Room: TC 316<br>
 Phone: +49 30 314 22728<br>
 e-mail: f.hess[at]tu-berlin.de<br>
-<br>
-Address:  <br>
-Technische Universität Berlin  <br>
-Fakultät II  <br>
-Institut für Chemie  <br>
-Sekretariat TC 8  <br>
-Straße des 17. Juni 124  <br>
-10623 Berlin<br>
 </td>
 </tr>
 </table>
