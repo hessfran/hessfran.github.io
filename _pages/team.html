@@ -9,7 +9,7 @@ author_profile: true
 <h2 id="team">Team members</h2>
 {% include base_path %}
 <ul class="news__item">
-{% for post in site.resources reversed %}
+{% for post in site.team reversed %}
   {% if post.pubtype == "teammember" %}
     {% include archive-single-res.html %}
   {% endif %}
