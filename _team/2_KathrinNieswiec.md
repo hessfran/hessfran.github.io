@@ -8,7 +8,7 @@ public: true
 tags: ["team"]
 ---
 
-<img src="/images/team_KathrinNieswiec.jpg" width="400"></td>
+<img src="/images/team_KathrinNieswiec.jpg" width="300">
 <h3> PhD student</h3> <br>
 <br>
 Kathrin works on modelling the reoxidation of CeCl<sub>3</sub> during the reactivation of the CeO<sub>2</sub> catalyst in the Deacon process using Density Functional Theory and Kinetic Monte Carlo Methods.<br>
