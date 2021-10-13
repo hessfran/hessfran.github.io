@@ -9,8 +9,8 @@ tags: ["team"]
 ---
 
 <table><tr>
-<td><img src="/images/photo.png"></td>
-<td><h3> Group Leader <br>
+<td><img src="/images/photo.png" width="400"></td>
+<td><h3> Group Leader</h3> <br>
 <br>
 Contact:  <br>
 Technische Universität Berlin  <br>
