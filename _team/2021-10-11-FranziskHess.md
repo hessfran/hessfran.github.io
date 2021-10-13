@@ -7,7 +7,11 @@ public: true
 tags: ["team"]
 ---
 
-Group Leader
+<table>
+<tr>
+<td><img src="/images/photo.png"></td>
+<td>
+## Group Leader
 
 Contact:  
 Technische Universität Berlin  
@@ -19,3 +23,4 @@ Straße des 17. Juni 124
 
 Gebäude TC, Raum 320  
 +49 30 314 22728
+</td>
