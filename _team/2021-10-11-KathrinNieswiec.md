@@ -1,5 +1,5 @@
 ---
-title: "Kathrin nieswiec"
+title: "Kathrin Nieswiec"
 collection: team
 pubtype: 'teammember'
 teaser: "/images/team_KathrinNieswiec.jpg"
