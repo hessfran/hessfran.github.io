@@ -177,6 +177,9 @@ collections:
   teaching:
     output: false
     permalink: /:collection/:path/
+  team:
+    output: true
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -221,6 +224,15 @@ defaults:
   - scope:
       path: ""
       type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # team
+  - scope:
+      path: ""
+      type: team
     values:
       layout: single
       author_profile: true

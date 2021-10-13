@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Team"
+permalink: /team/
+author_profile: true
+---
+
+<div>
+<h2 id="team">Team members</h2>
+{% include base_path %}
+<ul class="news__item">
+{% for post in site.resources reversed %}
+  {% if post.pubtype == "teammember" %}
+    {% include archive-single-res.html %}
+  {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+
