@@ -9,19 +9,20 @@ tags: ["team"]
 ---
 
 <table><tr>
-<td><img src="/images/photo.png" width="400"></td>
+<td><img src="/images/photo.png" width="300"></td>
 <td><h3> Group Leader</h3> <br>
 <br>
-Contact:  <br>
+Room: TC 316<br>
+Phone: +49 30 314 22728<br>
+e-mail: f.hess[at]tu-berlin.de<br>
+<br>
+Address:  <br>
 Technische Universität Berlin  <br>
 Fakultät II  <br>
 Institut für Chemie  <br>
 Sekretariat TC 8  <br>
 Straße des 17. Juni 124  <br>
 10623 Berlin<br>
-<br>
-Gebäude TC, Raum 320  <br>
-+49 30 314 22728<br>
 </td>
 </tr>
 </table>
