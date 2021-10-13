@@ -8,7 +8,7 @@ public: true
 tags: ["team"]
 ---
 
-<h3> M.Sc. student</h3> <br>
+<h3> M.Sc. student</h3> 
 <br>
 Emmanuelle studies the activation of O<sub>2</sub> over La<sub>0.8</sub>Sr<sub>0.8</sub>MnO<sub>3</sub>-based SOFC electrodes.<br>
 <br>

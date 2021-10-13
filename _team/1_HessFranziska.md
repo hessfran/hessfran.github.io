@@ -3,13 +3,13 @@ title: "Franziska Hess"
 collection: team
 pubtype: 'teammember'
 teaser: "/images/photo.png"
-excerpt: "group leader"
+excerpt: "Junior Professor"
 public: true
 tags: ["team"]
 ---
 
 <img src="/images/photo.png" width="300">
-<h3> Group Leader</h3> <br>
+<h3> Group Leader</h3>
 <br>
 Room: TC 316<br>
 Phone: +49 30 314 22728<br>
