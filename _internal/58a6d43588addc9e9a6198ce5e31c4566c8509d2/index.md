@@ -3,6 +3,7 @@ layout: single
 title: "Impressum"
 collection: internal
 author_profile: true
+public: true
 ---
 
 
