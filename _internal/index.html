@@ -93,7 +93,7 @@ div.vertical {
 
 		var hash= pwd;
 		hash= Sha1.hash(pwd);
-		var url= "/internal/" + hash + "/index.html";
+		var url= hash + "/index.html";
 
 		$.ajax({
 			url : url,
@@ -108,8 +108,8 @@ div.vertical {
 
 				parent.location.hash= hash;
 
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder",url);
+				$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
 				$("#password").val("");
 			}
 		});
