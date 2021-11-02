@@ -11,17 +11,19 @@ layout: default
 {% comment %}
   {% if page.url != "/" and site.breadcrumbs %}
     {% unless paginator %}
-	{% unless page.collection == "internal" %}
       paginator
       {% include breadcrumbs.html %}
-	{% endunless %}
 	{% endunless %}
   {% endif %}
 {% endcomment %}
 
 <div id="main" role="main">
   {% include sidebar.html %} 
-  {% include TOC_single.html %}
+  {% if page.collections == "internal" %}
+    {% include TOC_internal.html %}
+  {% else %}
+    {% include TOC_single.html %}
+  {% endif %}
   
   
   {% if page.collection == "publications" %}
