@@ -11,9 +11,11 @@ layout: default
 {% comment %}
   {% if page.url != "/" and site.breadcrumbs %}
     {% unless paginator %}
+	{% unless page.collection == "internal" %}
       paginator
       {% include breadcrumbs.html %}
 	{% endunless %}
+	{% unless paginator %}
   {% endif %}
 {% endcomment %}
 
