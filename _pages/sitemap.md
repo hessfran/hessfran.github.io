@@ -18,7 +18,7 @@ A list of all the posts and pages found on the site. For you robots out there is
 {% for post in site.posts %}
 {%  unless collection.public == false %}
   {% include archive-single.html %}
-{$ endunless %}
+{% endunless %}
 {% endfor %}
 
 {% capture written_label %}'None'{% endcapture %}
