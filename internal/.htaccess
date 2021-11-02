@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Protected Site"
-AuthUserFile /.htpasswd
+AuthUserFile http://hessfran.github.io/.htpasswd
 require valid-user
