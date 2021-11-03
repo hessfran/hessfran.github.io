@@ -1,10 +1,16 @@
 ---
-title: "Testing internal content"
-collection: internal
-date: 2020-02-29
+title: "Website stuff"
+collection: wiki
 public: false
-excerpt: 'I am starting my own group in the area of chemical catalysis in the Department of Technical Chemistry at TU Berlin. '
+excerpt: 'Stuff about website'
 tags: ["career"]
 ---
 
-test if new 2
+This is a list of properties that can be used on sites:
+
+- crumbdisp: allows you to manually assign a title for the page in the breadcrumbs menu -> use it to abbreviate longer titles
+
+- tags: ["tag1","tag2",...] assigns tags to pages -> can be used to filter publications (filtering works only for publications, but tags can be assigned to any page).
+
+- title (what is shown in the browser title)
+
