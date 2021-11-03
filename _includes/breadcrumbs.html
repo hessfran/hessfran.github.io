@@ -23,7 +23,12 @@
         <meta itemprop="position" content="{{ i }}" />
     </li>
     <!--<span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>-->
-    {% for crumb in crumbs offset: 1 %}
+	{% if page.collection = 'internal' %}
+	  {% assign crumb_offset = 3 %}
+	{% else %}
+	  {% assign crumb_offset = 1 %}
+	{% endif %}
+    {% for crumb in crumbs offset: crumb_offset %}
       
       {% if forloop.last %}
         <li class="current"><span class="current">{{ page.title }}</span></li>
