@@ -11,4 +11,4 @@ excerpt: 'This is the internal repository for the chemical catalysis group'
 
 # Accessible only for members of the chemical catalysis group
 
-https://github.com/hessfran/chemcat
+[[Github] Access the group repository] https://github.com/hessfran/chemcat
