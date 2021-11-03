@@ -1,6 +1,6 @@
 ---
 title: "Internal group repository"
-crumdisp: "Repository"
+crumbdisp: "Repository"
 collection: resources
 date: 2021-11-03
 public: true
