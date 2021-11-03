@@ -3,6 +3,7 @@ title: "Internal group respository"
 collection: resources
 date: 2021-11-03
 public: true
+pubtype: 'link'
 dllink: 'https://github.com/hessfran/chemcat'
 linktype: "Github"
 excerpt: 'This is the internal repository for the chemical catalysis group'

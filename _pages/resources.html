@@ -15,6 +15,15 @@ author_profile: true
   {% endif %}
 {% endfor %}
 </ul>
+<h2 id="F95">Links</h2>
+{% include base_path %}
+<ul class="news__item">
+{% for post in site.resources reversed %}
+  {% if post.pubtype == "link" %}
+    {% include archive-single-res.html %}
+  {% endif %}
+{% endfor %}
+</ul>
 </div>
 
 
