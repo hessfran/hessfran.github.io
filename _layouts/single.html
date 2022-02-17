@@ -19,11 +19,8 @@ layout: default
 
 <div id="main" role="main">
   {% include sidebar.html %} 
-  {% if page.collection == "internal" %}
-    {% include TOC_internal.html %}
-  {% else %}
-    {% include TOC_single.html %}
-  {% endif %}
+  {% include TOC_single.html %}
+
   
   
   {% if page.collection == "publications" %}
