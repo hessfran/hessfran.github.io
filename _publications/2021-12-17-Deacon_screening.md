@@ -2,7 +2,7 @@
 title: "Is There a Stable Deacon Catalyst? Computational Screening Approach for the Stability of Oxide Catalysts under Harsh Conditions"
 collection: publications
 pubtype: 'journal'
-date: 2021-12-17
+date: 2022-1-1
 paperurl: 'https://doi.org/10.1021/acscatal.1c04487'
 doi: '10.1021/acscatal.1c04487'
 citation: 'F. Hess. <i>ACS Catal. </i> 12 (<b>2022</b>) 497–511.'
