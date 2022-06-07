@@ -6,6 +6,7 @@ teaser: ""
 excerpt: "PhD student <br> Alexander works on modelling the formation of volatile PtO<sub>2</sub> from Pt alloy catalysts in oxidative catalysis, such as the Ostwald process, with the goal of enhancing long-term stability and reducing the loss of noble metal."
 public: true
 tags: ["team"]
+newsline: "A warm welcome to our new team member, Alexander Kafka!"
 ---
 
 <h3> PhD student</h3>
