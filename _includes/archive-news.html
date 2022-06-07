@@ -55,6 +55,7 @@
         {% elsif post.collection == 'publications' %}
 		{% elsif post.collection == 'resources' %}
 		{% elsif post.collection == 'news' %}
+		{% elsif post.collection == 'team' %}
 		  {{ post.excerpt }}
           <!--# <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>-->
         {% elsif post.date %}
