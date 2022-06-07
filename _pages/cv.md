@@ -57,6 +57,6 @@ Memberships
 ====
 * GDCh (German Chemical Society)
 * DPG (German Physical Society)
-* ACS (American Chemical Society)
+
 
 
