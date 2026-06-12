@@ -374,36 +374,37 @@ function renderQuestionScreen(screen) {
     ${renderCategoryNav(screen.section)}
     <p class="question-text">${screen.text}</p>
     <div class="importance-question">
-      <p><strong>Wie relevant ist diese Frage?</strong></p>
+      <p><strong>Wie hoch ist die Relevanz dieser Frage?</strong></p>
       <div class="likert-bar">
         <label class="bar-option">
           <input type="radio" name="importance" value="0">
-          <span>0</span>
+          <span>keine</span>
         </label>
         <label class="bar-option">
           <input type="radio" name="importance" value="1">
-          <span>1</span>
+          <span>gering</span>
         </label>
         <label class="bar-option">
-          <input type="radio" name="importance" value="2">
-          <span>2</span>
+          <input type="radio" name="importance" value="2" checked="true">
+          <span>mittel</span>
         </label>
         <label class="bar-option">
           <input type="radio" name="importance" value="3">
-          <span>3</span>
+          <span>hoch</span>
         </label>
       </div>
     </div>
 
-    <p><strong>Wie lautet deine Antwort?</strong></p>
+    <p><strong>Trifft die Aussage zu?</strong></p>
     <div class="options">
-      <label><input type="radio" name="answer" value="yes"> Ja</label>
-      <label><input type="radio" name="answer" value="no"> Nein</label>
-      <label><input type="radio" name="answer" value="unknown"> Keine Aussage</label>
+      <label><input type="radio" name="answer" value="yes"> Trifft <br> eher zu</label>
+	  <label><input type="radio" name="answer" value="half"> Halbe-Halbe</label>
+      <label><input type="radio" name="answer" value="no" checked="True"> Trifft <br> eher nicht zu</label>
+      <label><input type="radio" name="answer" value="unknown"> Keine <br> Aussage</label>
     </div>
 
     <div id="concealment-block" style="display:none; margin-top:1rem;">
-      <p><strong>Wurden die Informationen absichtlich verschleiert?</strong></p>
+      <p><strong>Scheint es als läge absichtliche Verschleierung vor?</strong></p>
       <div class="options">
         <label><input type="radio" name="concealment" value="yes"> Ja</label>
         <label><input type="radio" name="concealment" value="no"> Nein</label>
@@ -478,6 +479,9 @@ function renderQuestionScreen(screen) {
         if (answer === 'yes') {
             pointsPossible = importance;
             pointsEarned = importance;
+        } else if (answer === 'half') {
+            pointsPossible = importance;
+            pointsEarned = importance*0.5;
         } else if (answer === 'no') {
             pointsPossible = importance;
             pointsEarned = 0;
